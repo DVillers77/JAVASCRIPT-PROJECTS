@@ -45,3 +45,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To practice variable declaration and assignment using the `document.write()` method.
 - **Outcome**: Successfully created a variable and displayed its string value on the webpage, demonstrating an understanding of a core JavaScript concept.
+
+#### **Step 50: String Assignment**
+
+- **Date**: September 18, 2025
+- **Objective**: To practice variable declaration and assignment and use the `window.alert()` method to display the string value.
+- **Outcome**: Successfully created a variable and displayed its value in a pop-up alert, demonstrating an understanding of different output methods in JavaScript.
