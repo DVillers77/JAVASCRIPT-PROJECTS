@@ -9,5 +9,11 @@ document.write(
     " because those who mind don't matter and those who matter don't mind.\"" +
     "-Dr. Seuss"
 );
-var B = "Concatenated" + " String";
+let B = "Concatenated" + " String";
 document.write(B);
+let Family = "The Arezzinis",
+  Dad = "Jeremiah",
+  Mom = "Hermoine",
+  Daughter = "Penny",
+  Son = "Zorro";
+document.write(Dad);

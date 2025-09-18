@@ -69,3 +69,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To assign a concatenated string value to a variable and display it in the browser.
 - **Outcome**: Successfully assigned a concatenated string to a variable and used `document.write()` to display it, demonstrating the ability to combine skills to solve a challenge.
+
+#### **Step 57: Multiple Variables Assignment**
+
+- **Date**: September 18, 2025
+- **Objective**: To assign multiple variables in a single statement and display one of them in the browser.
+- **Outcome**: Successfully declared and displayed the value of one of the variables, demonstrating the ability to declare multiple variables in a single statement.
