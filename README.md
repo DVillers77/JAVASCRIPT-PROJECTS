@@ -39,3 +39,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To replace the `window.alert()` method with the `document.write()` method to display text directly on the webpage.
 - **Outcome**: Successfully modified `main.js` to use `document.write('Hello, world!')`, demonstrating an understanding of how to directly write content to the HTML document.
+
+#### **Step 47: Variables and Operators Assignment**
+
+- **Date**: September 18, 2025
+- **Objective**: To practice variable declaration and assignment using the `document.write()` method.
+- **Outcome**: Successfully created a variable and displayed its string value on the webpage, demonstrating an understanding of a core JavaScript concept.
