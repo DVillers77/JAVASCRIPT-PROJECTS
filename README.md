@@ -51,3 +51,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To practice variable declaration and assignment and use the `window.alert()` method to display the string value.
 - **Outcome**: Successfully created a variable and displayed its value in a pop-up alert, demonstrating an understanding of different output methods in JavaScript.
+
+#### **Step 52: Escape Character Assignment**
+
+- **Date**: September 18, 2025
+- **Objective**: To practice escaping characters like apostrophes and quotation marks within a string.
+- **Outcome**: Successfully wrote a string containing both an apostrophe and double quotes, using the backslash (`\`) to correctly display the characters.
