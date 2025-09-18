@@ -14,8 +14,8 @@
 - **Objective**: Successfully created a new GitHub repository named `JAVASCRIPT-PROJECTS` to serve as a central location for all course-related coding assignments and projects.
 - **Outcome**: Initialized the repository with a `README.md` file, providing a foundational document for tracking project progress and key learning milestones. This step is crucial for building an online portfolio and demonstrating proficiency with Git and GitHub.
 
-#### 2. **Hello, World!**
+#### **Step 37: Folder Structure & Hello, World! Program**
 
-- **Date**: September 17, 2025
-- **Objective**: Learn the foundational syntax for embedding and executing JavaScript code within an HTML document.
-- **Outcome**: Created an `index.html` file containing an embedded `<script>` tag that uses the `alert()` method to display the text "Hello, World!" upon page load. This demonstrated the basic use of a JavaScript method and string data type.
+- **Date**: September 18, 2025
+- **Objective**: Establish a clean and logical folder structure for projects and write the first JavaScript program.
+- **Outcome**: Successfully created a `project-1-expressions-alert` folder within `Basic JavaScript Projects` and created an `index.html` file inside it. The file contains a working `alert()` method that demonstrates the basic execution of a JavaScript script embedded in an HTML document.
