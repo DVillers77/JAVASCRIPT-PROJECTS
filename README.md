@@ -1,5 +1,7 @@
 # JAVASCRIPT-PROJECTS
 
+This repository serves as a portfolio for all coding projects and assignments completed during the JavaScript course from The Tech Academy's UI/UX Design program. The projects within this repository highlight a progression of skills and a mastery of core JavaScript concepts.
+
 ---
 
 ## JavaScript Course from The Tech Academy UI/UX Design course
