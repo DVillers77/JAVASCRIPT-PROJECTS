@@ -19,3 +19,9 @@
 - **Date**: September 18, 2025
 - **Objective**: Establish a clean and logical folder structure for projects and write the first JavaScript program.
 - **Outcome**: Successfully created a `project-1-expressions-alert` folder within `Basic JavaScript Projects` and created an `index.html` file inside it. The file contains a working `alert()` method that demonstrates the basic execution of a JavaScript script embedded in an HTML document.
+
+#### **Step 39: Linking JavaScript Files**
+
+- **Date**: September 18, 2025
+- **Objective**: To move JavaScript code to an external file and link it to an HTML document.
+- **Outcome**: Successfully created a `main.js` file within a dedicated `js` folder and linked it to `index.html` using the `<script>` tag with a `src` attribute. This demonstrated the best practice of separating JavaScript from HTML and the importance of correct file paths.
