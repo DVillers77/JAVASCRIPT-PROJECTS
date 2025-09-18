@@ -63,3 +63,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To practice joining multiple strings together using the `+` operator within the `document.write()` method.
 - **Outcome**: Successfully concatenated a string and displayed the result on the webpage, demonstrating an understanding of string concatenation.
+
+#### **Step 55: Concatenated String Challenge**
+
+- **Date**: September 18, 2025
+- **Objective**: To assign a concatenated string value to a variable and display it in the browser.
+- **Outcome**: Successfully assigned a concatenated string to a variable and used `document.write()` to display it, demonstrating the ability to combine skills to solve a challenge.

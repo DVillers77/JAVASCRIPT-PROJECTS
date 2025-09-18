@@ -9,3 +9,5 @@ document.write(
     " because those who mind don't matter and those who matter don't mind.\"" +
     "-Dr. Seuss"
 );
+var B = "Concatenated" + " String";
+document.write(B);
