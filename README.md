@@ -27,3 +27,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To move JavaScript code to an external file and link it to an HTML document.
 - **Outcome**: Successfully created a `main.js` file within a dedicated `js` folder and linked it to `index.html` using the `<script>` tag with a `src` attribute. This demonstrated the best practice of separating JavaScript from HTML and the importance of correct file paths.
+
+#### **Step 41: The window.alert() Method**
+
+- **Date**: September 18, 2025
+- **Objective**: To demonstrate understanding of the global window object by using the window.alert() method.
+- **Outcome**: Successfully modified the `main.js` file to use `window.alert("Hello, world!")`, confirming that `alert()` is a property of the global `window` object and that both methods produce the same result.
