@@ -33,3 +33,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To demonstrate understanding of the global window object by using the window.alert() method.
 - **Outcome**: Successfully modified the `main.js` file to use `window.alert("Hello, world!")`, confirming that `alert()` is a property of the global `window` object and that both methods produce the same result.
+
+#### **Step 43: The document.write() Method Assignment**
+
+- **Date**: September 18, 2025
+- **Objective**: To replace the `window.alert()` method with the `document.write()` method to display text directly on the webpage.
+- **Outcome**: Successfully modified `main.js` to use `document.write('Hello, world!')`, demonstrating an understanding of how to directly write content to the HTML document.
