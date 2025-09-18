@@ -75,3 +75,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To assign multiple variables in a single statement and display one of them in the browser.
 - **Outcome**: Successfully declared and displayed the value of one of the variables, demonstrating the ability to declare multiple variables in a single statement.
+
+#### **Step 59: Expression Assignment**
+
+- **Date**: September 18, 2025
+- **Objective**: To write a simple expression in the `main.js` file.
+- **Outcome**: Successfully wrote an expression and executed the code in the browser, demonstrating an understanding of the difference between an expression and a statement.
