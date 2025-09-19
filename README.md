@@ -87,3 +87,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 19, 2025
 - **Objective**: To add comments to the `main.js` file to explain the code's functionality.
 - **Outcome**: Successfully added comments that explain various lines of code, improving readability and demonstrating an understanding of code documentation.
+
+#### **Basic JavaScript Projects Submission**
+
+- **Date**: September 19, 2025
+- **Objective**: To finalize and submit the first JavaScript project, demonstrating an understanding of variables, expressions, concatenation, and commenting.
+- **Outcome**: Successfully completed all minimum requirements for the project, including using `document.write()`, `window.alert()`, concatenating strings, writing an expression, and adding comments to the code.
