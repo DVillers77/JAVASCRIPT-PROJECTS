@@ -111,3 +111,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 19, 2025
 - **Objective**: To use the `+=` operator to concatenate a string and display the result in an HTML element using JavaScript.
 - **Outcome**: Successfully utilized the `+=` operator to add a string to a paragraph element, demonstrating an understanding of how to modify existing HTML content with JavaScript.
+
+#### **Step 70: Project 2 Submission**
+
+- **Date**: September 19, 2025
+- **Objective**: To push the "Project2_functions" folder to GitHub, demonstrating an understanding of functions, variables, the `+=` operator, and DOM manipulation.
+- **Outcome**: The submitted code successfully includes a function that uses the `+=` operator to modify an HTML element, fulfilling all project requirements.

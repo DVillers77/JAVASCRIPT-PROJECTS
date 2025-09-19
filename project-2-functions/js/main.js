@@ -6,7 +6,7 @@ function My_First_Function() {
   // Concatenate the two variables and display the result.
   document.getElementById("h1").innerHTML = firstVar + secondVar;
 }
-// Step 69 operator assignment
+/* Step 69 operator assignment. Adds the string " 67" to the existing content of the HTML element with the ID "step" */
 document.getElementById("step").innerHTML += " 67";
 
 /* initially missunderstood the assignment and did the below alert buttons */
