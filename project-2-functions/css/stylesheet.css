@@ -1,0 +1,63 @@
+.btn-group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.tta-btn-dark {
+  background-color: #fff;
+  box-shadow: rgba(131, 131, 131, 0.5) 0 2px 4px,
+    rgba(131, 131, 131, 0.5) 0 2px 13px -3px, #182a53 0 -3px 0 inset;
+  color: #182a53;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
+.back-btn {
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.tta-btn-dark {
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  height: 60px;
+  padding-left: 55px;
+  padding-right: 55px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.tta-btn {
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  height: 60px;
+  padding-left: 55px;
+  padding-right: 55px;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.tta-btn {
+  background-color: #182a53;
+  box-shadow: rgba(24, 42, 83, 0.4) 0 2px 4px,
+    rgba(24, 42, 83, 0.3) 0 7px 13px -3px, #ff9c00 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+}
