@@ -47,3 +47,28 @@ let result = Sent1.concat(Sent2);
 
 // writes the concatenated string of text defined in the variable result to the document
 document.write(result);
+
+// CHALLENGE ASSIGNMENT
+
+// Function to change the text of the element
+function changeText(element) {
+  element.innerHTML = "You're hovering over me!";
+}
+
+// Function to reset the text of the element
+function resetText(element) {
+  element.innerHTML = "Hover over this text!";
+}
+
+// Get the h1 element by its ID
+const myHeading = document.getElementById("myHeading");
+
+// Add an event listener to the h1 element that calls the changeText function on mouseover
+myHeading.addEventListener("mouseover", () => {
+  changeText(myHeading);
+});
+
+// Add a second event listener to the h1 element that calls the resetText function on mouseleave
+myHeading.addEventListener("mouseleave", () => {
+  resetText(myHeading);
+});

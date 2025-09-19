@@ -93,3 +93,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 19, 2025
 - **Objective**: To finalize and submit the first JavaScript project, demonstrating an understanding of variables, expressions, concatenation, and commenting.
 - **Outcome**: Successfully completed all minimum requirements for the project, including using `document.write()`, `window.alert()`, concatenating strings, writing an expression, and adding comments to the code.
+
+#### **Step 66: Event Challenge**
+
+- **Date**: September 19, 2025
+- **Objective**: To research and implement a new HTML event.
+- **Outcome**: Successfully implemented the `onmouseover` and `onmouseleave` events, demonstrating an understanding of how to use JavaScript to create a dynamic and interactive user experience.
