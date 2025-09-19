@@ -81,3 +81,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 18, 2025
 - **Objective**: To write a simple expression in the `main.js` file.
 - **Outcome**: Successfully wrote an expression and executed the code in the browser, demonstrating an understanding of the difference between an expression and a statement.
+
+#### **Step 64: Comment Assignment**
+
+- **Date**: September 19, 2025
+- **Objective**: To add comments to the `main.js` file to explain the code's functionality.
+- **Outcome**: Successfully added comments that explain various lines of code, improving readability and demonstrating an understanding of code documentation.
