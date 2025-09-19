@@ -1,11 +1,13 @@
-// Function to display a message in the paragraph element.
+// step 67. Function to display a message in the paragraph element.
 function My_First_Function() {
   let firstVar = "This is a new message! ";
   let secondVar = "The function works!";
 
   // Concatenate the two variables and display the result.
-  document.getElementById("Paragraph").innerHTML = firstVar + secondVar;
+  document.getElementById("h1").innerHTML = firstVar + secondVar;
 }
+// Step 69 operator assignment
+document.getElementById("step").innerHTML += " 67";
 
 /* initially missunderstood the assignment and did the below alert buttons */
 

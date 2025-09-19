@@ -105,3 +105,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 19, 2025
 - **Objective**: To create a project that demonstrates the use of a function, variables, and the `document.getElementById` method.
 - **Outcome**: Successfully created a `main.js` file with a function that manipulates a paragraph element in the `index.html` file, demonstrating an understanding of how to connect JavaScript to HTML elements.
+
+#### **Step 69: Operator Assignment**
+
+- **Date**: September 19, 2025
+- **Objective**: To use the `+=` operator to concatenate a string and display the result in an HTML element using JavaScript.
+- **Outcome**: Successfully utilized the `+=` operator to add a string to a paragraph element, demonstrating an understanding of how to modify existing HTML content with JavaScript.
