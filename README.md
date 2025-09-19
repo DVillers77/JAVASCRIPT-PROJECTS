@@ -117,3 +117,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 19, 2025
 - **Objective**: To push the "Project2_functions" folder to GitHub, demonstrating an understanding of functions, variables, the `+=` operator, and DOM manipulation.
 - **Outcome**: The submitted code successfully includes a function that uses the `+=` operator to modify an HTML element, fulfilling all project requirements.
+
+#### **Step 76: Function Challenge**
+
+- **Date**: September 19, 2025
+- **Objective**: To demonstrate the ability to write and execute a JavaScript function and use the `document.getElementById` method.
+- **Outcome**: Successfully demonstrated the required skills by utilizing existing code that uses `addEventListener` and `document.getElementById` to create interactive button functionality.
