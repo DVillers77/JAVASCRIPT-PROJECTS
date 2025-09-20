@@ -9,5 +9,12 @@ function additionFunction() {
   // We are looking for the element that has the id "math".
   // The .innerHTML part means we are going to change the text inside that element.
   // We are setting the text to say "The answer is: " followed by the number we stored in our container we named "result" on the line above.
-  document.getElementById("math").innerHTML = "The answer is: " + result;
+  document.getElementById("math-ten-plus-five").innerHTML =
+    "The answer is: " + result;
+}
+
+function subtractionFunction() {
+  let result = 10 - 5;
+  document.getElementById("math-ten-minus-five").innerHTML =
+    "The answer is: " + result;
 }

@@ -129,3 +129,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 20, 2025
 - **Objective**: To practice using a JavaScript function to perform an addition operation and display the result in an HTML element.
 - **Outcome**: Successfully created a function that performs addition and updates a specific HTML element, demonstrating an understanding of basic arithmetic operators and DOM manipulation.
+
+#### **Step 82: Subtraction Assignment**
+
+- **Date**: September 20, 2025
+- **Objective**: To practice using a JavaScript function to perform a subtraction operation and display the result.
+- **Outcome**: Successfully created a function that performs subtraction and updates a specific HTML element, demonstrating an understanding of basic arithmetic operators and DOM manipulation.
