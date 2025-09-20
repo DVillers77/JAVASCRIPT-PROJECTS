@@ -30,3 +30,9 @@ function divisionFunction() {
   document.getElementById("math-10-divide-5").innerHTML =
     "The answer is: " + result;
 }
+
+function additionMultiplicationFunction() {
+  let result = 10 + 5 * 2;
+  document.getElementById("math-10-plus-10").innerHTML =
+    "The answer is:" + result;
+}
