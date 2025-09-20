@@ -6,15 +6,27 @@ function additionFunction() {
   let result = 10 + 5;
 
   // Now we're going to find an element in our HTML page.
-  // We are looking for the element that has the id "math".
+  // We are looking for the element that has the id "math-10-plus-5".
   // The .innerHTML part means we are going to change the text inside that element.
   // We are setting the text to say "The answer is: " followed by the number we stored in our container we named "result" on the line above.
-  document.getElementById("math-ten-plus-five").innerHTML =
+  document.getElementById("math-10-plus-5").innerHTML =
     "The answer is: " + result;
 }
 
 function subtractionFunction() {
   let result = 10 - 5;
-  document.getElementById("math-ten-minus-five").innerHTML =
+  document.getElementById("math-10-minus-5").innerHTML =
+    "The answer is: " + result;
+}
+
+function multiplicationFunction() {
+  let result = 10 * 5;
+  document.getElementById("math-10-times-5").innerHTML =
+    "The answer is: " + result;
+}
+
+function divisionFunction() {
+  let result = 10 / 5;
+  document.getElementById("math-10-divide-5").innerHTML =
     "The answer is: " + result;
 }

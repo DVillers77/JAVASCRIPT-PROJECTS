@@ -6,15 +6,32 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- This is a paragraph element. It will display the text "The equation is: 10 + 5 =". -->
-    <p>The equation is: 10 + 5 =</p>
-    <!-- This is a button. When you click it, it will run the JavaScript function we wrote. -->
-    <button onclick="additionFunction()">Show Answer</button>
-    <!-- This is another paragraph. It is empty for now. Our JavaScript code will look for this paragraph using its ID, "math", and place the answer inside it. -->
-    <p id="math-ten-plus-five"></p>
-    <p>The equation is: 10 - 5 =</p>
-    <button onclick="subtractionFunction()">Show Answer</button>
-    <p id="math-ten-minus-five"></p>
+    <h1>Math Equations</h1>
+    <ol>
+      <li>
+        <!-- This is a paragraph element. It will display the text "The equation is: 10 + 5 =". -->
+        <p>The equation is: 10 + 5 =</p>
+        <!-- This is a button. When you click it, it will run the JavaScript function we wrote. -->
+        <button onclick="additionFunction()">Show Answer</button>
+        <!-- This is another paragraph. It is empty for now. Our JavaScript code will look for this paragraph using its ID, "math", and place the answer inside it. -->
+        <p id="math-10-plus-5"></p>
+      </li>
+      <li>
+        <p>The equation is: 10 - 5 =</p>
+        <button onclick="subtractionFunction()">Show Answer</button>
+        <p id="math-10-minus-5"></p>
+      </li>
+      <li>
+        <p>The equation is: 10 * 5 =</p>
+        <button onclick="multiplicationFunction()">Show Answer</button>
+        <p id="math-10-times-5"></p>
+      </li>
+      <li>
+        <p>The equation is: 10 / 5 =</p>
+        <button onclick="divisionFunction()">Show Answer</button>
+        <p id="math-10-divide-5"></p>
+      </li>
+    </ol>
     <script src="./js/main.js"></script>
   </body>
 </html>
