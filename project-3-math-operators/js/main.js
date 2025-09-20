@@ -53,3 +53,15 @@ function negationFunction() {
   document.getElementById("math-negation-10").innerHTML =
     "The answer is:" + result;
 }
+
+function incrementFunction() {
+  let x = 10;
+  x++;
+  document.getElementById("math-increment").innerHTML = "The result is:" + x;
+}
+
+function decrementFunction() {
+  let x = 10;
+  x--;
+  document.getElementById("math-decrement").innerHTML = "The result is:" + x;
+}

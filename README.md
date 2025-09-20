@@ -159,3 +159,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 20, 2025
 - **Objective**: To practice using the unary negation operator (`-`) to return the negative value of a number.
 - **Outcome**: Successfully created a function that applies the negation operator and displays the result dynamically in an HTML element.
+
+#### **Step 92: UNARY OPERATOR (INCREMENT AND DECREMENT)**
+
+- **Date**: September 20, 2025
+- **Objective**: To practice using the increment (`++`) and decrement (`--`) unary operators.
+- **Outcome**: Successfully added a function that applies the increment and decrement operators and displays the result dynamically in a new HTML element.
