@@ -42,3 +42,14 @@ function remainderFunction() {
   document.getElementById("math-remainder-10-divide-3").innerHTML =
     "The answer is:" + remainder;
 }
+
+// This line starts a set of instructions. Think of it like a recipe. The name of our recipe is "negationFunction."
+function negationFunction() {
+  // This line creates a container, and we are calling it negation. We are putting the number 10 inside this container.
+  let negation = 10;
+  /* This line creates another container and calls it result. We are taking the number from the negation container and flipping its sign to make it negative. So, it changes from 10 to -10. We then put -10 into our result container. */
+  let result = -negation;
+  /* This line looks for a specific spot on your web page that has the unique ID "math-negation-10". It then changes the text in that spot. It will display the words "The answer is:" followed by whatever number is in our result container, which is -10. */
+  document.getElementById("math-negation-10").innerHTML =
+    "The answer is:" + result;
+}
