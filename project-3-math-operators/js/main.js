@@ -34,13 +34,13 @@ function divisionFunction() {
 function additionMultiplicationFunction() {
   let result = 10 + 5 * 2;
   document.getElementById("math-10-plus-10").innerHTML =
-    "The answer is:" + result;
+    "The answer is: " + result;
 }
 
 function remainderFunction() {
   let remainder = 10 % 3;
   document.getElementById("math-remainder-10-divide-3").innerHTML =
-    "The answer is:" + remainder;
+    "The answer is: " + remainder;
 }
 
 // This line starts a set of instructions. Think of it like a recipe. The name of our recipe is "negationFunction."
@@ -51,17 +51,29 @@ function negationFunction() {
   let result = -negation;
   /* This line looks for a specific spot on your web page that has the unique ID "math-negation-10". It then changes the text in that spot. It will display the words "The answer is:" followed by whatever number is in our result container, which is -10. */
   document.getElementById("math-negation-10").innerHTML =
-    "The answer is:" + result;
+    "The answer is: " + result;
 }
 
 function incrementFunction() {
   let x = 10;
   x++;
-  document.getElementById("math-increment").innerHTML = "The result is:" + x;
+  document.getElementById("math-increment").innerHTML = "The result is: " + x;
 }
 
 function decrementFunction() {
   let x = 10;
   x--;
-  document.getElementById("math-decrement").innerHTML = "The result is:" + x;
+  document.getElementById("math-decrement").innerHTML = "The result is: " + x;
+}
+
+function random01Function() {
+  let random = Math.random();
+  document.getElementById("math-random-01").innerHTML =
+    "The result is: " + random;
+}
+
+function random0100Function() {
+  let random = Math.random() * 100;
+  document.getElementById("math-random-0100").innerHTML =
+    "The result is: " + random;
 }

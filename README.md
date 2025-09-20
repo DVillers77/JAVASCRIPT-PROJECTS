@@ -165,3 +165,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 20, 2025
 - **Objective**: To practice using the increment (`++`) and decrement (`--`) unary operators.
 - **Outcome**: Successfully added a function that applies the increment and decrement operators and displays the result dynamically in a new HTML element.
+
+#### **Step 94: MATH.RANDOM ASSIGNMENT**
+
+- **Date**: September 20, 2025
+- **Objective**: To practice using the `Math.random()` function to generate a random floating-point number.
+- **Outcome**: Successfully created two functions that generate random numbers within different ranges and display the results in new HTML elements.
