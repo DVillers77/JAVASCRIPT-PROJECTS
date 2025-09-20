@@ -36,3 +36,9 @@ function additionMultiplicationFunction() {
   document.getElementById("math-10-plus-10").innerHTML =
     "The answer is:" + result;
 }
+
+function remainderFunction() {
+  let remainder = 10 % 3;
+  document.getElementById("math-remainder-10-divide-3").innerHTML =
+    "The answer is:" + remainder;
+}
