@@ -142,19 +142,19 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Objective**: To practice using JavaScript functions to perform multiplication and division operations.
 - **Outcome**: Successfully created functions for both multiplication and division, demonstrating an understanding of the `*` and `/` arithmetic operators and how to display their results dynamically.
 
-#### **Step 85: Multiple Operations Assignment**
+#### **Step 86: Multiple Operations Assignment**
 
 - **Date**: September 20, 2025
 - **Objective**: To practice performing multiple arithmetic operations in a single line of JavaScript code.
 - **Outcome**: Successfully created a function that performs combined addition and multiplication, demonstrating an understanding of the order of operations and how to display the result dynamically.
 
-#### **Step 87: Modulus Operator Assignment**
+#### **Step 88: Modulus Operator Assignment**
 
 - **Date**: September 20, 2025
 - **Objective**: To practice using the modulus operator (`%`) to find the remainder of a division.
 - **Outcome**: Successfully created a function that performs a modulus operation and displays the result dynamically in an HTML element.
 
-#### **Step 89: Unary Operator Assignment**
+#### **Step 90: Unary Operator Assignment**
 
 - **Date**: September 20, 2025
 - **Objective**: To practice using the unary negation operator (`-`) to return the negative value of a number.
