@@ -123,3 +123,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 19, 2025
 - **Objective**: To demonstrate the ability to write and execute a JavaScript function and use the `document.getElementById` method.
 - **Outcome**: Successfully demonstrated the required skills by utilizing existing code that uses `addEventListener` and `document.getElementById` to create interactive button functionality.
+
+#### **Step 80: Math Operators Assignment**
+
+- **Date**: September 20, 2025
+- **Objective**: To practice using a JavaScript function to perform an addition operation and display the result in an HTML element.
+- **Outcome**: Successfully created a function that performs addition and updates a specific HTML element, demonstrating an understanding of basic arithmetic operators and DOM manipulation.
