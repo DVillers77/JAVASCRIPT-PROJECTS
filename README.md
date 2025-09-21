@@ -213,3 +213,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To use the `document.write()` method and the `typeof` operator to display the data type of a variable.
 - **Outcome**: Successfully created a new `project-5-comparisons-type-coercion` folder with `index.html` and `main.js` files. The JavaScript code correctly used type coercion and the `typeof` operator to display the data type of the resulting variable on the webpage.
+
+#### **Step 107: TYPE COERCION ASSIGNMENT**
+
+- **Date**: September 21, 2025
+- **Objective**: To practice type coercion by performing an operation with different data types and displaying the result.
+- **Outcome**: Successfully utilized type coercion by concatenating a string and a number. A new function was created that used the unary plus operator to convert the resulting string back into a number, which was then displayed on the webpage.
