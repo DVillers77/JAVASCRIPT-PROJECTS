@@ -171,3 +171,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 20, 2025
 - **Objective**: To practice using the `Math.random()` function to generate a random floating-point number.
 - **Outcome**: Successfully created two functions that generate random numbers within different ranges and display the results in new HTML elements.
+
+#### **Step 95: MATH OBJECT CHALLENGE**
+
+- **Date**: September 20, 2025
+- **Objective**: To define and utilize a method of the JavaScript `Math` object.
+- **Outcome**: Successfully utilized the `Math.random()` method, which is a method of the `Math` object, to generate and display a random number dynamically in a new HTML element.
