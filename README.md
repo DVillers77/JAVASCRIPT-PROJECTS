@@ -219,3 +219,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To practice type coercion by performing an operation with different data types and displaying the result.
 - **Outcome**: Successfully utilized type coercion by concatenating a string and a number. A new function was created that used the unary plus operator to convert the resulting string back into a number, which was then displayed on the webpage.
+
+#### **Step 110: NAN CHALLENGE**
+
+- **Date**: September 21, 2025
+- **Objective**: To demonstrate an understanding of the `NaN` value and the `isNaN()` function.
+- **Outcome**: Successfully wrote JavaScript functions to display `NaN` by performing an impossible mathematical operation, and used the `isNaN()` function to return both `true` and `false` values based on the input.

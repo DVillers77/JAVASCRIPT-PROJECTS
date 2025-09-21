@@ -34,3 +34,31 @@ function coercoin_assignment() {
   // The .innerHTML part then changes the text in that spot to display the number 105.
   document.getElementById("coercoin-action").innerHTML = +mixedNumbers;
 }
+
+// NAN CHALLENGE
+
+// The "Nan()" function demonstrates how to get a "NaN" (Not a Number) result.
+function Nan() {
+  // This line looks for the HTML element with the ID "NaN-test" and sets its text.
+  // The expression "0 / 0" is an impossible mathematical operation.
+  // In JavaScript, this operation does not cause an error; it returns "NaN", which stands for "Not a Number".
+  document.getElementById("NaN-test").innerHTML = 0 / 0;
+}
+
+// The "Infinity8()" function demonstrates how the "isNaN()" function works.
+function Infinity8() {
+  // This line looks for the HTML element with the ID "Infinty-test" and sets its text.
+  // The `isNaN()` function checks if a value is "Not a Number".
+  // We are checking the string "This is a string".
+  // Since a string of letters is not a number, the function returns "true", which is displayed on the webpage.
+  document.getElementById("Infinty-test").innerHTML = isNaN("This is a string");
+}
+
+// The "neg_Infinity8()" function also uses the "isNaN()" function.
+function neg_Infinity8() {
+  // This line looks for the HTML element with the ID "-Infinity-test" and sets its text.
+  // We are checking the string "007".
+  // Even though it's inside quotes, JavaScript recognizes that the string contains only digits and can be converted to a number.
+  // Since "007" can be treated as a number, the `isNaN()` function returns "false", which is displayed on the webpage.
+  document.getElementById("-Infinity-test").innerHTML = isNaN("007");
+}
