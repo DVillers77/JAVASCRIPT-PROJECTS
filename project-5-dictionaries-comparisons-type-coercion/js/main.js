@@ -62,3 +62,22 @@ function neg_Infinity8() {
   // Since "007" can be treated as a number, the `isNaN()` function returns "false", which is displayed on the webpage.
   document.getElementById("-Infinity-test").innerHTML = isNaN("007");
 }
+
+// INFINITY ASSIGNMENT
+
+// This function, named "display_infinity", demonstrates how to display "Infinity".
+function display_infinity() {
+  // This line looks for the HTML element with the ID "display-infinity".
+  // We are giving it a very large number, written in scientific notation.
+  // The "e310" means we are multiplying 2 by 10 to the power of 310.
+  // This number is larger than JavaScript can store, so it returns "Infinity".
+  document.getElementById("display-infinity").innerHTML = 2e310;
+}
+
+// This function, named "display_Neg_infinity", demonstrates how to display "-Infinity".
+function display_Neg_infinity() {
+  // This line looks for the HTML element with the ID "display-neg-infinity".
+  // We are giving it a very large negative number, written in scientific notation.
+  // This number is smaller than JavaScript can store, so it returns "-Infinity".
+  document.getElementById("display-neg-infinity").innerHTML = -3e310;
+}

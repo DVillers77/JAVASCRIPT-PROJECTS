@@ -225,3 +225,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To demonstrate an understanding of the `NaN` value and the `isNaN()` function.
 - **Outcome**: Successfully wrote JavaScript functions to display `NaN` by performing an impossible mathematical operation, and used the `isNaN()` function to return both `true` and `false` values based on the input.
+
+#### **Step 113: INFINITY ASSIGNMENT**
+
+- **Date**: September 21, 2025
+- **Objective**: To demonstrate how to display `Infinity` and `-Infinity` in the browser using JavaScript.
+- **Outcome**: Successfully created JavaScript functions that used numbers larger than the maximum floating-point value (`2e310`) to display "Infinity," and numbers smaller than the minimum floating-point value (`-3e310`) to display "-Infinity".
