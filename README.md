@@ -177,3 +177,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 20, 2025
 - **Objective**: To define and utilize a method of the JavaScript `Math` object.
 - **Outcome**: Successfully utilized the `Math.random()` method, which is a method of the `Math` object, to generate and display a random number dynamically in a new HTML element.
+
+#### **Step 96: PROJECT3_MATH_OPERATORS SUBMISSION ASSIGNMENT**
+
+- **Date**: September 20, 2025
+- **Objective**: To finalize and submit the `project-3-math-operators` folder, ensuring all minimum project requirements are met.
+- **Outcome**: The submitted code successfully includes functions for all required mathematical operators (`+`, `-`, `*`, `%`, `++`, `--`) and `Math.random()`, with corresponding HTML elements and event handlers and comprehensive comments.
