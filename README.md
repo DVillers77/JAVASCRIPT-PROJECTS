@@ -189,3 +189,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To create a dictionary using a JavaScript object and display a value from it in an HTML element.
 - **Outcome**: Successfully created a `project-4-dictionaries` folder with `index.html` and `main.js` files. The `main.js` file contains a function that uses a JavaScript object to store key-value pairs and displays a selected value on the webpage.
+
+#### **Step 100: DICTIONARY CHALLENGE**
+
+- **Date**: September 21, 2025
+- **Objective**: To observe what happens when a JavaScript dictionary (object) is created with a duplicate key.
+- **Outcome**: Successfully observed that the last key-value pair defined overwrites any previous entries with the same key. The final output on the webpage was the value of the second, identical key.
