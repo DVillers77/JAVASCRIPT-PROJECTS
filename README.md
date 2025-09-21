@@ -201,3 +201,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To use the `delete` operator to remove a key-value pair from a dictionary.
 - **Outcome**: Successfully utilized the `delete` operator to remove a key from a JavaScript object. The code correctly attempted to access the deleted key, resulting in `undefined` being displayed on the webpage.
+
+#### **Step 103: PROJECT4_DICTIONARIES SUBMISSION ASSIGNMENT**
+
+- **Date**: September 21, 2025
+- **Objective**: To finalize and submit the `project-4-dictionaries` folder, ensuring all minimum project requirements are met.
+- **Outcome**: The submitted code successfully includes a dictionary and a function that outputs a key-value pair, a delete statement that removes a key before its value is displayed, and comprehensive comments throughout the JavaScript code.
