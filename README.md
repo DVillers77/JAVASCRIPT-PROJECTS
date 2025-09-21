@@ -183,3 +183,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 20, 2025
 - **Objective**: To finalize and submit the `project-3-math-operators` folder, ensuring all minimum project requirements are met.
 - **Outcome**: The submitted code successfully includes functions for all required mathematical operators (`+`, `-`, `*`, `%`, `++`, `--`) and `Math.random()`, with corresponding HTML elements and event handlers and comprehensive comments.
+
+#### **Step 99: DICTIONARY ASSIGNMENT**
+
+- **Date**: September 21, 2025
+- **Objective**: To create a dictionary using a JavaScript object and display a value from it in an HTML element.
+- **Outcome**: Successfully created a `project-4-dictionaries` folder with `index.html` and `main.js` files. The `main.js` file contains a function that uses a JavaScript object to store key-value pairs and displays a selected value on the webpage.
