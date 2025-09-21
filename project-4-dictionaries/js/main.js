@@ -14,3 +14,14 @@ function my_Dictionary_challenge() {
   };
   document.getElementById("Dictionary-challenge").innerHTML = Value.Key1;
 }
+
+/* delete assignment */
+
+function my_Dictionary_delete() {
+  let Value = {
+    Key1: "Value1",
+    Key2: "Value2",
+  };
+  delete Value.Key1;
+  document.getElementById("Dictionary-delete").innerHTML = Value.Key1;
+}

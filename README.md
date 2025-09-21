@@ -195,3 +195,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To observe what happens when a JavaScript dictionary (object) is created with a duplicate key.
 - **Outcome**: Successfully observed that the last key-value pair defined overwrites any previous entries with the same key. The final output on the webpage was the value of the second, identical key.
+
+#### **Step 102: DELETE ASSIGNMENT**
+
+- **Date**: September 21, 2025
+- **Objective**: To use the `delete` operator to remove a key-value pair from a dictionary.
+- **Outcome**: Successfully utilized the `delete` operator to remove a key from a JavaScript object. The code correctly attempted to access the deleted key, resulting in `undefined` being displayed on the webpage.
