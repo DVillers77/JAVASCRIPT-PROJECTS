@@ -81,3 +81,19 @@ function display_Neg_infinity() {
   // This number is smaller than JavaScript can store, so it returns "-Infinity".
   document.getElementById("display-neg-infinity").innerHTML = -3e310;
 }
+
+// BOOLEAN ASSIGNMENT
+
+// This function, named "b_True", demonstrates how to display "true" using a comparison.
+function b_True() {
+  // This line looks for the HTML element with the ID "b-true".
+  // The expression "2 > 1" asks if 2 is greater than 1. Since this is true, the function returns "true".
+  document.getElementById("b-true").innerHTML = 2 > 1;
+}
+
+// This function, named "b_False", demonstrates how to display "false" using a comparison.
+function b_False() {
+  // This line looks for the HTML element with the ID "b-false".
+  // The expression "1 > 2" asks if 1 is greater than 2. Since this is false, the function returns "false".
+  document.getElementById("b-false").innerHTML = 1 > 2;
+}

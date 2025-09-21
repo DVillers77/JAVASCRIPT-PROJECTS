@@ -231,3 +231,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To demonstrate how to display `Infinity` and `-Infinity` in the browser using JavaScript.
 - **Outcome**: Successfully created JavaScript functions that used numbers larger than the maximum floating-point value (`2e310`) to display "Infinity," and numbers smaller than the minimum floating-point value (`-3e310`) to display "-Infinity".
+
+#### **Step 115: BOOLEAN ASSIGNMENT**
+
+- **Date**: September 21, 2025
+- **Objective**: To use Boolean logic to display "true" and "false" in the browser.
+- **Outcome**: Successfully created JavaScript functions that use the greater than (`>`) operator to display a "true" statement (`2 > 1`) and a "false" statement (`1 > 2`).
