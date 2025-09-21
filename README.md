@@ -207,3 +207,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To finalize and submit the `project-4-dictionaries` folder, ensuring all minimum project requirements are met.
 - **Outcome**: The submitted code successfully includes a dictionary and a function that outputs a key-value pair, a delete statement that removes a key before its value is displayed, and comprehensive comments throughout the JavaScript code.
+
+#### **Step 106: TYPE OF OPERATOR ASSIGNMENT**
+
+- **Date**: September 21, 2025
+- **Objective**: To use the `document.write()` method and the `typeof` operator to display the data type of a variable.
+- **Outcome**: Successfully created a new `project-5-comparisons-type-coercion` folder with `index.html` and `main.js` files. The JavaScript code correctly used type coercion and the `typeof` operator to display the data type of the resulting variable on the webpage.
