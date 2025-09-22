@@ -127,3 +127,34 @@ function double_Equal_False() {
   // The expression "3 == 11" asks if 3 is equal to 11. Since this is false, the function returns "false".
   document.getElementById("double-equal-false").innerHTML = 3 == 11;
 }
+
+//TRIPLE EQUAL SIGNS ASSIGNMENT
+
+// This function, named "same_Value_type", demonstrates how to display "true" by matching both the value and data type.
+function same_Value_type() {
+  // The expression "10" === "10" asks if the string "10" is equal in value and data type to the string "10".
+  // Since both are strings with the same value, the function returns "true".
+  document.getElementById("same-value-type").innerHTML = "10" === "10";
+}
+
+// This function, named "differnt_Type_different_Value", demonstrates how to display "false" with a different data type and different value.
+function differnt_Type_different_Value() {
+  // The expression 3 === "11" asks if the number 3 is equal in value and data type to the string "11".
+  // Since neither the value nor the data type match, the function returns "false".
+  document.getElementById("different-type-different-value").innerHTML =
+    3 === "11";
+}
+
+// This function, named "same_Value_different_Type", demonstrates how to display "false" with the same value but a different data type.
+function same_Value_different_Type() {
+  // The expression 10 === "10" asks if the number 10 is equal in value and data type to the string "10".
+  // Although the values are the same, the data types are different (number vs. string), so the function returns "false".
+  document.getElementById("same-value-different-type").innerHTML = 10 === "10";
+}
+
+// This function, named "same_Type_different_Value", demonstrates how to display "false" with the same data type but a different value.
+function same_Type_different_Value() {
+  // The expression 10 === 11 asks if the number 10 is equal in value and data type to the number 11.
+  // The data types are the same, but the values are different, so the function returns "false".
+  document.getElementById("same-type-different-value").innerHTML = 10 === 11;
+}

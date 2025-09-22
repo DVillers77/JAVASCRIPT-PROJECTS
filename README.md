@@ -255,3 +255,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 22, 2025
 - **Objective**: To use the double equal signs (`==`) operator to return "true" and "false" results on the webpage.
 - **Outcome**: Successfully wrote two JavaScript functions that use the `==` operator to compare two values, displaying "true" when the values are equal and "false" when they are not, on the webpage.
+
+#### **Step 122: TRIPLE EQUAL SIGNS ASSIGNMENT**
+
+- **Date**: September 22, 2025
+- **Objective**: To use the triple equal signs (`===`) operator to return "true" and "false" results on the webpage under four specific conditions.
+- **Outcome**: Successfully wrote four JavaScript functions that use the `===` operator to perform strict comparisons, displaying "true" when the value and data type are identical, and "false" in cases where the value, data type, or both, do not match.
