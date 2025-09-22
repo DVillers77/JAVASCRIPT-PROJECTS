@@ -249,3 +249,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To display "false" in the console using Boolean logic and the `console.log()` method.
 - **Outcome**: Successfully created a JavaScript function that performs a Boolean comparison (`2 > 3`) which evaluates to "false" and then outputs the result to the browser's console.
+
+#### **Step 120: DOUBLE EQUAL SIGNS ASSIGNMENT**
+
+- **Date**: September 22, 2025
+- **Objective**: To use the double equal signs (`==`) operator to return "true" and "false" results on the webpage.
+- **Outcome**: Successfully wrote two JavaScript functions that use the `==` operator to compare two values, displaying "true" when the values are equal and "false" when they are not, on the webpage.

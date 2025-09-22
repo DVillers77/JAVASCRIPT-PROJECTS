@@ -113,3 +113,17 @@ function f_Console_log() {
   /* This line performs the comparison "2 > 3" and displays the result directly in the browser's developer console, not on the webpage. Since 2 is not greater than 3, the result is "false". */
   console.log(2 > 3);
 }
+
+// DOUBLE EQUAL SIGNS ASSIGNMENT
+
+// This function, named "double_Equal_True", demonstrates how to display "true" using the double equal signs (==).
+function double_Equal_True() {
+  // The expression "10 == 10" asks if 10 is equal to 10. Since this is true, the function returns "true".
+  document.getElementById("double-equal-true").innerHTML = 10 == 10;
+}
+
+// This function, named "double_Equal_False", demonstrates how to display "false" using the double equal signs (==).
+function double_Equal_False() {
+  // The expression "3 == 11" asks if 3 is equal to 11. Since this is false, the function returns "false".
+  document.getElementById("double-equal-false").innerHTML = 3 == 11;
+}
