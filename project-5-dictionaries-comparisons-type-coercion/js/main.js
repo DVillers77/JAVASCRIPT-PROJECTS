@@ -190,3 +190,19 @@ function or_False() {
   // Since 5 is NOT greater than 10 (false) and 10 is NOT greater than 20 (false), the function returns "false".
   document.getElementById("or-false").innerHTML = 5 > 10 || 10 > 20;
 }
+
+// NOT OPERATOR ASSIGNMENT
+
+// This function, named "not_True", demonstrates how to display "true" by inverting a false statement.
+function not_True() {
+  // The expression !(5 > 10) inverts the result of (5 > 10).
+  // Since 5 is not greater than 10, the inner statement is "false". The "!" operator inverts this to "true".
+  document.getElementById("not-true").innerHTML = !(5 > 10);
+}
+
+// This function, named "not_False", demonstrates how to display "false" by inverting a true statement.
+function not_False() {
+  // The expression !(20 > 10) inverts the result of (10 > 5).
+  // Since 20 is greater than 10, the inner statement is "true". The "!" operator inverts this to "false".
+  document.getElementById("not-false").innerHTML = !(10 > 5);
+}

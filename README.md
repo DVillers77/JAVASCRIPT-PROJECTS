@@ -267,3 +267,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 22, 2025
 - **Objective**: To use the `&&` (AND) and `||` (OR) logical operators to display `true` and `false` results on the webpage.
 - **Outcome**: Successfully wrote four JavaScript functions that use logical operators to evaluate comparisons, displaying `true` when all conditions are met for `&&` or at least one is met for `||`, and `false` when conditions are not met.
+
+#### **Step 126: NOT OPERATOR ASSIGNMENT**
+
+- **Date**: September 22, 2025
+- **Objective**: To use the `!` (NOT) logical operator to display `true` and `false` results on the webpage.
+- **Outcome**: Successfully wrote two JavaScript functions that use the `!` operator to invert Boolean values, displaying `true` when a `false` statement is inverted and `false` when a `true` statement is inverted.
