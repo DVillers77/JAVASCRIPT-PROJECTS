@@ -158,3 +158,35 @@ function same_Type_different_Value() {
   // The data types are the same, but the values are different, so the function returns "false".
   document.getElementById("same-type-different-value").innerHTML = 10 === 11;
 }
+
+// AND OPERATOR ASSIGNMENT
+
+// This function, named "and_True", demonstrates how to display "true" using the AND (&&) operator.
+function and_True() {
+  // The expression 5 > 2 && 10 > 4 asks if both statements are true.
+  // Since 5 is greater than 2 (true) AND 10 is greater than 4 (true), the function returns "true".
+  document.getElementById("and-true").innerHTML = 5 > 2 && 10 > 4;
+}
+
+// This function, named "and_False", demonstrates how to display "false" using the AND (&&) operator.
+function and_False() {
+  // The expression 5 > 10 && 10 > 4 asks if both statements are true.
+  // Since 5 is NOT greater than 10 (false), the entire expression returns "false" immediately.
+  document.getElementById("and-false").innerHTML = 5 > 10 && 10 > 4;
+}
+
+// OR OPERATOR ASSIGNMENT
+
+// This function, named "or_True", demonstrates how to display "true" using the OR (||) operator.
+function or_True() {
+  // The expression 5 > 10 || 10 > 4 asks if EITHER statement is true.
+  // Since 10 is greater than 4 (true), the entire expression returns "true".
+  document.getElementById("or-true").innerHTML = 5 > 10 || 10 > 4;
+}
+
+// This function, named "or_False", demonstrates how to display "false" using the OR (||) operator.
+function or_False() {
+  // The expression 5 > 10 || 10 > 20 asks if EITHER statement is true.
+  // Since 5 is NOT greater than 10 (false) and 10 is NOT greater than 20 (false), the function returns "false".
+  document.getElementById("or-false").innerHTML = 5 > 10 || 10 > 20;
+}

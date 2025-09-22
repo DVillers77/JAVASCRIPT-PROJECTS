@@ -261,3 +261,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 22, 2025
 - **Objective**: To use the triple equal signs (`===`) operator to return "true" and "false" results on the webpage under four specific conditions.
 - **Outcome**: Successfully wrote four JavaScript functions that use the `===` operator to perform strict comparisons, displaying "true" when the value and data type are identical, and "false" in cases where the value, data type, or both, do not match.
+
+#### **Step 124: AND OPERATOR ASSIGNMENT**
+
+- **Date**: September 22, 2025
+- **Objective**: To use the `&&` (AND) and `||` (OR) logical operators to display `true` and `false` results on the webpage.
+- **Outcome**: Successfully wrote four JavaScript functions that use logical operators to evaluate comparisons, displaying `true` when all conditions are met for `&&` or at least one is met for `||`, and `false` when conditions are not met.
