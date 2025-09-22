@@ -102,7 +102,14 @@ function b_False() {
 
 // This function, named "console_Log", demonstrates how to use the console.log() method.
 function console_Log() {
-  // This line performs the addition 10 + 5 and displays the result directly in the browser's
-  // developer console, not on the webpage.
+  /* This line performs the addition 10 + 5 and displays the result directly in the browser's developer console, not on the webpage. */
   console.log(10 + 5);
+}
+
+// BOOLEAN CHALLENGE
+
+// This function, named "f_Console_log", demonstrates how to display "false" using a comparison inside a console.log() method.
+function f_Console_log() {
+  /* This line performs the comparison "2 > 3" and displays the result directly in the browser's developer console, not on the webpage. Since 2 is not greater than 3, the result is "false". */
+  console.log(2 > 3);
 }
