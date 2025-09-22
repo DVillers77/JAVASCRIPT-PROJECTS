@@ -237,3 +237,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 21, 2025
 - **Objective**: To use Boolean logic to display "true" and "false" in the browser.
 - **Outcome**: Successfully created JavaScript functions that use the greater than (`>`) operator to display a "true" statement (`2 > 1`) and a "false" statement (`1 > 2`).
+
+#### **Step 117: CONSOLE.LOG() METHOD**
+
+- **Date**: September 21, 2025
+- **Objective**: To use the `console.log()` method to display the result of a calculation in the browser's developer console.
+- **Outcome**: Successfully wrote a JavaScript function that performs an addition operation and outputs the result directly to the console instead of the webpage.

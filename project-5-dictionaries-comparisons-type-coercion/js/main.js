@@ -97,3 +97,12 @@ function b_False() {
   // The expression "1 > 2" asks if 1 is greater than 2. Since this is false, the function returns "false".
   document.getElementById("b-false").innerHTML = 1 > 2;
 }
+
+// CONSOLE.LOG ASSIGNMENT
+
+// This function, named "console_Log", demonstrates how to use the console.log() method.
+function console_Log() {
+  // This line performs the addition 10 + 5 and displays the result directly in the browser's
+  // developer console, not on the webpage.
+  console.log(10 + 5);
+}
