@@ -34,3 +34,18 @@ accessGlobalVariable();
 createLocalVariable();
 // Call the function that will cause the error.
 debugScopeError();
+
+// METHOD ASSIGNMENT
+
+// This is the main function that gets called when the user clicks.
+function displayGreeting() {
+  // Get the current hour from the system.
+  const hour = new Date().getHours();
+
+  // Check if the hour is less than 18 (6:00 PM).
+  if (hour < 18) {
+    // This code will only run if the condition is true.
+    document.getElementById("greeting-display").innerHTML =
+      "How are you today?";
+  }
+}

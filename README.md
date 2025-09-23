@@ -327,3 +327,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To demonstrate the difference between local and global scope and to practice debugging using the `console.log()` method.
 - **Outcome**: A global variable was created and successfully accessed by a function. A local variable was created within a separate function, and an intentional error was written to show that it could not be accessed outside of its scope. The `console.log()` method was used to view the resulting `ReferenceError` in the browser console.
+
+#### **Step 147: METHOD ASSIGNMENT**
+
+- **Date**: September 23, 2025
+- **Objective**: To write a function using an `if` statement and a date method.
+- **Outcome**: A function was created to check the current hour using the `new Date().getHours()` method. An `if` statement was used to display a greeting on the webpage if the condition was met, successfully fulfilling the assignment's requirements.
