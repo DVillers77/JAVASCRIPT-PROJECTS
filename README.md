@@ -315,3 +315,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To write and execute a nested function in JavaScript.
 - **Outcome**: A nested function was successfully written to access and modify a variable from its parent function, demonstrating the concept of function scope. The final value was correctly displayed on the webpage, confirming the code's functionality.
+
+#### **Step 141: PROJECT6_TERNARY_OPERATORS_CONSTRUCTORS SUBMISSION ASSIGNMENT**
+
+- **Date**: September 23, 2025
+- **Objective**: To finalize, document, and submit the project demonstrating the use of ternary operators, constructors, and nested functions.
+- **Outcome**: The project was completed, meeting all minimum requirements, including the use of ternary operations, constructor functions with the 'new' and 'this' keywords, and a nested function. The code was fully commented and pushed to the GitHub repository for instructor review.
