@@ -321,3 +321,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To finalize, document, and submit the project demonstrating the use of ternary operators, constructors, and nested functions.
 - **Outcome**: The project was completed, meeting all minimum requirements, including the use of ternary operations, constructor functions with the 'new' and 'this' keywords, and a nested function. The code was fully commented and pushed to the GitHub repository for instructor review.
+
+#### **Step 143: LOCAL AND GLOBAL VARIABLE ASSIGNMENT**
+
+- **Date**: September 23, 2025
+- **Objective**: To demonstrate the difference between local and global scope and to practice debugging using the `console.log()` method.
+- **Outcome**: A global variable was created and successfully accessed by a function. A local variable was created within a separate function, and an intentional error was written to show that it could not be accessed outside of its scope. The `console.log()` method was used to view the resulting `ReferenceError` in the browser console.
