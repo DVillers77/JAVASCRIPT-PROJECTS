@@ -62,3 +62,32 @@ function myFunction() {
     " manufactured in " +
     Erik.Vehicle_Year;
 }
+
+// NEW KEYWORD ASSIGNMENT
+
+// This is a constructor function for creating Vehicle objects.
+function Vehicle(Make, Model, Year, Color) {
+  this.Vehicle_Make = Make;
+  this.Vehicle_Model = Model;
+  this.Vehicle_Year = Year;
+  this.Vehicle_Color = Color;
+}
+
+// These lines use the 'new' keyword to create three new Vehicle objects, each with unique properties.
+var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
+var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
+var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+
+// This function will display information about one of the created objects.
+function displayCar() {
+  // This line accesses the paragraph element in the HTML and changes its content.
+  // It uses the object 'Erik' to get its 'Vehicle_Color', 'Vehicle_Model', and 'Vehicle_Year' properties.
+  // The 'this' keyword within the constructor allows this to happen seamlessly.
+  document.getElementById("New_and_This").innerHTML =
+    "Erik drives a " +
+    Erik.Vehicle_Color +
+    "-colored " +
+    Erik.Vehicle_Model +
+    " manufactured in " +
+    Erik.Vehicle_Year;
+}

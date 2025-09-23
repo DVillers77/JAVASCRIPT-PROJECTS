@@ -297,3 +297,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To write and execute a program that demonstrates the use of the `new` and `this` keywords within a constructor function.
 - **Outcome**: Successfully created a `Vehicle` constructor function and used the `new` keyword to create multiple instances of it. The `this` keyword was used to correctly assign properties to each new object, and the program successfully displayed the properties of one of the objects on the webpage.
+
+#### **Step 135: NEW KEYWORD ASSIGNMENT**
+
+- **Date**: September 23, 2025
+- **Objective**: To further practice using the `new` keyword and constructor functions by adding new HTML elements and a JavaScript function to display object properties on the webpage.
+- **Outcome**: The `Vehicle` constructor function was used with the `new` keyword to create new objects. A new JavaScript function was successfully written to display one of the newly created objects' properties on the webpage, confirming that the `new` keyword was used correctly to instantiate the object.
