@@ -285,3 +285,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 22, 2025
 - **Objective**: To create a new project folder and files to demonstrate the use of the ternary operator.
 - **Outcome**: Successfully wrote and executed a function using a ternary operator to assign a value based on a condition, displaying a dynamic result on the webpage based on user input. The code was confirmed to be working as intended in the browser.
+
+#### **Step 130: TERNARY OPERATORS CHALLENGE**
+
+- **Date**: September 23, 2025
+- **Objective**: To create a basic program using the ternary operator to determine if a user is old enough to vote.
+- **Outcome**: Successfully wrote a program that takes a user's age as input, uses a ternary operator to check if it meets the voting age, and displays an appropriate message on the webpage. The code was confirmed to be working as intended.
