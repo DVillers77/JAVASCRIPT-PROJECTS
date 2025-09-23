@@ -117,3 +117,24 @@ function displayAges() {
   document.getElementById("reserved").innerHTML =
     "My father is " + myFather.age + ". My mother is " + myMother.age + ".";
 }
+
+// NESTED FUNCTIONS ASSIGNMENT
+
+// This is the outer, or parent, function
+function displayNestedFunction() {
+  // 1. Declare the variable in the parent function.
+  let startNumber = 5;
+
+  // 2. The inner function is defined here, allowing it to access `startNumber`.
+  function addOne() {
+    // 3. This line accesses and modifies the parent's variable.
+    //    Notice there is no `let` here.
+    startNumber += 1;
+    // 4. The inner function returns the updated value.
+    return startNumber;
+  }
+
+  // 5. This is the correct way to call the nested function and
+  //    use its returned value to update the HTML element.
+  document.getElementById("nested-function").innerHTML = addOne();
+}

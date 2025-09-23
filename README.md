@@ -309,3 +309,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To demonstrate the concept of reserved words and to write an object constructor function.
 - **Outcome**: The code was intentionally written to use a reserved word as a variable, which resulted in a `SyntaxError` as expected, confirming the rule of reserved keywords. Additionally, a working `Person` object constructor was created, which successfully instantiated new objects with properties.
+
+#### **Step 140: NESTED FUNCTIONS ASSIGNMENT**
+
+- **Date**: September 23, 2025
+- **Objective**: To write and execute a nested function in JavaScript.
+- **Outcome**: A nested function was successfully written to access and modify a variable from its parent function, demonstrating the concept of function scope. The final value was correctly displayed on the webpage, confirming the code's functionality.
