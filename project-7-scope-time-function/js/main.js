@@ -49,3 +49,23 @@ function displayGreeting() {
       "How are you today?";
   }
 }
+
+// IF STATEMENT ASSIGNMENT
+
+/*
+This function checks if the current date is before a specific date.
+It's used to determine if a sale is still active.
+*/
+function sale() {
+  // Create a new Date object representing today's date and time.
+  const today = new Date();
+
+  // Create another Date object for the end of the sale, using the format "YYYY-MM-DD".
+  const saleEnds = new Date("2025-09-25");
+
+  // An if statement checks if today's date is less than the sale end date.
+  if (today < saleEnds) {
+    // If the condition is true, the sale is still on.
+    document.getElementById("sale-ends").innerHTML = "Sale is on!";
+  }
+}

@@ -333,3 +333,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To write a function using an `if` statement and a date method.
 - **Outcome**: A function was created to check the current hour using the `new Date().getHours()` method. An `if` statement was used to display a greeting on the webpage if the condition was met, successfully fulfilling the assignment's requirements.
+
+#### **Step 148: IF STATEMENT ASSIGNMENT**
+
+- **Date**: September 23, 2025
+- **Objective**: To write an `if` statement to fulfill a custom condition.
+- **Outcome**: A new function was created with a variable and an `if` statement to check a condition of the user's choosing. The code successfully displayed the result on the webpage when the condition was met.
