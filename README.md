@@ -279,3 +279,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 22, 2025
 - **Objective**: To finalize the "Project5_comparisons_type_coercion" project and prepare it for submission by ensuring all minimum requirements were met.
 - **Outcome**: The code was confirmed to include all required elements: a `document.write()` method, `typeof` operator, a string/number expression, and a demonstration of all specified comparison and logical operators (`==`, `===`, `>`, `<`, `&&`, `||`, `!`) with explanatory comments. The project is now ready to be pushed to the GitHub repository.
+
+#### **Step 129: PROJECT6_TERNARY_OPERATORS_CONSTRUCTORS ASSIGNMENT**
+
+- **Date**: September 22, 2025
+- **Objective**: To create a new project folder and files to demonstrate the use of the ternary operator.
+- **Outcome**: Successfully wrote and executed a function using a ternary operator to assign a value based on a condition, displaying a dynamic result on the webpage based on user input. The code was confirmed to be working as intended in the browser.
