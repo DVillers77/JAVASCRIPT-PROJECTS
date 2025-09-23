@@ -1,3 +1,5 @@
+// PROJECT6_TERNARY__OPERATORS_CONSTRUCTORS ASSIGNMENT
+
 // This function, named "rideFunction", checks a rider's height using a ternary operator.
 function rideFunction() {
   // We are declaring two variables: "Height" to store the input and "Can_ride" to store the result string.
@@ -14,6 +16,8 @@ function rideFunction() {
   document.getElementById("ride").innerHTML = Can_ride + " to ride.";
 }
 
+//TERNARY OPERATORS CHALLENGE
+
 // This function, named "votingAge", checks a user's age using a ternary operator.
 function votingAge() {
   // We are declaring two variables: "Age" to store the input and "Can_vote" to store the result string.
@@ -28,4 +32,33 @@ function votingAge() {
   // This line takes the result string from "Can_vote" and adds the text " to vote.".
   // It then displays the full message inside the HTML element with the ID "age".
   document.getElementById("age").innerHTML = Can_vote + " to vote.";
+}
+
+// CODING ASSIGNMENT
+
+// This is a constructor function for creating Vehicle objects.
+function Vehicle(Make, Model, Year, Color) {
+  this.Vehicle_Make = Make;
+  this.Vehicle_Model = Model;
+  this.Vehicle_Year = Year;
+  this.Vehicle_Color = Color;
+}
+
+// These lines use the 'new' keyword to create three new Vehicle objects, each with unique properties.
+var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
+var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
+var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
+
+// This function will display information about one of the created objects.
+function myFunction() {
+  // This line accesses the paragraph element in the HTML and changes its content.
+  // It uses the object 'Erik' to get its 'Vehicle_Color', 'Vehicle_Model', and 'Vehicle_Year' properties.
+  // The 'this' keyword within the constructor allows this to happen seamlessly.
+  document.getElementById("Keywords_and_Constructors").innerHTML =
+    "Erik drives a " +
+    Erik.Vehicle_Color +
+    "-colored " +
+    Erik.Vehicle_Model +
+    " manufactured in " +
+    Erik.Vehicle_Year;
 }

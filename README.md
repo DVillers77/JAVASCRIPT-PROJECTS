@@ -291,3 +291,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To create a basic program using the ternary operator to determine if a user is old enough to vote.
 - **Outcome**: Successfully wrote a program that takes a user's age as input, uses a ternary operator to check if it meets the voting age, and displays an appropriate message on the webpage. The code was confirmed to be working as intended.
+
+#### **Step 134: KEYWORDS ASSIGNMENT**
+
+- **Date**: September 23, 2025
+- **Objective**: To write and execute a program that demonstrates the use of the `new` and `this` keywords within a constructor function.
+- **Outcome**: Successfully created a `Vehicle` constructor function and used the `new` keyword to create multiple instances of it. The `this` keyword was used to correctly assign properties to each new object, and the program successfully displayed the properties of one of the objects on the webpage.
