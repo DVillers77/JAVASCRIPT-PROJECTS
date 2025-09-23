@@ -91,3 +91,29 @@ function displayCar() {
     " manufactured in " +
     Erik.Vehicle_Year;
 }
+
+// RESERVED KEYWORD CHALLENGE
+// This line will intentionally cause an error because 'let' is a reserved keyword.
+
+/* You must comment the below line of code to run the rest of the code un commenting it will cause an error */
+
+//let let = "This will cause an error!";
+
+// CONSTRUCTOR FUNCTION
+// This is a constructor function for creating 'Person' objects.
+// It acts as a blueprint for new objects with properties like first name and age.
+function Person(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+}
+
+// These lines use the 'new' keyword to create two new instances of the 'Person' object.
+const myFather = new Person("John", "Doe", 65);
+const myMother = new Person("Sally", "Rally", 62);
+
+// This function will display the 'age' property of each object on the webpage.
+function displayAges() {
+  document.getElementById("reserved").innerHTML =
+    "My father is " + myFather.age + ". My mother is " + myMother.age + ".";
+}

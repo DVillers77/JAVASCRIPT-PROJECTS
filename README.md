@@ -303,3 +303,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To further practice using the `new` keyword and constructor functions by adding new HTML elements and a JavaScript function to display object properties on the webpage.
 - **Outcome**: The `Vehicle` constructor function was used with the `new` keyword to create new objects. A new JavaScript function was successfully written to display one of the newly created objects' properties on the webpage, confirming that the `new` keyword was used correctly to instantiate the object.
+
+#### **Step 137: RESERVED KEYWORD CHALLENGE**
+
+- **Date**: September 23, 2025
+- **Objective**: To demonstrate the concept of reserved words and to write an object constructor function.
+- **Outcome**: The code was intentionally written to use a reserved word as a variable, which resulted in a `SyntaxError` as expected, confirming the rule of reserved keywords. Additionally, a working `Person` object constructor was created, which successfully instantiated new objects with properties.
