@@ -61,10 +61,23 @@ function string() {
 // NUMBER METHODS ASSIGNMENT
 
 // toString() Method
+
 function numberToString() {
   const myNumber = 12345; // This is a number
   // toString() method to convert the number to a string
   const myString = myNumber.toString();
   // The result will be the string "12345"
   document.getElementById("number-to-string").innerHTML = myString;
+}
+
+// toPrecision() Method
+
+function toPrecisionFunction() {
+  // A number with many decimal places
+  const myNumber = 12938.3013012938;
+  // The toPrecision() method formats the number to a specified length
+  // In this case, it will be 10 digits
+  const preciseNumber = myNumber.toPrecision(10);
+  // Display the result
+  document.getElementById("precision-result").innerHTML = preciseNumber;
 }

@@ -386,3 +386,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 24, 2025
 - **Objective**: To use the `toString()` number method to convert a number into a string.
 - **Outcome**: A function was created that takes a number, converts it to a string using the `toString()` method, and successfully displays the result in a designated HTML element on the webpage.
+
+#### **Step 165: TOPRECISION() METHOD ASSIGNMENT**
+
+- **Date**: September 24, 2025
+- **Objective**: To practice using the `toPrecision()` number method to format a number to a specified length.
+- **Outcome**: A function was created that uses the `toPrecision()` method to format a decimal number to a specific number of significant digits, and the result was successfully displayed on the webpage.
