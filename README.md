@@ -368,3 +368,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 24, 2025
 - **Objective**: To practice using the `concat()` string method to join multiple strings together.
 - **Outcome**: A new project folder was created. A function was written that uses the `concat()` method to combine several string variables into a single sentence, which was then successfully displayed on the webpage.
+
+#### **Step 160: SLICE() METHOD ASSIGNMENT**
+
+- **Date**: September 24, 2025
+- **Objective**: To practice using the `slice()` string method to extract a portion of a string.
+- **Outcome**: A function was created that uses the `slice()` method to get a specific section of a string by using both positive and negative indices, and the result was successfully displayed on the webpage.
