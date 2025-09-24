@@ -56,7 +56,7 @@ function displayGreeting() {
 This function checks if the current date is before a specific date.
 It's used to determine if a sale is still active.
 */
-function sale() {
+function saleOne() {
   // Create a new Date object representing today's date and time.
   const today = new Date();
 
@@ -67,5 +67,28 @@ function sale() {
   if (today < saleEnds) {
     // If the condition is true, the sale is still on.
     document.getElementById("sale-ends").innerHTML = "Sale is on!";
+  }
+}
+
+// ELSE ASSIGNMENT
+
+/*
+This function checks if the current date is before a specific date.
+It's used to determine if a sale is still active.
+*/
+function saleTwo() {
+  // Create a new Date object representing today's date and time.
+  const today = new Date();
+
+  // Create another Date object for the end of the sale, using the format "YYYY-MM-DD".
+  const saleEnds = new Date("2025-09-22");
+
+  // An if statement checks if today's date is less than the sale end date.
+  if (today < saleEnds) {
+    // If the condition is true, the sale is still on.
+    document.getElementById("sale-2-ends").innerHTML = "Sale is on!";
+  } else {
+    // If the condition is false, the sale has ended.
+    document.getElementById("sale-2-ends").innerHTML = "Regular Price";
   }
 }

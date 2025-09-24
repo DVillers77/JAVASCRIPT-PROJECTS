@@ -339,3 +339,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To write an `if` statement to fulfill a custom condition.
 - **Outcome**: A new function was created with a variable and an `if` statement to check a condition of the user's choosing. The code successfully displayed the result on the webpage when the condition was met.
+
+#### **Step 150: ELSE ASSIGNMENT**
+
+- **Date**: September 23, 2025
+- **Objective**: To write a function using `if` and `else` statements to handle both a true and a false condition.
+- **Outcome**: A new function was created that takes user input and uses an `if/else` statement to display different messages based on the condition. The code successfully provides feedback for both positive and negative outcomes.
