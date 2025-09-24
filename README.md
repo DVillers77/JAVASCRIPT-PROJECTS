@@ -351,3 +351,14 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 24, 2025
 - **Objective**: To create a function with a multi-conditional `if/else if/else` statement.
 - **Outcome**: A function was written to get the current time and display a different message based on the time of day (morning, afternoon, or evening). The logical AND (`&&`) operator was used to correctly check if a value falls within a range. This was an improvement over the course example given which inccorrectly use the ("==") operator.
+
+#### **Step 153: PROJECT7_SCOPE_TIME_FUNCTION SUBMISSION ASSIGNMENT**
+
+- **Date**: September 24, 2025
+- **Objective**: To finalize and submit the project demonstrating understanding of local and global scope, `if/else if/else` statements, and debugging with `console.log()`.
+- **Outcome**: The project was completed, successfully implementing:
+  - Global and local variable assignments.
+  - A function with a simple `if` statement.
+  - A `Time_function()` with `if/else if/else` statements that use the logical AND (`&&`) operator.
+  - An intentional error that was debugged using `console.log()` and then commented out.
+  - Detailed comments explaining the code's purpose and functionality.
