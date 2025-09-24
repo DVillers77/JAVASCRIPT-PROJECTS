@@ -374,3 +374,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 24, 2025
 - **Objective**: To practice using the `slice()` string method to extract a portion of a string.
 - **Outcome**: A function was created that uses the `slice()` method to get a specific section of a string by using both positive and negative indices, and the result was successfully displayed on the webpage.
+
+#### **Step 161: MORE METHODS CHALLENGE**
+
+- **Date**: September 24, 2025
+- **Objective**: To research and implement the `toUpperCase()` and `search()` string methods.
+- **Outcome**: The `toUpperCase()` method was used to convert a string to all uppercase characters, while the `search()` method was used to find the starting index of a specific substring within a string. Both methods were successfully integrated and executed in the project.

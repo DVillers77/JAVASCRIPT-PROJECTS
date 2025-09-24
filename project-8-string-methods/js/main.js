@@ -30,3 +30,30 @@ function sphincter() {
   // and sets its content to the extracted string, which is "what".
   document.getElementById("what").innerHTML = answer;
 }
+
+// MORE METHODS CHALLENGES
+
+// toUpperCase() Method
+
+// This function converts a string to all uppercase letters.
+function angry() {
+  // A string variable is declared.
+  const dontYell = "Don't yell at me!";
+  // The `toUpperCase()` method is called on the string to create a new one in all caps.
+  const shout = dontYell.toUpperCase();
+  // This line finds the HTML element with the id "yell" and displays the new string.
+  document.getElementById("yell").innerHTML = shout;
+}
+
+// search() Method
+
+// This function finds the starting position (index) of a specific word within a string.
+function string() {
+  // A string variable is declared to hold the full sentence.
+  const number = "What index is number at in this string?";
+  // The `search()` method is called to find the first occurrence of "number".
+  // It returns the index where the word starts.
+  const numberIndex = number.search("number");
+  // This line finds the HTML element with the id "numberSearch" and displays the index number.
+  document.getElementById("numberSearch").innerHTML = numberIndex;
+}
