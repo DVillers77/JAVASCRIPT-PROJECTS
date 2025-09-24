@@ -345,3 +345,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 23, 2025
 - **Objective**: To write a function using `if` and `else` statements to handle both a true and a false condition.
 - **Outcome**: A new function was created that takes user input and uses an `if/else` statement to display different messages based on the condition. The code successfully provides feedback for both positive and negative outcomes.
+
+#### **Step 152: ELSE IF ASSIGNMENT**
+
+- **Date**: September 24, 2025
+- **Objective**: To create a function with a multi-conditional `if/else if/else` statement.
+- **Outcome**: A function was written to get the current time and display a different message based on the time of day (morning, afternoon, or evening). The logical AND (`&&`) operator was used to correctly check if a value falls within a range. This was an improvement over the course example given which inccorrectly use the ("==") operator.

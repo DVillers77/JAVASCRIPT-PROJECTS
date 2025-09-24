@@ -92,3 +92,28 @@ function saleTwo() {
     document.getElementById("sale-2-ends").innerHTML = "Regular Price";
   }
 }
+
+// ELSE IF STATEMENTS
+
+function timeFunction() {
+  // Get the current hour from the user's computer.
+  let time = new Date().getHours();
+  let reply;
+
+  // The 'if' statement checks for morning hours (1 AM to 11 AM).
+  if (time < 12 && time > 0) {
+    reply = "It is morning time.";
+  }
+  // The 'else if' statement checks for afternoon hours (12 PM to 5 PM).
+  // The '&&' (AND) operator ensures both conditions are true.
+  else if (time >= 12 && time < 18) {
+    reply = "It is afternoon.";
+  }
+  // The 'else' statement catches all other cases, which would be evening hours (6 PM to 12 AM).
+  else {
+    reply = "It is evening time.";
+  }
+
+  // This line writes the final message to the HTML page.
+  document.getElementById("time-of-day").innerHTML = reply;
+}
