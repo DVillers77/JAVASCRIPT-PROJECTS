@@ -398,3 +398,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Wednesday, September 24, 2025
 - **Objective**: To research and implement the `toFixed()` and `valueOf()` number methods.
 - **Outcome**: The `toFixed()` method was used to round a monetary value to two decimal places. The `valueOf()` and `toString()` methods were used on a `Date` object to understand the difference between the object's primitive numeric value and its human-readable string representation.
+
+#### **Step 167: PROJECT8_STRING_METHODS SUBMISSION**
+
+- **Date**: Wednesday, September 24, 2025
+- **Objective**: To finalize the "Project8_string_methods" project by pushing the code to a GitHub repository and submitting the URL for review.
+- **Outcome**: The `main.js` and `index.html` files were successfully updated to include functions for the `concat()`, `slice()`, `toString()`, and `toPrecision()` methods, and the project was prepared for submission.
