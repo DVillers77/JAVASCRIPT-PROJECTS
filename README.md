@@ -362,3 +362,9 @@ This repository serves as a portfolio for all coding projects and assignments co
   - A `Time_function()` with `if/else if/else` statements that use the logical AND (`&&`) operator.
   - An intentional error that was debugged using `console.log()` and then commented out.
   - Detailed comments explaining the code's purpose and functionality.
+
+#### **Step 158: CONCAT() METHOD ASSIGNMENT**
+
+- **Date**: September 24, 2025
+- **Objective**: To practice using the `concat()` string method to join multiple strings together.
+- **Outcome**: A new project folder was created. A function was written that uses the `concat()` method to combine several string variables into a single sentence, which was then successfully displayed on the webpage.
