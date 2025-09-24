@@ -392,3 +392,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 24, 2025
 - **Objective**: To practice using the `toPrecision()` number method to format a number to a specified length.
 - **Outcome**: A function was created that uses the `toPrecision()` method to format a decimal number to a specific number of significant digits, and the result was successfully displayed on the webpage.
+
+#### **Step 166: NEW METHODS CHALLENGE**
+
+- **Date**: Wednesday, September 24, 2025
+- **Objective**: To research and implement the `toFixed()` and `valueOf()` number methods.
+- **Outcome**: The `toFixed()` method was used to round a monetary value to two decimal places. The `valueOf()` and `toString()` methods were used on a `Date` object to understand the difference between the object's primitive numeric value and its human-readable string representation.

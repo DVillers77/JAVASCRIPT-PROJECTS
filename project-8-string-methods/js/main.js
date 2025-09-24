@@ -81,3 +81,27 @@ function toPrecisionFunction() {
   // Display the result
   document.getElementById("precision-result").innerHTML = preciseNumber;
 }
+
+// toFixed() Method
+
+function round() {
+  const longNumber = 10.4955;
+  // The toFixed() method rounds the number to a specified number of decimal places (2).
+  // It returns a string, so convertedNumber will be "10.50".
+  let convertedNumber = longNumber.toFixed(2);
+  document.getElementById("round-number").innerHTML = convertedNumber;
+}
+
+// valueOf() Method and then some
+
+function primitive() {
+  // Creates a Date object representing the current date and time.
+  let today = new Date();
+  // The valueOf() method returns the primitive numeric value of the Date object,
+  // which is the number of milliseconds since January 1, 1970.
+  let convertValue = today.valueOf();
+  document.getElementById("value").innerHTML = convertValue;
+  // The toString() method returns a human-readable string representation of the Date.
+  let convertString = today.toString();
+  document.getElementById("string-value").innerHTML = convertString;
+}
