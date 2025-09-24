@@ -57,3 +57,14 @@ function string() {
   // This line finds the HTML element with the id "numberSearch" and displays the index number.
   document.getElementById("numberSearch").innerHTML = numberIndex;
 }
+
+// NUMBER METHODS ASSIGNMENT
+
+// toString() Method
+function numberToString() {
+  const myNumber = 12345; // This is a number
+  // toString() method to convert the number to a string
+  const myString = myNumber.toString();
+  // The result will be the string "12345"
+  document.getElementById("number-to-string").innerHTML = myString;
+}

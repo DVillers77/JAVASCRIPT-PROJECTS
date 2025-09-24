@@ -380,3 +380,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: September 24, 2025
 - **Objective**: To research and implement the `toUpperCase()` and `search()` string methods.
 - **Outcome**: The `toUpperCase()` method was used to convert a string to all uppercase characters, while the `search()` method was used to find the starting index of a specific substring within a string. Both methods were successfully integrated and executed in the project.
+
+#### **Step 163: NUMBER METHODS ASSIGNMENT**
+
+- **Date**: September 24, 2025
+- **Objective**: To use the `toString()` number method to convert a number into a string.
+- **Outcome**: A function was created that takes a number, converts it to a string using the `toString()` method, and successfully displays the result in a designated HTML element on the webpage.
