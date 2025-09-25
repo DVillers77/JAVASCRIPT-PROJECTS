@@ -416,3 +416,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To create a fully functional slideshow program by integrating HTML, CSS, and JavaScript.
 - **Outcome**: The slideshow was successfully built, debugged, and customized to include a fixed-size image container, centered captions with a buffer, and fully functional navigation buttons, demonstrating a comprehensive understanding of core front-end languages.
+
+#### **Step 173: PROJECT9_COUNTDOWN_SLIDESHOW SUBMISSION**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To finalize the "Project9_countdown_slideshow" project by pushing the code to a GitHub repository and submitting the URL for review.
+- **Outcome**: The `index.html`, `main.js`, and `main.css` files were successfully completed, meeting all minimum requirements for the countdown timer and slideshow and containing explanatory comments.
