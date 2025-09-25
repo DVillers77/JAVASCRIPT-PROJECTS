@@ -440,3 +440,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To learn how to use the browser console for debugging by creating a new file named `debug-code.html` and following a video tutorial on how to identify and resolve common errors.
 - **Outcome**: A new file was successfully created, and the DevTools console was used to identify and fix `ReferenceError` and `TypeError` issues, demonstrating a fundamental debugging process.
+
+#### **Step 194: DEV TOOLS ASSIGNMENT**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To practice using the browser's developer tools to locate and fix a `ReferenceError` in JavaScript code.
+- **Outcome**: Successfully identified and corrected a variable reference error, allowing the script to execute correctly and display the full message in the browser.
