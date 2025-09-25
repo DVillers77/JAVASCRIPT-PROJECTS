@@ -438,5 +438,5 @@ This repository serves as a portfolio for all coding projects and assignments co
 #### **Step 193: USING THE CONSOLE TO DEBUG CODE**
 
 - **Date**: Thursday, September 25, 2025
-- **Objective**: To learn how to use the browser console to find and debug common JavaScript errors by following along with a video tutorial.
-- **Outcome**: Successfully used DevTools to identify and resolve `ReferenceError` and `TypeError` issues, demonstrating proficiency in a fundamental debugging process.
+- **Objective**: To learn how to use the browser console for debugging by creating a new file named `debug-code.html` and following a video tutorial on how to identify and resolve common errors.
+- **Outcome**: A new file was successfully created, and the DevTools console was used to identify and fix `ReferenceError` and `TypeError` issues, demonstrating a fundamental debugging process.
