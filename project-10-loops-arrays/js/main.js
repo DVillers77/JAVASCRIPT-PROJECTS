@@ -15,6 +15,8 @@ function Call_Loop() {
   document.getElementById("Loop").innerHTML = digit;
 }
 
+// Challenge
+
 // Define a string variable
 let myString = "This is a test string.";
 
@@ -27,3 +29,27 @@ stringElement.innerHTML = "The string is: " + myString;
 
 // Display the length of the string using the .length property
 lengthElement.innerHTML = "The length of the string is: " + myString.length;
+
+// FOR LOOP ASSIGNMENT
+
+function for_Loop() {
+  // Define an array of musical instruments.
+  var Instruments = [
+    "Guitar",
+    "Drums",
+    "Piano",
+    "Bass",
+    "Violin",
+    "Trumpet",
+    "Flute",
+  ];
+  // Declare an empty string variable to store the loop's output.
+  var Content = "";
+  // A for loop that iterates through each element in the array.
+  for (var i = 0; i < Instruments.length; i++) {
+    // Appends the current instrument and a line break to the Content string.
+    Content += Instruments[i] + "<br>";
+  }
+  // Updates the HTML paragraph element with the id "List_of_Instruments" with the Content string.
+  document.getElementById("List_of_Instruments").innerHTML = Content;
+}

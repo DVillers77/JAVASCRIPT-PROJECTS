@@ -458,3 +458,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To define and successfully use the JavaScript string `length` property to determine the number of characters in a string.
 - **Outcome**: The string `length` property was successfully implemented and executed, demonstrating an understanding of how to retrieve the character count of a string.
+
+#### **Step 204: FOR LOOP ASSIGNMENT**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To update the project files to use a `for` loop to iterate through an array of instruments and display the output on the web page.
+- **Outcome**: The `for` loop was successfully implemented in `main.js`, and the `index.html` file was updated to display the output, demonstrating an understanding of `for` loop syntax and its use with arrays.
