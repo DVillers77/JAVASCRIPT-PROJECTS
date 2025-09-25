@@ -464,3 +464,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To update the project files to use a `for` loop to iterate through an array of instruments and display the output on the web page.
 - **Outcome**: The `for` loop was successfully implemented in `main.js`, and the `index.html` file was updated to display the output, demonstrating an understanding of `for` loop syntax and its use with arrays.
+
+#### **Step 208: DOCUMENT.GETELEMENTBYID().INNERHTML ASSIGNMENT**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To demonstrate how to access and display an element from an array using the `document.getElementById().innerHTML` method.
+- **Outcome**: The `main.js` and `index.html` files were updated to successfully display a specific value from an array, reinforcing the concept of array indexing and HTML element manipulation.

@@ -53,3 +53,18 @@ function for_Loop() {
   // Updates the HTML paragraph element with the id "List_of_Instruments" with the Content string.
   document.getElementById("List_of_Instruments").innerHTML = Content;
 }
+
+// DOCUMENT.GETELEMENTBYID().INNERHTML ASSIGNMENT
+
+function array_Function() {
+  // Defines an array of cat pictures.
+  var Cat_Picture = [];
+  Cat_Picture[0] = "sleeping";
+  Cat_Picture[1] = "playing";
+  Cat_Picture[2] = "eating";
+  Cat_Picture[3] = "purring";
+  // Sets the inner HTML of the element with the id "Array" to a sentence
+  // that uses the value at index 2 of the Cat_Picture array.
+  document.getElementById("Array").innerHTML =
+    "In this picture, the cat is " + Cat_Picture[2] + ".";
+}
