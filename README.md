@@ -446,3 +446,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To practice using the browser's developer tools to locate and fix a `ReferenceError` in JavaScript code.
 - **Outcome**: Successfully identified and corrected a variable reference error, allowing the script to execute correctly and display the full message in the browser.
+
+#### **Step 200: LOOPS ASSIGNMENT**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To create a project folder structure and implement a JavaScript `while` loop that counts to 10, displaying the output on an HTML page.
+- **Outcome**: A new project was successfully created, and the `while` loop was correctly coded and linked to the HTML page, demonstrating a fundamental understanding of loop functionality.
