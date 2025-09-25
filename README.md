@@ -428,3 +428,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To understand the function of the `async` attribute on a script tag by completing a coding assignment that highlights its non-blocking behavior.
 - **Outcome**: The assignment was successfully completed, demonstrating how `async` allows a script to download in parallel with HTML parsing, improving page load speed.
+
+#### **Step 188: DEFER CHALLENGE**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To successfully complete a coding challenge by using the `defer` attribute to ensure a JavaScript file executes only after the HTML document has been fully parsed.
+- **Outcome**: A functional web page was created that demonstrates the non-blocking behavior of the `defer` attribute, which is a key practice for web performance.
