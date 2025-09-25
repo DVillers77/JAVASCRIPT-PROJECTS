@@ -410,3 +410,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To put various JavaScript concepts into practice by creating a countdown timer program.
 - **Outcome**: A new `main.js` file was created with a `countdown()` function that takes a number of seconds from an HTML input, updates a paragraph element with the remaining time, and uses a recursive `setTimeout` call to create a functioning timer.
+
+#### **Step 172: SLIDESHOW CHALLENGE SUBMISSION**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To create a fully functional slideshow program by integrating HTML, CSS, and JavaScript.
+- **Outcome**: The slideshow was successfully built, debugged, and customized to include a fixed-size image container, centered captions with a buffer, and fully functional navigation buttons, demonstrating a comprehensive understanding of core front-end languages.

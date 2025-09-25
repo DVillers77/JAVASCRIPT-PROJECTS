@@ -3,14 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>project-9-countdown-slideshow</title>
   </head>
   <body>
+    <h2>Countdown Timer</h2>
     <p>How many seconds would you like to set your alarm for?</p>
     <input id="seconds" value="" />
     <button onclick="countdown()">Click here</button>
     <p id="timer"></p>
+    <h2>Slide Show</h2>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img
+          src="images/dain-miller-sadle-reigns-quote-md.png"
+          alt="A conceptual digital illustration depicting a silhouetted figure confidently riding a glowing wireframe horse, its form made of digital elements and geometric, luminous UI-like saddle, stirrups, and reins. The overall scene is enveloped in a radiant, swirling aura of abstract colors, symbolizing the positive user experience (UX) derived from intuitive user interface (UI). This imagery visually represents Dain Miller's quote: 'UI is the saddle, the stirrups, & the reins. UX is the feeling you get from being able to ride the horse'."
+        />
+        <div class="caption-wrapper">
+          <div class="text">
+            "UI is the saddle, the stirrups, & the reigns. UX is the feeling you
+            get from being able to ride the horse"
+          </div>
+        </div>
+      </div>
 
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="images/designing-for-people-md.png"
+          alt="Conceptual image depicting a human mind integrated with mechanical gears, illustrating the importance of understanding human cognition when designing technology."
+        />
+        <div class="caption-wrapper">
+          <div class="text">
+            "Usability is about people and how they understand and use things,
+            not technology"
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img
+          src="images/flying-steam-engine-md.png"
+          alt='A fantastical steampunk flying train with prominent wings and smoking chimneys soarsthrough sunlit clouds above a detailed, elaborate cityscape at golden hour, embodying "Curiosity is the engine of achievement."'
+        />
+        <div class="caption-wrapper">
+          <div class="text">“Curiosity is the engine of achievement.”</div>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
