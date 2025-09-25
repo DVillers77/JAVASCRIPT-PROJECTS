@@ -434,3 +434,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To successfully complete a coding challenge by using the `defer` attribute to ensure a JavaScript file executes only after the HTML document has been fully parsed.
 - **Outcome**: A functional web page was created that demonstrates the non-blocking behavior of the `defer` attribute, which is a key practice for web performance.
+
+#### **Step 193: USING THE CONSOLE TO DEBUG CODE**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To learn how to use the browser console to find and debug common JavaScript errors by following along with a video tutorial.
+- **Outcome**: Successfully used DevTools to identify and resolve `ReferenceError` and `TypeError` issues, demonstrating proficiency in a fundamental debugging process.
