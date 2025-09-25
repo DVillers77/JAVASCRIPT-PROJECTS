@@ -404,3 +404,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Wednesday, September 24, 2025
 - **Objective**: To finalize the "Project8_string_methods" project by pushing the code to a GitHub repository and submitting the URL for review.
 - **Outcome**: The `main.js` and `index.html` files were successfully updated to include functions for the `concat()`, `slice()`, `toString()`, and `toPrecision()` methods, and the project was prepared for submission.
+
+#### **Step 170: CODING ASSIGNMENT**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To put various JavaScript concepts into practice by creating a countdown timer program.
+- **Outcome**: A new `main.js` file was created with a `countdown()` function that takes a number of seconds from an HTML input, updates a paragraph element with the remaining time, and uses a recursive `setTimeout` call to create a functioning timer.
