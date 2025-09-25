@@ -422,3 +422,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To finalize the "Project9_countdown_slideshow" project by pushing the code to a GitHub repository and submitting the URL for review.
 - **Outcome**: The `index.html`, `main.js`, and `main.css` files were successfully completed, meeting all minimum requirements for the countdown timer and slideshow and containing explanatory comments.
+
+#### **Step 186: ASYNC ASSIGNMENT**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To understand the function of the `async` attribute on a script tag by completing a coding assignment that highlights its non-blocking behavior.
+- **Outcome**: The assignment was successfully completed, demonstrating how `async` allows a script to download in parallel with HTML parsing, improving page load speed.
