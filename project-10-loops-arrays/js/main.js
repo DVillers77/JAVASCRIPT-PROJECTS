@@ -14,3 +14,16 @@ function Call_Loop() {
   // Get the HTML element with the id "Loop" and update its content with the final string.
   document.getElementById("Loop").innerHTML = digit;
 }
+
+// Define a string variable
+let myString = "This is a test string.";
+
+// Get the HTML elements to display the output
+let stringElement = document.getElementById("string-output");
+let lengthElement = document.getElementById("length-output");
+
+// Display the string itself
+stringElement.innerHTML = "The string is: " + myString;
+
+// Display the length of the string using the .length property
+lengthElement.innerHTML = "The length of the string is: " + myString.length;

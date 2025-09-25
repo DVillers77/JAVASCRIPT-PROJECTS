@@ -452,3 +452,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To create a project folder structure and implement a JavaScript `while` loop that counts to 10, displaying the output on an HTML page.
 - **Outcome**: A new project was successfully created, and the `while` loop was correctly coded and linked to the HTML page, demonstrating a fundamental understanding of loop functionality.
+
+#### **Step 201: LENGTH PROPERTY CHALLENGE**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To define and successfully use the JavaScript string `length` property to determine the number of characters in a string.
+- **Outcome**: The string `length` property was successfully implemented and executed, demonstrating an understanding of how to retrieve the character count of a string.
