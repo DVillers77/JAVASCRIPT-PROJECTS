@@ -69,47 +69,34 @@ function array_Function() {
     "In this picture, the cat is " + Cat_Picture[2] + ".";
 }
 
-// CONST KEYWORD ASSIGNMENT
+// LET and Const Assignments
 
-/* This function demonstrates the use of the 'const' keyword and string concatenation.
- * It is called by the 'onclick' event of a button in the HTML file. */
-function constant_Function() {
-  // Part 1: Initial creation and display of the constant object.
-  const Musical_Instrument = {
-    type: "guitar",
-    brand: "Fender",
-    color: "black",
-  };
+// This function demonstrates the use of a 'const' variable for a fixed timestamp.
+// The value of the variable will not be reassigned.
+function useConstDate() {
+  // Declares a constant to capture the current date and time.
+  const loginTime = new Date();
 
-  /* The following line uses string concatenation to build a sentence from multiple parts.
-   * The plus signs (+) join the strings together.
-   * The white space inside the quotation marks (" ") is a space character,
-   * which is added to prevent the words from running together. */
-  document.getElementById("Constant").innerHTML =
-    "The instrument is a " +
-    Musical_Instrument.brand +
-    " " +
-    Musical_Instrument.type +
-    " with a " +
-    Musical_Instrument.color +
-    " color.";
+  // Displays the fixed timestamp in its own paragraph element.
+  document.getElementById("const-date-output").innerHTML =
+    "User session started at: " + loginTime;
+}
 
-  // Part 2: Modifying properties of the constant object.
-  // A constant's properties can be changed, but the object itself cannot be reassigned.
-  Musical_Instrument.color = "blue";
-  Musical_Instrument.price = "$900"; // This line adds a new property to the object.
+// This function demonstrates the use of a 'let' variable for an updating timestamp.
+// The value of the variable will be reassigned.
+function useLetDate() {
+  // Declares a 'let' variable for the time that can be updated.
+  let currentTime = new Date();
 
-  /* This 'setTimeout' function creates a delay. It then updates the HTML with a new sentence.
-   * Here, we use a period (".") inside the quotes, which is a literal character that acts
-   * as punctuation at the end of the sentence. */
+  // Displays the initial timestamp.
+  document.getElementById("let-date-output").innerHTML =
+    "Current time: " + currentTime;
+
+  // Use setTimeout to reassign and update the variable after a delay.
   setTimeout(function () {
-    document.getElementById("Constant").innerHTML =
-      "The " +
-      Musical_Instrument.color +
-      " " +
-      Musical_Instrument.type +
-      " costs " +
-      Musical_Instrument.price +
-      ".";
-  }, 2000); // 2000 milliseconds = 2-second delay.
+    currentTime = new Date();
+    // Displays the updated timestamp in its own paragraph element.
+    document.getElementById("let-date-output").innerHTML =
+      "Time updated to: " + currentTime;
+  }, 2000); // Wait for 2 seconds to show the change.
 }

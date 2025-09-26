@@ -18,8 +18,18 @@
     <h2>DOCUMENT.GETELEMENTBYID().INNERHTML ASSIGNMENT</h2>
     <p id="Array"></p>
     <button onclick="array_Function()">Click here.</button>
-    <h2>CONST KEYWORD ASSIGNMENT</h2>
-    <p id="Constant"></p>
-    <button onclick="constant_Function()">Click here.</button>
+
+    <h2>let vs. const: The Date Scenario</h2>
+    <p>
+      The choice between <strong>let</strong> and <strong>const</strong> depends
+      on whether the variable's value needs to be reassigned. For a date, this
+      distinction is crucial.
+    </p>
+
+    <button onclick="useConstDate()">Use const for a fixed timestamp</button>
+    <p id="const-date-output"></p>
+
+    <button onclick="useLetDate()">Use let for an updating timestamp</button>
+    <p id="let-date-output"></p>
   </body>
 </html>

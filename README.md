@@ -476,3 +476,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To complete a coding assignment that demonstrates the behavior of the `const` keyword, including how its properties can be modified and new properties can be added even though the variable identifier cannot be reassigned.
 - **Outcome**: The `main.js` and `index.html` files were updated to successfully use a `const` object, change its properties, and display the changes, reinforcing the key concept of `const` with objects.
+
+#### **Steps 216 & 218: FINALIZING CONST AND LET ASSIGNMENTS**
+
+- **Date**: Friday, September 26, 2025
+- **Objective**: To replace and finalize the `const` and `let` assignments with a single, clear demonstration that uses a real-world date scenario to showcase the difference between the keywords.
+- **Outcome**: The `index.html` and `main.js` files were updated to display a fixed timestamp using `const` and a reassigned timestamp using `let` in separate locations, solidifying the understanding of their core differences in a practical way.
