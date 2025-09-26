@@ -482,3 +482,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Friday, September 26, 2025
 - **Objective**: To replace and finalize the `const` and `let` assignments with a single, clear demonstration that uses a real-world date scenario to showcase the difference between the keywords.
 - **Outcome**: The `index.html` and `main.js` files were updated to display a fixed timestamp using `const` and a reassigned timestamp using `let` in separate locations, solidifying the understanding of their core differences in a practical way.
+
+#### **Step 221: RETURN STATEMENT CHALLENGE**
+
+- **Date**: Friday, September 26, 2025
+- **Objective**: To learn and implement the `return` statement in JavaScript.
+- **Outcome**: A function was successfully created to return a value, which was then used by another function to display the result on the web page, demonstrating a clear understanding of the `return` statement's purpose.

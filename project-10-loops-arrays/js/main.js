@@ -100,3 +100,16 @@ function useLetDate() {
       "Time updated to: " + currentTime;
   }, 2000); // Wait for 2 seconds to show the change.
 }
+
+// RETURN STATEMENT CHALLENGE
+
+// This function adds two numbers and returns the sum.
+function addNumbers(a, b) {
+  return a + b;
+}
+
+// This function calls addNumbers() and displays the returned value.
+function returnExample() {
+  let result = addNumbers(5, 7);
+  document.getElementById("return-output").innerHTML = "The sum is: " + result;
+}

@@ -9,7 +9,7 @@
   <body>
     <p id="Loop"></p>
     <button onclick="Call_Loop()">Click here to execute the loop.</button>
-    <h1>JavaScript String Length Property</h1>
+    <h2>JavaScript String Length Property</h2>
     <p id="string-output"></p>
     <p id="length-output"></p>
     <h2>FOR LOOP ASSIGNMENT</h2>
@@ -21,15 +21,32 @@
 
     <h2>let vs. const: The Date Scenario</h2>
     <p>
+      I replaced the invidual const and let assignments with this after doing
+      some independant research into the best usage of the two operators.
+    </p>
+    <p>
       The choice between <strong>let</strong> and <strong>const</strong> depends
       on whether the variable's value needs to be reassigned. For a date, this
       distinction is crucial.
     </p>
-
-    <button onclick="useConstDate()">Use const for a fixed timestamp</button>
+    <h3>When to use const</h3>
+    <p>The below example is for logging when a user signed in</p>
+    <button onclick="useConstDate()">fixed timestamp</button>
     <p id="const-date-output"></p>
-
-    <button onclick="useLetDate()">Use let for an updating timestamp</button>
+    <h3>When to use let</h3>
+    <p>
+      The below example is a mini version of a counter tracking how long a user
+      has been logged in.
+    </p>
+    <button onclick="useLetDate()">updating timestamp</button>
     <p id="let-date-output"></p>
+    <h2>RETURN STATEMENT CHALLENGE</h2>
+    <p>A function is declared to <strong>return</strong> a + b</p>
+    <p>
+      Another function is declared to give a value to a(5) and b(7) then dispaly
+      the result of the new value of a + b.
+    </p>
+    <button onclick="returnExample()">Click for Result</button>
+    <p id="return-output"></p>
   </body>
 </html>
