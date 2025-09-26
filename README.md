@@ -488,3 +488,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Friday, September 26, 2025
 - **Objective**: To learn and implement the `return` statement in JavaScript.
 - **Outcome**: A function was successfully created to return a value, which was then used by another function to display the result on the web page, demonstrating a clear understanding of the `return` statement's purpose.
+
+#### **Step 224: OBJECT ASSIGNMENT**
+
+- **Date**: Friday, September 26, 2025
+- **Objective**: To define and utilize a JavaScript object, including properties and a method.
+- **Outcome**: A functional web page was created that uses a JavaScript object to describe a car. The `innerHTML` method was used to display the output of a method call on that object, successfully demonstrating the object data structure.

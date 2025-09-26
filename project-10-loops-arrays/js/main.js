@@ -113,3 +113,31 @@ function returnExample() {
   let result = addNumbers(5, 7);
   document.getElementById("return-output").innerHTML = "The sum is: " + result;
 }
+
+// OBJECT ASSIGNMENT
+
+// Creates a car object with properties and a method.
+let car = {
+  make: "Dodge",
+  model: "Viper",
+  year: 2021,
+  color: "red",
+  // This is a method that returns a string describing the car.
+  description: function () {
+    return (
+      "The car is a " +
+      this.year +
+      " " +
+      this.color +
+      " " +
+      this.make +
+      " " +
+      this.model
+    );
+  },
+};
+
+// This function calls the car object's method and displays the result.
+function Car_Function() {
+  document.getElementById("Car_Object").innerHTML = car.description();
+}
