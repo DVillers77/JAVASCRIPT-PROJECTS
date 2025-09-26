@@ -470,3 +470,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Thursday, September 25, 2025
 - **Objective**: To demonstrate how to access and display an element from an array using the `document.getElementById().innerHTML` method.
 - **Outcome**: The `main.js` and `index.html` files were updated to successfully display a specific value from an array, reinforcing the concept of array indexing and HTML element manipulation.
+
+#### **Step 216: CONST KEYWORD ASSIGNMENT**
+
+- **Date**: Thursday, September 25, 2025
+- **Objective**: To complete a coding assignment that demonstrates the behavior of the `const` keyword, including how its properties can be modified and new properties can be added even though the variable identifier cannot be reassigned.
+- **Outcome**: The `main.js` and `index.html` files were updated to successfully use a `const` object, change its properties, and display the changes, reinforcing the key concept of `const` with objects.

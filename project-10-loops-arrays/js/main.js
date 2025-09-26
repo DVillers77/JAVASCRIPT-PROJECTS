@@ -68,3 +68,48 @@ function array_Function() {
   document.getElementById("Array").innerHTML =
     "In this picture, the cat is " + Cat_Picture[2] + ".";
 }
+
+// CONST KEYWORD ASSIGNMENT
+
+/* This function demonstrates the use of the 'const' keyword and string concatenation.
+ * It is called by the 'onclick' event of a button in the HTML file. */
+function constant_Function() {
+  // Part 1: Initial creation and display of the constant object.
+  const Musical_Instrument = {
+    type: "guitar",
+    brand: "Fender",
+    color: "black",
+  };
+
+  /* The following line uses string concatenation to build a sentence from multiple parts.
+   * The plus signs (+) join the strings together.
+   * The white space inside the quotation marks (" ") is a space character,
+   * which is added to prevent the words from running together. */
+  document.getElementById("Constant").innerHTML =
+    "The instrument is a " +
+    Musical_Instrument.brand +
+    " " +
+    Musical_Instrument.type +
+    " with a " +
+    Musical_Instrument.color +
+    " color.";
+
+  // Part 2: Modifying properties of the constant object.
+  // A constant's properties can be changed, but the object itself cannot be reassigned.
+  Musical_Instrument.color = "blue";
+  Musical_Instrument.price = "$900"; // This line adds a new property to the object.
+
+  /* This 'setTimeout' function creates a delay. It then updates the HTML with a new sentence.
+   * Here, we use a period (".") inside the quotes, which is a literal character that acts
+   * as punctuation at the end of the sentence. */
+  setTimeout(function () {
+    document.getElementById("Constant").innerHTML =
+      "The " +
+      Musical_Instrument.color +
+      " " +
+      Musical_Instrument.type +
+      " costs " +
+      Musical_Instrument.price +
+      ".";
+  }, 2000); // 2000 milliseconds = 2-second delay.
+}
