@@ -121,7 +121,7 @@ let car = {
   make: "Dodge",
   model: "Viper",
   year: 2021,
-  color: "red",
+  color: "red", // trailing comma for improved code readability and maintainability
   // This is a method that returns a string describing the car.
   description: function () {
     return (
