@@ -141,3 +141,41 @@ let car = {
 function Car_Function() {
   document.getElementById("Car_Object").innerHTML = car.description();
 }
+
+// BREAK AND CONTINUE CHALLENGE
+
+// This function demonstrates the 'break' statement.
+function breakLoop() {
+  let text = "";
+
+  // The for loop is set to count from 0 to 9.
+  for (let i = 0; i < 10; i++) {
+    // This if statement checks if the current number (i) is 5.
+    if (i === 5) {
+      // The 'break' statement is executed, which immediately exits the entire loop.
+      // Any code that comes after the break statement in the loop will not run.
+      break;
+    }
+    text += "The number is " + i + "<br>";
+  }
+  document.getElementById("break-output").innerHTML = text;
+}
+
+// -------------------------------------------------------------------------
+
+// This function demonstrates the 'continue' statement.
+function continueLoop() {
+  let text = "";
+
+  // The for loop is set to count from 0 to 9.
+  for (let i = 0; i < 10; i++) {
+    // This if statement checks for the number 5.
+    if (i === 5) {
+      // The 'continue' statement is executed, which skips the rest of the code
+      // in this specific iteration and immediately moves on to the next one.
+      continue;
+    }
+    text += "The number is " + i + "<br>";
+  }
+  document.getElementById("continue-output").innerHTML = text;
+}

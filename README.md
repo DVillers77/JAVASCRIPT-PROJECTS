@@ -494,3 +494,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Friday, September 26, 2025
 - **Objective**: To define and utilize a JavaScript object, including properties and a method.
 - **Outcome**: A functional web page was created that uses a JavaScript object to describe a car. The `innerHTML` method was used to display the output of a method call on that object, successfully demonstrating the object data structure.
+
+#### **Step 225: BREAK AND CONTINUE CHALLENGE**
+
+- **Date**: Friday, September 26, 2025
+- **Objective**: To define and implement the `break` and `continue` statements to control loop execution.
+- **Outcome**: The `main.js` and `index.html` files were updated to demonstrate how `break` stops a loop entirely and how `continue` skips a single iteration, successfully showcasing the different behaviors of both statements.

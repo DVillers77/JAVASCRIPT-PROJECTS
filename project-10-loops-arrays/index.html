@@ -7,6 +7,7 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
+    <h2>LOOPS ASSIGNMENT</h2>
     <p id="Loop"></p>
     <button onclick="Call_Loop()">Click here to execute the loop.</button>
     <h2>JavaScript String Length Property</h2>
@@ -18,6 +19,7 @@
     <h2>DOCUMENT.GETELEMENTBYID().INNERHTML ASSIGNMENT</h2>
     <p id="Array"></p>
     <button onclick="array_Function()">Click here.</button>
+    <!-- ASSIGNMENT SPACER-->
 
     <h2>let vs. const: The Date Scenario</h2>
     <p>
@@ -40,6 +42,8 @@
     </p>
     <button onclick="useLetDate()">updating timestamp</button>
     <p id="let-date-output"></p>
+    <!-- ASSIGNMENT SPACER-->
+
     <h2>RETURN STATEMENT CHALLENGE</h2>
     <p>A function is declared to <strong>return</strong> a + b</p>
     <p>
@@ -48,6 +52,8 @@
     </p>
     <button onclick="returnExample()">Click for Result</button>
     <p id="return-output"></p>
+    <!-- ASSIGNMENT SPACER-->
+
     <h2>OBJECT ASSIGNMENT</h2>
     <p>
       "I created a car object. It was given the key names make:, model:, year:
@@ -67,5 +73,28 @@
     </p>
     <button onclick="Car_Function()">Click to display car object.</button>
     <p id="Car_Object"></p>
+    <!-- ASSIGNMENT SPACER-->
+
+    <h2>BREAK AND CONTINUE CHALLENGE</h2>
+    <h3>Break Statement</h3>
+    <p>
+      The `break` statement is used to immediately exit a loop. In the below
+      example, a loop is set to count from 0 to 9, but the code is instructed to
+      "break" when the number 5 is reached. Clicking the button will show that
+      the loop stops at 4 and does not continue to 5.
+    </p>
+    <button onclick="breakLoop()">Run Break Loop</button>
+    <p id="break-output"></p>
+
+    <h3>Continue Statement</h3>
+    <p>
+      The `continue` statement is used to skip the current iteration of a loop
+      and move on to the next one. In the below example, a loop is set to count
+      from 0 to 9, but the code is instructed to "continue" when the number 5 is
+      reached. Clicking the button will show that the number 5 is skipped, and
+      the loop continues to the end.
+    </p>
+    <button onclick="continueLoop()">Run Continue Loop</button>
+    <p id="continue-output"></p>
   </body>
 </html>
