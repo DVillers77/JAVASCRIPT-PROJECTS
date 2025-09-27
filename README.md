@@ -506,3 +506,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Friday, September 26, 2025
 - **Objective**: To prepare the "Project10_loops_arrays" folder for final submission by ensuring all project requirements are met and documented.
 - **Outcome**: The project was confirmed to meet all minimum requirements, including the use of `while` and `for` loops, arrays, objects with the `let` keyword, and explanatory comments, and is now ready for submission to the GitHub repository.
+
+#### **Step 228: SWITCH STATEMENT ASSIGNMENT**
+
+- **Date**: Saturday, September 27, 2025
+- **Objective**: To create a new project structure and implement a `switch` statement to handle user input.
+- **Outcome**: A new `advanced-javascript-projects` folder was created with a functional `html-1.html` and `javascript-1.js` file. The code successfully uses a `switch` statement to evaluate case-insensitive user input and handles both mouse clicks and "Enter" key presses for submission.

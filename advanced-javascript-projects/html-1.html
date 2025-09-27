@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Placing the script in the head with 'defer' ensures the browser loads the page's HTML before running the JavaScript. -->
+    <script src="javascript/javascript-1.js" defer></script>
+    <title>Switch Statement</title>
+  </head>
+  <body>
+    <!-- ================== SWITCH STATEMENT ASSIGNMENT ================== -->
+
+    <h1>SWITCH STATEMENT ASSIGNMENT:</h1>
+    <h2>What is your favorite animal?</h2>
+    <h3>Choose from a list of animals:</h3>
+    <ul>
+      <li>Dog</li>
+      <li>Cat</li>
+      <li>Cow</li>
+      <li>Goat</li>
+      <li>Pig</li>
+      <li>Sheep</li>
+    </ul>
+
+    <h3>Enter your choice below:</h3>
+    <!-- The form element allows the user to press 'Enter' to submit, not just click the button. -->
+    <!-- The onsubmit="return false;" prevents the page from reloading. -->
+    <form onsubmit="return false;">
+      <input id="animal-input" type="text" />
+      <button onclick="animalFunction()">Submit Animal</button>
+    </form>
+    <p id="output-text"></p>
+  </body>
+</html>
