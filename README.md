@@ -507,11 +507,11 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Objective**: To prepare the "Project10_loops_arrays" folder for final submission by ensuring all project requirements are met and documented.
 - **Outcome**: The project was confirmed to meet all minimum requirements, including the use of `while` and `for` loops, arrays, objects with the `let` keyword, and explanatory comments, and is now ready for submission to the GitHub repository.
 
-#### **Step 228: SWITCH STATEMENT DOCUMENTATION**
+#### **Step 228: SWITCH STATEMENT ASSIGNMENT**
 
-- **Date**: Sunday, September 28, 2025
-- **Objective**: To refine the `switch` statement code by improving readability and user experience.
-- **Outcome**: The `html-1.html` and `javascript-1.js` files were updated with detailed comments and educational text to explain the logic and highlight the use of the `.toLowerCase()` method and a `form` element to improve the user experience.
+- **Date**: Saturday, September 27, 2025
+- **Objective**: To create a new project structure and implement a `switch` statement to handle user input.
+- **Outcome**: A new `advanced-javascript-projects` folder was created with a functional `html-1.html` and `javascript-1.js` file. The code successfully uses a `switch` statement to evaluate case-insensitive user input and handles both mouse clicks and "Enter" key presses for submission.
 
 #### **Step 234: RUNNING JAVASCRIPT IN THE CONSOLE VIDEO**
 
@@ -524,6 +524,12 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Sunday, September 28, 2025
 - **Objective**: To review the `window` object and its properties and methods.
 - **Outcome**: The challenge was successfully completed by writing and executing commands in the browser console that used `window` object properties (e.g., `window.location.href`) and methods (e.g., `window.alert()`).
+
+#### **Step 228: SWITCH STATEMENT DOCUMENTATION**
+
+- **Date**: Sunday, September 28, 2025
+- **Objective**: To refine the `switch` statement code by improving readability and user experience.
+- **Outcome**: The `html-1.html` and `javascript-1.js` files were updated with detailed comments and educational text to explain the logic and highlight the use of the `.toLowerCase()` method and a `form` element to improve the user experience.
 
 #### **Step 239: `GETELEMENTSBYCLASSNAME()` METHOD ASSIGNMENT**
 
