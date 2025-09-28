@@ -1,4 +1,10 @@
-// SWITCH STATEMENT ASSIGNMENT
+/*
+/
+/-------------------------------------------------------------------------------
+/ SWITCH STATEMENT ASSIGNMENT
+/-------------------------------------------------------------------------------
+/
+*/
 
 // This function handles the animal input and switch statement logic.
 function animalFunction() {
@@ -61,3 +67,21 @@ document.querySelector("form").addEventListener("submit", function (event) {
   // 10. We then call the animalFunction() to run the code we just wrote.
   animalFunction();
 });
+
+/*
+/
+/-------------------------------------------------------------------------------
+/ DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT
+/-------------------------------------------------------------------------------
+/
+*/
+
+function changeText() {
+  // Gets all elements with the class 'demo-class'.
+  // This returns a collection (like an array) of elements.
+  let collection = document.getElementsByClassName("demo-class");
+
+  // We use the index [0] to select the first element in the collection.
+  // This will change the text of only the first h2.
+  collection[0].innerHTML = "The text has changed!";
+}

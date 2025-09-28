@@ -8,9 +8,28 @@
     <title>Switch Statement</title>
   </head>
   <body>
-    <!-- ================== SWITCH STATEMENT ASSIGNMENT ================== -->
+    <!--  ====================================================================
+                          SWITCH STATEMENT ASSIGNMENT  
+    ====================================================================== -->
 
     <h1>SWITCH STATEMENT ASSIGNMENT:</h1>
+    <p>
+      The code below uses a `switch` statement to check the user's input. The
+      `switch` statement compares the input to each `case`, and when it finds a
+      match, it executes the code and then `breaks` out of the statement. If no
+      match is found, the `default` case is executed instead.
+    </p>
+    <p>The user experience was improved by:</p>
+    <ul>
+      <li>
+        The use of .toLowerCase() method to make the input case-insensitive.
+      </li>
+      <li>
+        The form element to allow the user to press 'Enter' to submit, not just
+        click the button.
+      </li>
+    </ul>
+
     <h2>What is your favorite animal?</h2>
     <h3>Choose from a list of animals:</h3>
     <ul>
@@ -23,6 +42,7 @@
     </ul>
 
     <h3>Enter your choice below:</h3>
+
     <!-- The form element allows the user to press 'Enter' to submit, not just click the button. -->
     <!-- The onsubmit="return false;" prevents the page from reloading. -->
     <form onsubmit="return false;">
@@ -30,5 +50,21 @@
       <button onclick="animalFunction()">Submit Animal</button>
     </form>
     <p id="output-text"></p>
+
+    <!--  ====================================================================
+                DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT  
+    ====================================================================== -->
+
+    <hr />
+    <h1>DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT</h1>
+    <p>
+      Both headings below have the same class name of "demo-class". The button
+      will call the function "changeText()" which selects the first instance of
+      the "demo-class" and replaces the assigned string with another using the
+      getElementsByClassName() method using index[0].
+    </p>
+    <h3 class="demo-class">This text will change!</h3>
+    <h3 class="demo-class">This text will not change.</h3>
+    <button onclick="changeText()">Click to Change Text</button>
   </body>
 </html>
