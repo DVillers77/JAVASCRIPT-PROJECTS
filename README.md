@@ -542,3 +542,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Sunday, September 28, 2025
 - **Objective**: To implement the HTML `<canvas>` element and apply a border using a separate stylesheet.
 - **Outcome**: The `html-1.html` file was updated to include the `<canvas>` element. A new `css` folder and `style.css` file were created to add a border, successfully demonstrating the best practice of separating HTML structure from CSS presentation.
+
+#### **Step 242: CANVAS CHALLENGE**
+
+- **Date**: Sunday, September 28, 2025
+- **Objective**: To use JavaScript to draw a graphic within the `<canvas>` element.
+- **Outcome**: The `javascript-1.js` file was updated with code that accesses the canvas and its 2D drawing context. It successfully used `ctx.fillStyle` and `ctx.fillRect` to draw a solid blue rectangle within the canvas element, fulfilling the challenge requirements.

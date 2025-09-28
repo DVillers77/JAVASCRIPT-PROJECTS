@@ -1,7 +1,7 @@
 /*
 /
 /-------------------------------------------------------------------------------
-/ SWITCH STATEMENT ASSIGNMENT
+/                     SWITCH STATEMENT ASSIGNMENT
 /-------------------------------------------------------------------------------
 /
 */
@@ -71,7 +71,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 /*
 /
 /-------------------------------------------------------------------------------
-/ DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT
+/           DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT
 /-------------------------------------------------------------------------------
 /
 */
@@ -85,3 +85,24 @@ function changeText() {
   // This will change the text of only the first h2.
   collection[0].innerHTML = "The text has changed!";
 }
+
+/*
+/
+/-------------------------------------------------------------------------------
+/                           CANVAS CHALLENGE
+/-------------------------------------------------------------------------------
+/
+*/
+
+// 1. Get the canvas element from the HTML.
+const canvas = document.getElementById("myCanvas");
+
+// 2. Get the 2D drawing context. This is what you'll use to draw on the canvas.
+const ctx = canvas.getContext("2d");
+
+// 3. Set the color of the shape to a dark blue.
+ctx.fillStyle = "#1e40af";
+
+// 4. Draw a filled rectangle with the parameters: (x, y, width, height).
+// It starts at position (20, 20) and is 150 pixels wide by 100 pixels tall.
+ctx.fillRect(20, 20, 150, 100);

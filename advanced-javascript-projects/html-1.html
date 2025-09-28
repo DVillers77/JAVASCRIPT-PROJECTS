@@ -72,16 +72,27 @@
     <button onclick="changeText()">Click to Change Text</button>
 
     <!-- ====================================================================
-                          SWITCH STATEMENT ASSIGNMENT  
+                      CANVAS ELEMENT ASSIGNMENT & CHALLENGE  
     ====================================================================== -->
 
     <hr />
-    <h1>CANVAS ELEMENT ASSIGNMENT</h1>
+    <h1>CANVAS ELEMENT ASSIGNMENT & CHALLENGE</h1>
+    <h3>ASSIGNMENT:</h3>
     <p>
       The &lt;canvas&gt; element is a container for graphics that you can use to
       draw on a webpage using JavaScript. Use HTML to define the canvas
       demensions and a separate CSS file to give it a border. This is a best
       practice as it keeps your styling separate from your HTML.
+    </p>
+    <h3>CHALLENGE:</h3>
+    <p>
+      Before you can draw on the &lt;canvas&gt; element, you must use JavaScript
+      to access it. First, a variable is declared using `const` (since it won't
+      change) to get the canvas from the HTML by its ID. Next, a second variable
+      is declared to get the "2D drawing context" using `getContext("2d")`,
+      which provides all the methods needed to draw shapes on the canvas. The
+      final lines of code use the context to define a fill color and then draw a
+      filled rectangle with a specific position and size.
     </p>
     <canvas id="myCanvas" width="500" height="250"></canvas>
   </body>
