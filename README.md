@@ -518,3 +518,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Saturday, September 27, 2025
 - **Objective**: To learn how to use the browser's developer console to run and debug JavaScript.
 - **Outcome**: A new `running-javascript-in-the-console.html` file was created to demonstrate the concepts of global and local variables, string concatenation, and object constructors. The exercises were successfully performed by interacting with the code in the browser console.
+
+#### **Step 235: WINDOW OBJECT CHALLENGE**
+
+- **Date**: Sunday, September 28, 2025
+- **Objective**: To review the `window` object and its properties and methods.
+- **Outcome**: The challenge was successfully completed by writing and executing commands in the browser console that used `window` object properties (e.g., `window.location.href`) and methods (e.g., `window.alert()`).
