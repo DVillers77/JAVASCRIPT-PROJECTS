@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Placing the script in the head with 'defer' ensures the browser loads the page's HTML before running the JavaScript. -->
     <script src="javascript/javascript-1.js" defer></script>
     <title>Switch Statement</title>
+
+    <!-- A stylesheet is added to create a separation of concerns—keeping the HTML for structure, CSS for presentation, and JavaScript for behavior. -->
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!--  ====================================================================
+    <!-- ====================================================================
                           SWITCH STATEMENT ASSIGNMENT  
     ====================================================================== -->
 
@@ -51,7 +55,7 @@
     </form>
     <p id="output-text"></p>
 
-    <!--  ====================================================================
+    <!-- ====================================================================
                 DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT  
     ====================================================================== -->
 
@@ -66,5 +70,19 @@
     <h3 class="demo-class">This text will change!</h3>
     <h3 class="demo-class">This text will not change.</h3>
     <button onclick="changeText()">Click to Change Text</button>
+
+    <!-- ====================================================================
+                          SWITCH STATEMENT ASSIGNMENT  
+    ====================================================================== -->
+
+    <hr />
+    <h1>CANVAS ELEMENT ASSIGNMENT</h1>
+    <p>
+      The &lt;canvas&gt; element is a container for graphics that you can use to
+      draw on a webpage using JavaScript. Use HTML to define the canvas
+      demensions and a separate CSS file to give it a border. This is a best
+      practice as it keeps your styling separate from your HTML.
+    </p>
+    <canvas id="myCanvas" width="500" height="250"></canvas>
   </body>
 </html>

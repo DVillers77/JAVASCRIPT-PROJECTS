@@ -536,3 +536,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Sunday, September 28, 2025
 - **Objective**: To implement the `document.getElementsByClassName()` method to manipulate an element by its class name.
 - **Outcome**: The `html-1.html` and `javascript-1.js` files were updated to include a new assignment. A function was created that uses `document.getElementsByClassName()` and the index `[0]` to change the text of the first of two elements with the same class.
+
+#### **Step 241: CANVAS ELEMENT ASSIGNMENT**
+
+- **Date**: Sunday, September 28, 2025
+- **Objective**: To implement the HTML `<canvas>` element and apply a border using a separate stylesheet.
+- **Outcome**: The `html-1.html` file was updated to include the `<canvas>` element. A new `css` folder and `style.css` file were created to add a border, successfully demonstrating the best practice of separating HTML structure from CSS presentation.
