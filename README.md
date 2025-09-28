@@ -512,3 +512,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Saturday, September 27, 2025
 - **Objective**: To create a new project structure and implement a `switch` statement to handle user input.
 - **Outcome**: A new `advanced-javascript-projects` folder was created with a functional `html-1.html` and `javascript-1.js` file. The code successfully uses a `switch` statement to evaluate case-insensitive user input and handles both mouse clicks and "Enter" key presses for submission.
+
+#### **Step 234: RUNNING JAVASCRIPT IN THE CONSOLE VIDEO**
+
+- **Date**: Saturday, September 27, 2025
+- **Objective**: To learn how to use the browser's developer console to run and debug JavaScript.
+- **Outcome**: A new `running-javascript-in-the-console.html` file was created to demonstrate the concepts of global and local variables, string concatenation, and object constructors. The exercises were successfully performed by interacting with the code in the browser console.
