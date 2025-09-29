@@ -548,3 +548,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Sunday, September 28, 2025
 - **Objective**: To use JavaScript to draw a graphic within the `<canvas>` element.
 - **Outcome**: The `javascript-1.js` file was updated with code that accesses the canvas and its 2D drawing context. It successfully used `ctx.fillStyle` and `ctx.fillRect` to draw a solid blue rectangle within the canvas element, fulfilling the challenge requirements.
+
+#### **Step 243: GRADIENT COLOR CHALLENGE**
+
+- **Date**: Sunday, September 28, 2025
+- **Objective**: To define and utilize the `createLinearGradient()` method to apply a gradient fill to the canvas, while ensuring both the solid-color and gradient challenges coexist.
+- **Outcome**: The `javascript-1.js` file was updated to draw two distinct rectangles on the canvas: one with a solid color (from Step 242) and one with a vertical linear gradient. The `html-1.html` file was restructured to implement best practices for document organization, including: using a descriptive title in the `<title>` and `<h1>` tags, and using consistent `<h2>` tags for each assignment.

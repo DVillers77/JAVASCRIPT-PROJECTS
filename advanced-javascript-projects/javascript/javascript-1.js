@@ -106,3 +106,25 @@ ctx.fillStyle = "#1e40af";
 // 4. Draw a filled rectangle with the parameters: (x, y, width, height).
 // It starts at position (20, 20) and is 150 pixels wide by 100 pixels tall.
 ctx.fillRect(20, 20, 150, 100);
+
+/*
+/
+/-------------------------------------------------------------------------------
+/                        GRADIENT COLOR CHALLENGE
+/-------------------------------------------------------------------------------
+/
+*/
+
+//
+// 5. Create a linear gradient object.
+const gradient = ctx.createLinearGradient(300, 0, 300, 250);
+
+// 6. Add color stops to the gradient.
+gradient.addColorStop(0, "blue");
+gradient.addColorStop(1, "white");
+
+// 7. Assign the gradient to the canvas's fillStyle.
+ctx.fillStyle = gradient;
+
+// 8. Draw a new rectangle on the right side of the canvas with the gradient fill.
+ctx.fillRect(300, 20, 150, 100);

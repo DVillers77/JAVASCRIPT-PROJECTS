@@ -6,7 +6,7 @@
 
     <!-- Placing the script in the head with 'defer' ensures the browser loads the page's HTML before running the JavaScript. -->
     <script src="javascript/javascript-1.js" defer></script>
-    <title>Switch Statement</title>
+    <title>Advanced JavaScript Projects (Steps 228, 239, 241, 242, 243)</title>
 
     <!-- A stylesheet is added to create a separation of concerns—keeping the HTML for structure, CSS for presentation, and JavaScript for behavior. -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -15,8 +15,10 @@
     <!-- ====================================================================
                           SWITCH STATEMENT ASSIGNMENT  
     ====================================================================== -->
+    <h1>Advanced JavaScript Projects (Steps 228, 239, 241, 242, 243)</h1>
 
-    <h1>SWITCH STATEMENT ASSIGNMENT:</h1>
+    <hr />
+    <h2>Step 228: SWITCH STATEMENT ASSIGNMENT</h2>
     <p>
       The code below uses a `switch` statement to check the user's input. The
       `switch` statement compares the input to each `case`, and when it finds a
@@ -34,7 +36,7 @@
       </li>
     </ul>
 
-    <h2>What is your favorite animal?</h2>
+    <h3>What is your favorite animal?</h3>
     <h3>Choose from a list of animals:</h3>
     <ul>
       <li>Dog</li>
@@ -60,7 +62,7 @@
     ====================================================================== -->
 
     <hr />
-    <h1>DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT</h1>
+    <h2>Step 239: DOCUMENT.GETELEMENTSBYCLASSNAME() METHOD ASSIGNMENT</h2>
     <p>
       Both headings below have the same class name of "demo-class". The button
       will call the function "changeText()" which selects the first instance of
@@ -72,19 +74,19 @@
     <button onclick="changeText()">Click to Change Text</button>
 
     <!-- ====================================================================
-                      CANVAS ELEMENT ASSIGNMENT & CHALLENGE  
+                      CANVAS ELEMENT ASSIGNMENT & CHALLENGES  
     ====================================================================== -->
 
     <hr />
-    <h1>CANVAS ELEMENT ASSIGNMENT & CHALLENGE</h1>
-    <h3>ASSIGNMENT:</h3>
+    <h2>CANVAS ELEMENT ASSIGNMENT & CHALLENGES</h2>
+    <h3>241: ASSIGNMENT:</h3>
     <p>
       The &lt;canvas&gt; element is a container for graphics that you can use to
       draw on a webpage using JavaScript. Use HTML to define the canvas
       demensions and a separate CSS file to give it a border. This is a best
       practice as it keeps your styling separate from your HTML.
     </p>
-    <h3>CHALLENGE:</h3>
+    <h3>242: CANVAS CHALLENGE:</h3>
     <p>
       Before you can draw on the &lt;canvas&gt; element, you must use JavaScript
       to access it. First, a variable is declared using `const` (since it won't
@@ -93,6 +95,15 @@
       which provides all the methods needed to draw shapes on the canvas. The
       final lines of code use the context to define a fill color and then draw a
       filled rectangle with a specific position and size.
+    </p>
+
+    <h3>243: GRADIENT COLOR CHALLENGE:</h3>
+    <p>
+      The createLinearGradient() method is used to create a color gradient,
+      which is a smooth transition between two or more colors. After defining
+      the starting and ending points for the gradient, you add color "stops" at
+      specific positions along the line. The final step is to assign this
+      gradient to the drawing context's fillStyle and then draw the shape.
     </p>
     <canvas id="myCanvas" width="500" height="250"></canvas>
   </body>
