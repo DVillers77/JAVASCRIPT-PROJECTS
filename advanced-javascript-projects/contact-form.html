@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced JavaScript Projects (Step 244)</title>
+
+    <link rel="stylesheet" href="css/contact-form-styles.css" />
+
+    <!-- Placing the script in the head with 'defer' ensures the browser loads the page's HTML before running the JavaScript. -->
+    <script src="javascript/form-validation.js" defer></script>
+  </head>
+  <body>
+    <h1>Advanced JavaScript Projects (Step 244)</h1>
+    <hr />
+    <h2>Educatioanl Description</h2>
+    <p>
+      The primary purpose of this form is to use **JavaScript to control the
+      submission process**. The `onsubmit="return validateForm()"` attribute
+      dictates this flow, forcing the browser to run the validation function
+      first. The form will **only submit** if the function returns `true`. If
+      validation passes, the form is directed by the `action="/action_page.php"`
+      attribute. In this local environment, this is a common **placeholder URL**
+      for server-side code. If the submission is successful, the resulting "File
+      Not Found" error in the browser is the desired feedback, confirming that
+      the **JavaScript validation passed** and the form *attempted* to submit
+      without sending your data anywhere.
+    </p>
+    <h2>Step 244: Contact Form Challenge</h2>
+
+    <p>
+      Please fill out the form below. The form will validate your input before
+      submitting.
+    </p>
+
+    <!-- "/action_page.php" is used as a placeholder for a URL to send the submitted info to. -->
+    <form
+      name="myForm"
+      action="/action_page.php"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" />
+      <!-- Note: <br /><br /> is used here for simple vertical spacing, prioritizing the core JavaScript task. In a production environment, CSS margin or Flexbox/Grid should be used for layout, adhering to the separation of concerns. -->
+      <br /><br />
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" /><br /><br />
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

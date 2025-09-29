@@ -560,3 +560,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Monday, September 29, 2025
 - **Objective**: To refactor the initial set of project files (`html-1.html`, `javascript-1.js`, `css/styles.css`) to use descriptive **kebab-case** and a **start-step anchor**. This establishes a new preferred naming convention for all future projects where applicable.
 - **Outcome**: The files were renamed to `assignment-collection-start-228.html`, `javascript/logic-collection-start-228.js`, and `css/styles-collection-start-228.css`. This change improves file accuracy, avoids misleading file-name ranges, and will serve as a naming guideline for subsequent assignments. The HTML links were successfully updated to reflect the new file paths, ensuring the project remains fully functional.
+
+#### **Step 244: CONTACT FORM CHALLENGE**
+
+- **Date**: Monday, September 29, 2025
+- **Objective**: To create a contact form with external CSS styling and JavaScript validation, while establishing a new, consistent semantic file naming and document structure for single assignments.
+- **Outcome**: A new HTML file (`contact-form.html`), CSS file (`css/contact-form-styles.css`), and JavaScript file (`javascript/form-validation.js`) were created. The JavaScript validation successfully prevents the form from submitting if the "First Name" field is empty. The files use **kebab-case** and follow the **separation of concerns** principle, with an HTML comment documenting the deviation for spacing.
