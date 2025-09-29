@@ -554,3 +554,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Sunday, September 28, 2025
 - **Objective**: To define and utilize the `createLinearGradient()` method to apply a gradient fill to the canvas, while ensuring both the solid-color and gradient challenges coexist.
 - **Outcome**: The `javascript-1.js` file was updated to draw two distinct rectangles on the canvas: one with a solid color (from Step 242) and one with a vertical linear gradient. The `html-1.html` file was restructured to implement best practices for document organization, including: using a descriptive title in the `<title>` and `<h1>` tags, and using consistent `<h2>` tags for each assignment.
+
+#### **Refactor: Implement Semantic File Naming**
+
+- **Date**: Monday, September 29, 2025
+- **Objective**: To refactor the initial set of project files (`html-1.html`, `javascript-1.js`, `css/styles.css`) to use descriptive **kebab-case** and a **start-step anchor**. This establishes a new preferred naming convention for all future projects where applicable.
+- **Outcome**: The files were renamed to `assignment-collection-start-228.html`, `javascript/logic-collection-start-228.js`, and `css/styles-collection-start-228.css`. This change improves file accuracy, avoids misleading file-name ranges, and will serve as a naming guideline for subsequent assignments. The HTML links were successfully updated to reflect the new file paths, ensuring the project remains fully functional.
