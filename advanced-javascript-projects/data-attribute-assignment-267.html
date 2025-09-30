@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data-attribute-assignment-267</title>
+    <!-- Link to the external JavaScript file, loaded after the HTML is parsed  -->
+    <script src="javascript/data-attribute-logic-267.js" defer></script>
+  </head>
+  <body>
+    <h1>Advanced JavaScript Projects (267)</h1>
+    <hr />
+
+    <!-- Start of Educational Content Section  -->
+    <h2>Educational Description</h2>
+    <p>
+      This assignment utilizes the <strong>data-*</strong> attribute, a powerful
+      HTML5 feature designed to **embed non-visual, custom data directly into
+      HTML elements.** The data acts as a "bridge" that **decouples** the HTML
+      structure (presentation) from the JavaScript logic (behavior). In this
+      project, the <code>data-planet</code> and
+      <code>data-info</code> attributes **contain** the planet's name and its
+      fun fact. This allows JavaScript to read this specific, contextual data
+      using the <code>dataset</code> property (e.g.,
+      <code>button.dataset.planet</code>) to dynamically update the page. This
+      method is crucial for building maintainable, interactive user interfaces.
+    </p>
+    <!-- End of Educational Content Section  -->
+
+    <!-- Start of Interactive Input Section  -->
+    <h2>Planetary Fun Facts</h2>
+    <p>Click any button below to see a fun fact about that planet.</p>
+
+    <div id="planet-facts">
+      <!-- Each button stores the relevant data in two custom data attributes  -->
+      <button
+        data-planet="Mars"
+        data-info="Mars has the tallest mountain in the solar system, Olympus Mons."
+        class="fact-button"
+      >
+        Mars
+      </button>
+
+      <button
+        data-planet="Jupiter"
+        data-info="Jupiter is so large that all other planets could fit inside it."
+        class="fact-button"
+      >
+        Jupiter
+      </button>
+
+      <button
+        data-planet="Saturn"
+        data-info="Saturn's rings are mostly made of ice particles."
+        class="fact-button"
+      >
+        Saturn
+      </button>
+    </div>
+    <!-- End of Interactive Input Section  -->
+
+    <hr />
+
+    <!-- Start of Dynamic Output Section  -->
+    <h2>Fact Display:</h2>
+    <!-- This paragraph is the target for the JavaScript to inject the fact  -->
+    <p id="fact-output">Click a planet button above to reveal a fact!</p>
+    <!-- End of Dynamic Output Section  -->
+  </body>
+</html>

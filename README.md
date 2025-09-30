@@ -566,3 +566,15 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Monday, September 29, 2025
 - **Objective**: To create a contact form with external CSS styling and JavaScript validation, while establishing a new, consistent semantic file naming and document structure for single assignments.
 - **Outcome**: A new HTML file (`contact-form.html`), CSS file (`css/contact-form-styles.css`), and JavaScript file (`javascript/form-validation.js`) were created. The JavaScript validation successfully prevents the form from submitting if the "First Name" field is empty. The files use **kebab-case** and follow the **separation of concerns** principle, with an HTML comment documenting the deviation for spacing.
+
+#### **Refactor: Implement Semantic File Naming (Step 244)**
+
+- **Date**: Tuesday, September 30, 2025
+- **Objective**: To refactor the project files created in Step 244 to fully adopt the descriptive **kebab-case** and **step-anchor** convention (`-244`) for improved file organization.
+- **Outcome**: The files were successfully renamed to `contact-form-244.html`, `javascript/form-validation-244.js`, and `css/contact-form-styles-244.css`. All internal file links were verified and updated, ensuring the contact form remains fully functional under the new naming structure.
+
+#### **Step 267: DATA ATTRIBUTE ASSIGNMENT**
+
+- **Date**: Tuesday, September 30, 2025
+- **Objective**: To utilize the HTML5 **`data-*` attribute** to pass custom data from HTML elements to JavaScript, thereby driving dynamic user interface changes.
+- **Outcome**: New files `data-attribute-assignment-267.html` and `javascript/data-attribute-logic-267.js` were created using the established **kebab-case** naming convention. The JavaScript successfully reads the `data-planet` and `data-info` attributes using the `dataset` property to dynamically update a fact display. The HTML includes an **educational description** and **corrected developer comments** for clarity.
