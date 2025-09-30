@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARROW FUNCTION CHALLENGE (277)</title>
+  </head>
+  <body>
+    <h1>ARROW FUNCTION CHALLENGE (277)</h1>
+    <hr />
+
+    <!-- Start of Standard Function Section  -->
+    <h2>1. Standard Function Syntax</h2>
+
+    <!-- Educational Description for Standard Function  -->
+    <p>
+      <strong>Description:</strong> This is the original and most formal way to
+      declare functions (pre-ES6). It is verbose, requiring the
+      <code>function</code> keyword, parentheses, and curly braces.<br />
+      <strong>Pros:</strong> It binds its own <code>this</code> context, making
+      it suitable for object methods and constructor functions.<br />
+      <strong>Cons:</strong> The manual binding of <code>this</code> often
+      causes bugs in callbacks and event handlers, requiring extra code (like
+      <code>.bind()</code>) to fix.
+    </p>
+
+    <p>a = 5 <br />b = 4 <br /></p>
+    <button onclick="sumA()">Calculate with Standard Function</button>
+    <p id="value-standard">a + b = ?</p>
+
+    <script>
+      // Global variables used by both functions
+      let a = 5;
+      let b = 4;
+
+      // STEP 1: Standard Function Syntax
+      sumA = function () {
+        let result = a + b;
+        document.getElementById("value-standard").innerHTML =
+          "a + b = " + result;
+      };
+    </script>
+    <!-- End of Standard Function Section  -->
+
+    <hr />
+
+    <!-- Start of Arrow Function Section  -->
+    <h2>2. Arrow Function Rewrite</h2>
+
+    <!-- Educational Description for Arrow Function  -->
+    <p>
+      <strong>Description:</strong> Introduced in ES6, the arrow function is a
+      <strong>concise</strong> syntax that drops the
+      <code>function</code> keyword.<br />
+      <strong>Pros:</strong> Excellent for callbacks, event handlers, and array
+      methods (like map/filter) due to its
+      <strong>lexical <code>this</code></strong> (it inherits
+      <code>this</code> from the surrounding scope). Single-line functions allow
+      for **implicit returns**.<br />
+      <strong>Cons:</strong> Cannot be used as object constructors and is not
+      suitable for object methods where an independent <code>this</code> context
+      is needed.
+    </p>
+
+    <p>a = 5 <br />b = 4 <br /></p>
+    <button onclick="sumB()">Calculate with Arrow Function</button>
+    <p id="value-arrow">a + b = ?</p>
+
+    <script>
+      // STEP 2: Arrow Function Rewrite (Concise syntax)
+      // Implicit return is used here to update the DOM in one line.
+      sumB = () =>
+        (document.getElementById("value-arrow").innerHTML =
+          "a + b = " + (a + b));
+    </script>
+    <!-- End of Arrow Function Section  -->
+  </body>
+</html>
