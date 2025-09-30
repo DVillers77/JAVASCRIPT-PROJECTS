@@ -584,3 +584,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Tuesday, September 30, 2025
 - **Objective**: To demonstrate and document the difference between standard JavaScript function syntax and the concise ES6 Arrow Function (`=>`) syntax.
 - **Outcome**: The HTML file `arrow-function-challenge-277.html` was created. It includes two buttons to execute both the standard function and its arrow function rewrite, showing identical results. The file also includes a detailed **educational description** under each section, explaining the pros, cons, and the concept of **lexical `this`** for each function type.
+
+#### **Step 279: ARRAY .SOME() METHOD CHALLENGE**
+
+- **Date**: Tuesday, September 30, 2025
+- **Objective**: To write and execute a custom JavaScript function using the built-in Array <code>.some()</code> method.
+- **Outcome**: A simple script was written that successfully executes the <code>.some()</code> method on an array of numbers. The code demonstrated the method's efficiency by short-circuiting the iteration immediately upon finding the first value (45) that met the condition of being greater than 40.
