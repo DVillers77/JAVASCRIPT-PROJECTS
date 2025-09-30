@@ -578,3 +578,9 @@ This repository serves as a portfolio for all coding projects and assignments co
 - **Date**: Tuesday, September 30, 2025
 - **Objective**: To utilize the HTML5 **`data-*` attribute** to pass custom data from HTML elements to JavaScript, thereby driving dynamic user interface changes.
 - **Outcome**: New files `data-attribute-assignment-267.html` and `javascript/data-attribute-logic-267.js` were created using the established **kebab-case** naming convention. The JavaScript successfully reads the `data-planet` and `data-info` attributes using the `dataset` property to dynamically update a fact display. The HTML includes an **educational description** and **corrected developer comments** for clarity.
+
+#### **Step 277: ARROW FUNCTION CHALLENGE**
+
+- **Date**: Tuesday, September 30, 2025
+- **Objective**: To demonstrate and document the difference between standard JavaScript function syntax and the concise ES6 Arrow Function (`=>`) syntax.
+- **Outcome**: The HTML file `arrow-function-challenge-277.html` was created. It includes two buttons to execute both the standard function and its arrow function rewrite, showing identical results. The file also includes a detailed **educational description** under each section, explaining the pros, cons, and the concept of **lexical `this`** for each function type.
