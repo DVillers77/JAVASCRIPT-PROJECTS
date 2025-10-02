@@ -85,7 +85,106 @@ let boardElement = null;
 let canvas = null;
 let ctx = null;
 
-// --- 2. GAME FUNCTIONS (The Controller & View) ---
+// --- 2. CORE AI LOGIC (Minimax Functions for Unbeatable Mode) ---
+
+// Helper function: Returns true if the board state results in a win for the specified player.
+function checkWin(board, player) {
+  for (let [a, b, c] of WINNING_COMBOS) {
+    if (board[a] === player && board[b] === player && board[c] === player) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Helper function: Returns an array of indices that are null.
+function getEmptyIndices(board) {
+  return board
+    .map((val, index) => (val === null ? index : null))
+    .filter((val) => val !== null);
+}
+
+// --- MINIMAX ALGORITHM ---
+// This recursive function evaluates all possible future moves to determine the optimal move.
+// It is used for the 'hard' difficulty to make the AI unbeatable.
+function minimax(newBoard, player) {
+  // Available spots
+  let availSpots = getEmptyIndices(newBoard);
+
+  // --- TERMINAL STATES (Base cases for recursion) ---
+  // If the computer ('O') wins, return a high score (+10)
+  if (checkWin(newBoard, "O")) {
+    return { score: 10 };
+  }
+  // If the human ('X') wins, return a low score (-10)
+  else if (checkWin(newBoard, "X")) {
+    return { score: -10 };
+  }
+  // If it's a tie, return a neutral score (0)
+  else if (availSpots.length === 0) {
+    return { score: 0 };
+  }
+
+  // An array to collect all move objects (index and score)
+  let moves = [];
+
+  // Loop through all available spots
+  for (let i = 0; i < availSpots.length; i++) {
+    let move = {};
+    move.index = availSpots[i];
+
+    // 1. Temporarily make the move on the board
+    newBoard[availSpots[i]] = player;
+
+    // 2. Recursively call minimax for the *next* player
+    if (player === "O") {
+      let result = minimax(newBoard, "X");
+      move.score = result.score;
+    } else {
+      let result = minimax(newBoard, "O");
+      move.score = result.score;
+    }
+
+    // 3. Reset the spot on the board (Crucial for unwinding the recursion)
+    newBoard[availSpots[i]] = null;
+
+    // 4. Push the move object to the moves array
+    moves.push(move);
+  }
+
+  // --- MINIMAX OPTIMIZATION ---
+  let bestMove;
+  if (player === "O") {
+    // MAXIMIZER: Find the move with the highest score (Computer wants to win)
+    let bestScore = -10000;
+    for (let i = 0; i < moves.length; i++) {
+      if (moves[i].score > bestScore) {
+        bestScore = moves[i].score;
+        bestMove = moves[i];
+      }
+    }
+  } else {
+    // MINIMIZER: Find the move with the lowest score (Human wants the lowest score for the Computer)
+    let bestScore = 10000;
+    for (let i = 0; i < moves.length; i++) {
+      if (moves[i].score < bestScore) {
+        bestScore = moves[i].score;
+        bestMove = moves[i];
+      }
+    }
+  }
+
+  return bestMove;
+}
+
+// Function that calls minimax and executes the best move.
+function findBestMove() {
+  // Minimax returns an object {index: N, score: S}. We only need the index.
+  const bestMoveObject = minimax(board, "O");
+  return bestMoveObject.index;
+}
+
+// --- 3. GAME FLOW & CONTROLLER FUNCTIONS ---
 
 // This function starts the game and handles the user's click.
 function handleMove(event) {
@@ -180,11 +279,12 @@ function computersTurn() {
   if (emptySquares.length > 0) {
     let bestMove = -1;
 
-    // --- Core AI Logic (Reusable for Hard & Medium) ---
+    // Helper function: Find an immediate winning or blocking move (Used for Medium difficulty).
     function findWinningOrBlockingMove(playerToCheck) {
       for (const move of emptySquares) {
         board[move] = playerToCheck; // Temporarily make the move
-        if (checkWinner()) {
+        // checkWinner() can be used here, but checkWin() is slightly more efficient as it doesn't need to return the combo object.
+        if (checkWin(board, playerToCheck)) {
           board[move] = null; // Undo
           return move;
         }
@@ -195,36 +295,13 @@ function computersTurn() {
 
     switch (currentDifficulty) {
       case "hard":
-        // PRIORITY 1: Win (O)
-        bestMove = findWinningOrBlockingMove("O");
-
-        // PRIORITY 2: Block (X)
-        if (bestMove === -1) {
-          bestMove = findWinningOrBlockingMove("X");
-        }
-
-        // PRIORITY 3: Take Center (4)
-        if (bestMove === -1 && emptySquares.includes(4)) {
-          bestMove = 4;
-        }
-
-        // PRIORITY 4: Take Corner (0, 2, 6, 8)
-        if (bestMove === -1) {
-          const corners = [0, 2, 6, 8];
-          const openCorners = emptySquares.filter((square) =>
-            corners.includes(square)
-          );
-          if (openCorners.length > 0) {
-            const randomIndex = Math.floor(Math.random() * openCorners.length);
-            bestMove = openCorners[randomIndex];
-          }
-        }
-
-        // PRIORITY 5: Fall through to random move (Side)
-        // If no priority move found, fall through to default random selection.
+        // CRITICAL FIX: The Minimax algorithm handles all optimal moves (win, block, fork, center)
+        // by evaluating the future game tree. This ensures the AI is truly unbeatable.
+        bestMove = findBestMove();
         break;
 
       case "medium":
+        // Medium uses a heuristic (simple win/block priority).
         // PRIORITY 1: Win (O)
         bestMove = findWinningOrBlockingMove("O");
 
@@ -241,7 +318,7 @@ function computersTurn() {
         break;
     }
 
-    // --- Execute Move (Random fallback if bestMove is still -1) ---
+    // --- Execute Move (Random fallback if no priority move found on Easy/Medium) ---
     if (bestMove === -1) {
       const randomIndex = Math.floor(Math.random() * emptySquares.length);
       bestMove = emptySquares[randomIndex];
