@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Resource hints for faster loading -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <title>"Modern Tic Tac Toe" live!</title>
+    <link rel="stylesheet" href="css/modern-tic-tac-toe-styles.css" />
+    <!-- ICON LIBRARY -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="js/modern-tic-tac-toe-logic.js" defer></script>
+  </head>
+  <body id="body">
+    <h1>Advanced JavaScript Projects: MODERN TIC TAC TOE</h1>
+    <hr />
+
+    <div id="score-container">
+      <span id="x-wins">User Wins: 0</span> |
+      <span id="o-wins">Computer Wins: 0</span> |
+      <span id="ties">Ties: 0</span>
+      <button onclick="resetScores()" id="reset-button">Reset Scores</button>
+    </div>
+    <hr />
+
+    <div id="difficulty-selector">
+      <label>
+        Difficulty:
+        <input
+          type="radio"
+          name="difficulty"
+          value="easy"
+          onclick="setDifficulty('easy')"
+        />
+        Easy
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="difficulty"
+          value="medium"
+          onclick="setDifficulty('medium')"
+        />
+        Medium
+      </label>
+      <label>
+        <input
+          type="radio"
+          name="difficulty"
+          value="hard"
+          onclick="setDifficulty('hard')"
+          checked
+        />
+        Hard
+      </label>
+    </div>
+    <br />
+
+    <div class="center-container">
+      <canvas id="win-lines" width="608" height="608"></canvas>
+      <table>
+        <tr>
+          <td id="0"></td>
+          <td id="1"></td>
+          <td id="2"></td>
+        </tr>
+        <tr>
+          <td id="3"></td>
+          <td id="4"></td>
+          <td id="5"></td>
+        </tr>
+        <tr>
+          <td id="6"></td>
+          <td id="7"></td>
+          <td id="8"></td>
+        </tr>
+      </table>
+    </div>
+    <footer id="attribution-footer">
+      <p>&copy; 2025 David Villers. All Rights Reserved</p>
+      <p>
+        Sound Effects provided by
+        <a href="https://www.zapsplat.com" target="_blank">Zapsplat.com</a>
+      </p>
+    </footer>
+  </body>
+</html>

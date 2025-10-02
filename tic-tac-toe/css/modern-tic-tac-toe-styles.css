@@ -1,0 +1,180 @@
+/* Styling for the body background (Dark/Cyber Theme) */
+#body {
+  /* Dark background for high-tech feel */
+  background-color: #1a1a1d;
+  /* Fallback text color */
+  color: #e0e0e0;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+h1 {
+  /* Bright, high-contrast title */
+  color: #00ff88; /* Neon Green */
+  font-family: "Courier New", Courier, monospace; /* Optional: adds a terminal font look */
+  text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+}
+
+/* This container includes our table and canvas */
+.center-container {
+  /* sets the width of the container */
+  width: 608px;
+  /* centers container */
+  margin: 0 auto;
+  /* adds a margin of 50px from the top */
+  margin-top: 20px;
+  /* *** CRITICAL FIX: Anchor the canvas to this container *** */
+  position: relative;
+}
+
+table {
+  /* collapses the table border into 1 border */
+  border-collapse: collapse;
+  /* hides outer borders on table */
+  border-style: hidden;
+}
+
+td {
+  /* sets the cursor to the index finger hand when hovering over td element */
+  cursor: pointer;
+
+  /* UPDATED Border Color: A bright, distinct green for the grid lines */
+  border: 5px solid #00ff88;
+
+  /* removes default padding, sets standard size */
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+
+  /* Retain box-shadow but ensure it looks good on a dark background */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+
+  /* Cell background is dark gray for contrast */
+  background-color: #2c2c34;
+
+  /* Smooth transition for hover effect */
+  transition: all 0.2s ease-in-out;
+
+  text-align: center;
+}
+
+/* Hover effect for empty cells */
+td:empty:hover {
+  background-color: #3f3f4a; /* Slightly lighter dark gray on hover */
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.2);
+}
+
+canvas {
+  /* Sets the position of the canvas to the top left corner of the conatainer */
+  position: absolute;
+  /* *** CRITICAL FIX: Force the canvas to the top-left corner *** */
+  top: 0;
+  left: 0;
+  /* Places the canvas over the top of the table */
+  z-index: 10;
+  /* makes canvas invisible */
+  pointer-events: none;
+}
+
+/* Styling for the difficulty selector */
+#difficulty-selector {
+  /* Ensure it's centered along with the main body content */
+  text-align: center;
+  /* Add some spacing below it */
+  margin-bottom: 20px;
+  /* Basic styling for the labels */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#difficulty-selector label {
+  /* Add spacing between the options */
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Styling for the Font Awesome Icons */
+.player-x,
+.player-o {
+  /* Ensures the <i> element is a block-level element */
+  display: block;
+
+  /* Center the icon visually within the <i> block */
+  text-align: center;
+
+  /* Slightly increased size for better fit */
+  font-size: 160px;
+
+  /* ADJUSTMENT: Reduced margin-top to pull the icon up towards center */
+  margin-top: 10px;
+
+  /* Set the default color */
+  color: #00ff88; /* Green for X */
+}
+
+/* Specific color for the computer player (O) */
+.player-o {
+  color: #00ffff; /* Bright Cyan (High-tech contrast) */
+}
+
+/* --- Scoreboard and Difficulty Selector Styling --- */
+#score-container,
+#difficulty-selector {
+  /* Match the high-contrast font and color */
+  color: #00ff88; /* Neon Green */
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: 0 0 3px rgba(0, 255, 136, 0.5); /* Subtle glow */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#difficulty-selector label {
+  /* Match the new styles for the radio button labels */
+  font-weight: normal; /* Make the font less heavy than the main title */
+  margin-right: 25px; /* Increase spacing between options */
+}
+
+/* Styling for the Reset Scores Button */
+#reset-button {
+  background-color: #1a1a1d; /* Dark background */
+  color: #00ffff; /* Bright Cyan for the button text */
+  border: 2px solid #00ffff; /* Cyan border */
+  padding: 5px 10px;
+  margin-left: 20px;
+  cursor: pointer;
+
+  /* Apply the monospace font */
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+
+  /* Add a hover effect for visual feedback */
+  transition: all 0.2s;
+}
+
+#reset-button:hover {
+  background-color: #00ffff; /* Swap colors on hover */
+  color: #1a1a1d;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Add a bright glow */
+}
+
+/* --- Footer and Attribution Styling --- */
+#attribution-footer {
+  margin-top: 40px;
+  padding: 10px 0;
+  font-size: 0.8em;
+  color: #00ff88; /* Neon Green text */
+  font-family: "Courier New", Courier, monospace;
+}
+
+#attribution-footer a {
+  color: #00ffff; /* Bright Cyan links */
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+
+#attribution-footer a:hover {
+  color: #ffffff;
+}

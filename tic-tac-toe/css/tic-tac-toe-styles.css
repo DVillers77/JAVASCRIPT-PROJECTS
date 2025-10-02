@@ -1,0 +1,47 @@
+/* Styling to center the main text content */
+#body {
+  text-align: center;
+}
+
+/* This container includes our table and canvas */
+.center-container {
+  /* sets the width of the container */
+  width: 608px;
+  /* centers container */
+  margin: 0 auto;
+  /* adds a margin of 50px from the top */
+  margin-top: 50px;
+  /* *** CRITICAL FIX: Anchor the canvas to this container *** */
+  position: relative;
+}
+
+table {
+  /* collapses the table border into 1 border */
+  border-collapse: collapse;
+  /* hides outer borders on table */
+  border-style: hidden;
+}
+
+td {
+  /* changes the cursor to the index finger hand when hovering over td element */
+  cursor: pointer;
+  /* sets table border style */
+  border: 4px solid rgba(252, 169, 3, 0.8);
+  /* removes default padding */
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+  filter: contrast(3);
+}
+
+canvas {
+  /* Sets the position of the canvas to the top left corner of the conatainer */
+  position: absolute;
+  /* *** CRITICAL FIX: Force the canvas to the top-left corner *** */
+  top: 0;
+  left: 0;
+  /* Places the canvas over the top of the table */
+  z-index: 10;
+  /* makes canvas invisible */
+  pointer-events: none;
+}
