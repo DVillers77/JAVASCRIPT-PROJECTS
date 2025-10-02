@@ -602,3 +602,14 @@ This repository serves as a portfolio for all coding projects and assignments co
   - **Visuals**: Replaced images with scalable **Font Awesome icons** (User vs. Microchip) and fixed all centering issues.
   - **Sound**: Integrated and customized **five distinct sound effects** for every game event, with attribution added to the footer.
   - **Submission Prep**: Verified the inclusion of extensive **developer comments** in `modern-tic-tac-toe-logic.js` and finalized the comprehensive `README.md` file for GitHub submission.
+
+### Advanced Calculator Project (Steps 292 - 297)
+
+- **Date**: Wednesday, October 1, 2025
+  **Objective:** Create a fully functional, two-line calculator using advanced CSS Grid and a JavaScript Class structure.
+  **Key Features & Concepts Implemented:**
+
+* **CSS Grid Mastery (Step 292):** Designed a stable 4x5 button grid. Successfully implemented `grid-row: span 2;` (for '+') and `grid-column: span 2;` (for '=') to create a custom layout, overcoming initial HTML structural conflicts.
+* **JavaScript Class Structure (Step 294):** Built the calculator logic using a `class` (best practice) to manage state (`currentOperand`, `previousOperand`, `operation`) and encapsulate methods (`compute`, `clear`, etc.).
+* **Two-Line Display UX (Step 296/297):** Configured a modern two-line display, overcoming several CSS conflicts (Flexbox vs. fixed heights) to achieve a stable and visually balanced output. The JavaScript was refined to provide persistent calculation history on the top line after the `=` button is pressed.
+* **Final Alignment & Polish:** Adjusted CSS for font sizes and vertical alignment to ensure the history text and current input are clearly distinguishable and aesthetically balanced.

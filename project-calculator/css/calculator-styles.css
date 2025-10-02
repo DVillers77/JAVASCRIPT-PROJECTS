@@ -1,0 +1,124 @@
+html {
+  font-size: 70%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.calculator {
+  border: 1.2px solid darkslategray;
+  border-radius: 7px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+/* --- ADAPTATION: STYLING THE TWO-LINE DISPLAY --- */
+/* The single .calculator-screen input is replaced by this .output div */
+.output {
+  width: 100%;
+  height: 120px; /* Increased height to accommodate two lines */
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding: 10px 20px;
+  /* Uses flexbox to stack the two lines and align content to the bottom-right */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.previous-operand {
+  font-size: 2rem; /* Smaller font for the running equation */
+  color: rgba(255, 255, 255, 0.75); /* Faded color */
+  height: 30px; /* Fixed height for consistency */
+  line-height: 30px;
+}
+
+.current-operand {
+  font-size: 5rem; /* Large font for the active input */
+  height: 70px; /* Fixed height for consistency */
+}
+
+button {
+  /* Removed: height: 70px; (This was conflicting) */
+  border-radius: 3px;
+  border: 1px solid darkslategray;
+  background-color: transparent;
+  font-size: 3.2rem;
+  color: black;
+  /* This is the definitive height that makes the button fill the 70px grid-row height */
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50%,
+    rgba(0, 0, 0, 0.6)
+  );
+  text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+  /* Corrected box-shadow syntax (removed invalid 'e' characters) */
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+}
+
+button:hover {
+  background-color: #e1e1e1; /* Corrected original typo: #elelel -> #e1e1e1 */
+}
+
+.operator {
+  color: black;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 50%,
+    rgba(0, 0, 0, 0.5)
+  );
+  background-color: lightgray;
+}
+
+/* --- ADAPTATION: AC and EQUALS Selectors --- */
+/* We target the data-* attributes or the existing class if it's still present */
+
+/* The AC button has data-all-clear (and you may have kept the function class) */
+[data-all-clear] {
+  background-color: red;
+  border-color: darkslategray;
+  color: #ffffff;
+}
+
+/* The equals button has data-equals and spans two columns */
+[data-equals] {
+  background-color: blue;
+  border-color: darkslategray;
+  color: #fff;
+  grid-column: span 2;
+}
+
+[data-equals]:hover {
+  background-color: darkblue;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* This explicitly defines 5 rows, each 70px tall. */
+  grid-template-rows: repeat(5, 70px);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+/* Selects the plus button and makes it span two rows */
+[data-type="operator"][value="+"] {
+  /* Tells the element to span 2 rows vertically */
+  grid-row: span 2;
+}
