@@ -38,5 +38,5 @@ This project has been developed through a multi-step process, incorporating seve
 
 ## ©️ Attribution
 
-- **Code:** &copy; 2024 \[Your Name]. All Rights Reserved.
+- **Code:** &copy; 2025 David Villers. All Rights Reserved.
 - **Sound Effects:** Provided by [Zapsplat.com](https://www.zapsplat.com/).
