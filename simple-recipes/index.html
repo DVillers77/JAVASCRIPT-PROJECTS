@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ======================================================================
+                                 HEAD
+   ========================================================================-->
+  <head>
+    <!-- Character set declaration. Ensures the page displays correctly in all browsers. -->
+    <meta charset="UTF-8" />
+    <!-- Viewport meta tag. Ensures the webpage is responsive and looks good on all devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links the external CSS file to the HTML document for styling. -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Links the external js file to the HTML document for function. -->
+    <script src="js/simple-recipes.js" defer></script>
+    <!-- The title of the page that appears in the browser tab. -->
+    <title>Simple Recipes</title>
+  </head>
+
+  <!-- ======================================================================
+                                 BODY
+   ========================================================================-->
+  <body>
+    <!-- ======================================================================
+                                 NAVBAR
+    ========================================================================-->
+    <nav class="nav-bar">
+      <ul>
+        <!-- The main navigation links. -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <!-- A link that triggers a dropdown menu on hover. -->
+        <li class="drop">
+          <a href="#recipes">Recipes</a>
+          <!-- The dropdown menu. -->
+          <div class="rollover-menu">
+            <a href="#pasta">Pasta</a>
+            <a href="#chicken">Chicken</a>
+            <a href="#pork">Pork</a>
+            <a href="#biscuits">Biscuits</a>
+            <a href="#fish">Fish</a>
+            <a href="#dessert">Dessert</a>
+          </div>
+        </li>
+        <li><a href="#contact-form">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- ===================================================================
+                                 HEADER
+      =====================================================================-->
+      <header>
+        <h1>Simple Recipes</h1>
+      </header>
+
+      <!-- ===================================================================
+                             FEATURED RECIPE
+      =====================================================================-->
+      <section>
+        <div class="container" id="featured">
+          <h2>Featured Recipe</h2>
+          <!-- This div is the first column containing the featured recipe's image. -->
+          <div class="column recipe-card-background">
+            <div class="recipe-container">
+              <img
+                src="images/skillet-pizza.jpeg"
+                alt="A golden-crusted deep dish skillet pizza topped with melted cheese and fresh basil."
+              />
+            </div>
+          </div>
+          <!-- This div is the second column containing the featured recipe's description. -->
+          <div class="column">
+            <h3 id="featured-header"></h3>
+
+            <div id="featured-data-container"></div>
+
+            <p class="main-text"></p>
+
+            <div class="button-wrapper">
+              <a href="#recipe-modal-1" id="featured-button" class="modal-btn">
+                Recipe
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===============================================================
+                             RECIPES CARD SECTION
+        ==================================================================-->
+        <div class="container" id="recipes">
+          <h2>Recipes</h2>
+
+          <!-- Pasta Recipe Card -->
+          <div class="column" id="pasta">
+            <div class="recipe-container">
+              <h3>Saucy Tortillone Parm</h3>
+              <div class="flip">
+                <!--FRONT-->
+                <div class="flip-front">
+                  <img
+                    src="images/tortelloni.jpeg"
+                    alt="A delicious looking bowl of pasta with a white sauce and vegetables."
+                  />
+                </div>
+                <!--BACK-->
+                <div class="flip-back">
+                  <div class="text-container js-recipe-details"></div>
+                  <input
+                    type="button"
+                    value="Recipe"
+                    href="#recipe-modal-2"
+                    class="modal-btn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chicken Recipe Card -->
+          <div class="column recipe-card-background" id="chicken">
+            <div class="recipe-container">
+              <h3>Mediterranean Chicken Thighs</h3>
+              <div class="flip">
+                <!--FRONT-->
+                <div class="flip-front">
+                  <img
+                    src="images/chicken-thighs.jpeg"
+                    alt="A delicious looking chicken thigh with greens and red peppers."
+                  />
+                </div>
+                <!--BACK-->
+                <div class="flip-back">
+                  <div class="text-container js-recipe-details"></div>
+                  <input
+                    type="button"
+                    value="Recipe"
+                    href="#recipe-modal-3"
+                    class="modal-btn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pork Recipe Card -->
+          <div class="column recipe-card-background" id="pork">
+            <div class="recipe-container">
+              <h3>Crispy Pork Katsu and Rice</h3>
+              <div class="flip">
+                <!--FRONT-->
+                <div class="flip-front">
+                  <img
+                    src="images/pork-katsu.jpeg"
+                    alt="Pork cutlet covered in panko breadcrumbs with rice."
+                  />
+                </div>
+                <!--BACK-->
+                <div class="flip-back">
+                  <div class="text-container js-recipe-details"></div>
+                  <input
+                    type="button"
+                    value="Recipe"
+                    href="#recipe-modal-4"
+                    class="modal-btn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Biscuits Recipe Card -->
+          <div class="column" id="biscuits">
+            <div class="recipe-container">
+              <h3>Cheddar Cheese Biscuits</h3>
+              <div class="flip">
+                <!--FRONT-->
+                <div class="flip-front">
+                  <img
+                    src="images/cheddar-biscuits.jpeg"
+                    alt="Delicious cheddar cheese biscuits."
+                  />
+                </div>
+                <!--BACK-->
+                <div class="flip-back">
+                  <div class="text-container js-recipe-details"></div>
+                  <input
+                    type="button"
+                    value="Recipe"
+                    href="#recipe-modal-5"
+                    class="modal-btn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fish Recipe Card -->
+          <div class="column" id="fish">
+            <div class="recipe-container">
+              <h3>Baked Cod and Scallop Potatoes</h3>
+              <div class="flip">
+                <!--FRONT-->
+                <div class="flip-front">
+                  <img
+                    src="images/baked-cod.jpeg"
+                    alt="Baked cod and scallop potatoes."
+                  />
+                </div>
+                <!--BACK-->
+                <div class="flip-back">
+                  <div class="text-container js-recipe-details"></div>
+                  <input
+                    type="button"
+                    value="Recipe"
+                    href="#recipe-modal-6"
+                    class="modal-btn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dessert Recipe Card -->
+          <div class="column recipe-card-background" id="dessert">
+            <div class="recipe-container">
+              <h3>S'mores Cake</h3>
+              <div class="flip">
+                <!--FRONT-->
+                <div class="flip-front">
+                  <img
+                    src="images/smores.jpeg"
+                    alt="A delicious looking s'mores cake."
+                  />
+                </div>
+                <!--BACK-->
+                <div class="flip-back">
+                  <div class="text-container js-recipe-details"></div>
+                  <input
+                    type="button"
+                    value="Recipe"
+                    href="#recipe-modal-7"
+                    class="modal-btn"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======================================================================
+                                ABOUT
+      =====================================================================-->
+      <section id="about" class="container">
+        <h2>About</h2>
+        <p class="main-text">
+          Simple Recipes is your ultimate destination for easy-to-follow recipes
+          that make cooking enjoyable for everyone, whether you're a seasoned
+          chef or a beginner. Founded in the United States out of a passion for
+          home cooking, our mission is to inspire and empower you to create
+          delicious meals with everyday ingredients and simple techniques. We
+          offer a wide range of diverse cuisines, from classic comfort foods to
+          international dishes, all accompanied by step-by-step instructions and
+          helpful tips to ensure your cooking experience is smooth and
+          successful. Our dedicated team of home cooks and food enthusiasts
+          meticulously test each recipe, so you can cook with confidence. At
+          Simple Recipes, we believe that good food brings people together, and
+          we're excited to have you join our community. Lets cook up something
+          amazing together!
+        </p>
+      </section>
+      <!-- ======================================================================
+                             RECIPE MODALS
+      ====================================================================-->
+      <!-- ================== RECIPE MODAL 1 ================== -->
+      <dialog id="recipe-modal-1" class="recipe-modal">
+        <!-- MODAL ONE CONTENT -->
+        <div class="recipe-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-header">
+            <h3>Deep Dish Skillet Pizza</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Cook Time</h4>
+                <p>30-40 minutes</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Servings</h4>
+                <p>6</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Level</h4>
+                <p>medium</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Ingredients</h4>
+                <ul class="recipe-list">
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                </ul>
+              </div>
+              <div class="rp-column-2">
+                <h4 class="recipe-directions">Directions</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <!-- ================== RECIPE MODAL 2 ================== -->
+      <dialog id="recipe-modal-2" class="recipe-modal">
+        <!-- MODAL ONE CONTENT -->
+        <div class="recipe-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-header">
+            <h3>Saucy Tortellone Parm</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Cook Time</h4>
+                <p>15-20 minutes</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Servings</h4>
+                <p>2</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Level</h4>
+                <p>easy</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Ingredients</h4>
+                <ul class="recipe-list">
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                </ul>
+              </div>
+              <div class="rp-column-2">
+                <h4 class="recipe-directions">Directions</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <!-- ================== RECIPE MODAL 3 ================== -->
+      <dialog id="recipe-modal-3" class="recipe-modal">
+        <!-- MODAL ONE CONTENT -->
+        <div class="recipe-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-header">
+            <h3>Mediterranean Chicken Thighs</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Cook Time</h4>
+                <p>20-30 minutes</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Servings</h4>
+                <p>4</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Level</h4>
+                <p>medium</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Ingredients</h4>
+                <ul class="recipe-list">
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                </ul>
+              </div>
+              <div class="rp-column-2">
+                <h4 class="recipe-directions">Directions</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <!-- ================== RECIPE MODAL 4 ================== -->
+      <dialog id="recipe-modal-4" class="recipe-modal">
+        <!-- MODAL ONE CONTENT -->
+        <div class="recipe-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-header">
+            <h3>Crispy Pork Katsu and Rice</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Cook Time</h4>
+                <p>25-35 minutes</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Servings</h4>
+                <p>4</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Level</h4>
+                <p>hard</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Ingredients</h4>
+                <ul class="recipe-list">
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                </ul>
+              </div>
+              <div class="rp-column-2">
+                <h4 class="recipe-directions">Directions</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <!-- ================== RECIPE MODAL 5 ================== -->
+      <dialog id="recipe-modal-5" class="recipe-modal">
+        <!-- MODAL ONE CONTENT -->
+        <div class="recipe-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-header">
+            <h3>Cheddar Cheese Biscuits</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Cook Time</h4>
+                <p>30-40 minutes</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Servings</h4>
+                <p>4</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Level</h4>
+                <p>medium</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Ingredients</h4>
+                <ul class="recipe-list">
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                </ul>
+              </div>
+              <div class="rp-column-2">
+                <h4 class="recipe-directions">Directions</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <!-- ================== RECIPE MODAL 6 ================== -->
+      <dialog id="recipe-modal-6" class="recipe-modal">
+        <!-- MODAL ONE CONTENT -->
+        <div class="recipe-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-header">
+            <h3>Baked Cod and Scallop Potatoes</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Cook Time</h4>
+                <p>40-50 minutes</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Servings</h4>
+                <p>4</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Level</h4>
+                <p>hard</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Ingredients</h4>
+                <ul class="recipe-list">
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                </ul>
+              </div>
+              <div class="rp-column-2">
+                <h4 class="recipe-directions">Directions</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+      <!-- ================== RECIPE MODAL 7 ================== -->
+      <dialog id="recipe-modal-7" class="recipe-modal">
+        <!-- MODAL ONE CONTENT -->
+        <div class="recipe-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-header">
+            <h3>S'mores Cake</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Cook Time</h4>
+                <p>50-60 minutes</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Servings</h4>
+                <p>4</p>
+              </div>
+              <div class="rp-column-1">
+                <h4>Level</h4>
+                <p>medium</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="rp-column-1">
+                <h4>Ingredients</h4>
+                <ul class="recipe-list">
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                  <li>sadsalad</li>
+                </ul>
+              </div>
+              <div class="rp-column-2">
+                <h4 class="recipe-directions">Directions</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+
+      <!-- ====================================================================
+                             CONTACT FORM
+      =======================================================================-->
+      <div id="validate-msg"></div>
+
+      <form class="container" id="contact-form">
+        <h2>Contact Us</h2>
+        <h3>
+          Want more infromation about our recipes?
+          <br />
+          Contact us below!
+        </h3>
+        <div>
+          <input type="text" placeholder="First Name" id="first-name" />
+          <input type="text" placeholder="Last Name" id="last-name" />
+          <br />
+          <input type="email" placeholder="Email" id="email" required />
+          <input type="tel" placeholder="Phone Number" id="phone" />
+          <br />
+          <input
+            type="checkbox"
+            name="newsletter-subscription"
+            id="subscription"
+          />
+          <label for="subscription">Subscribe for weekly recipes!</label>
+          <br />
+          <textarea placeholder="Type message here..." id="message"></textarea>
+          <br />
+          <input type="submit" value="submit" />
+        </div>
+      </form>
+    </main>
+    <!-- ======================================================================
+                                 FOOTER
+     ======================================================================-->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-item">
+          <p>Simple Recipes &copy;</p>
+        </div>
+        <div class="footer-item">
+          <p>310 SW 4th Ave Suite 200</p>
+          <p>Portland, OR 97204</p>
+        </div>
+        <div class="footer-item">
+          <a href="tel:503-206-6915">503-206-6915</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

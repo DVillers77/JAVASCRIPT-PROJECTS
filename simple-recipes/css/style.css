@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+/* Custom Properties (CSS Variables) standardized to Hex Codes */
+:root {
+  /* 1. BRAND COLORS (The core palette) */
+  --primary-color: #01806a;
+  --accent-color: #f7b1bc;
+  --subtle-background: #95eedf;
+
+  /* 2. TEXT COLORS (Defined by function/contrast) */
+  --text-color-green: #005043;
+  --text-color-gray: #333333;
+  --black: #000000;
+  --white: #ffffff;
+
+  /* 3. UTILITY / UI COLORS (Neutrals, borders) */
+  --border-gray: #a5a5a5;
+
+  /* 4. SHADOW OPACITY LEVELS (Non-color values) */
+  --shadow-subtle: 0.2;
+  --shadow-medium: 0.4;
+  --shadow-strong: 0.7;
+}
+
+/* This rule ensures that horizontal scrollbars are hidden and smooth-scrolling is enabled. */
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/*--======================================================================
+                                NAVBAR
+========================================================================*/
+
+/* This class makes the navigation bar sticky at the top of the page. */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+/* This styles the main list of the navigation bar. */
+ul {
+  display: flex; /* Arranges the list items in a row. */
+  list-style: none; /* Removes the default bullet points. */
+  align-items: center; /* Vertically centers the list items. */
+  /* Negative margins are used to make the navbar span the full width of the browser. */
+  margin: -8px -8px 0px -8px;
+  background-color: var(--primary-color);
+  border-bottom: 5px solid var(--accent-color);
+}
+
+/* This styles the navigation links specifically within the main unordered list (<ul>). */
+ul li a {
+  display: block; /* Makes the links fill their parent <li>, creating a larger clickable area. */
+  font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--accent-color); /* Using the CSS variable */
+  text-align: center;
+  width: 100px;
+  padding: 20px;
+  text-decoration: none; /* Removes the default underline from links. */
+  transition: background-color 0.3s ease-in; /* Smooth hover effect. */
+}
+
+/* This is a combined selector for the hover effects on the main navigation links. */
+ul li a:hover,
+.drop:hover a:only-of-type {
+  background-color: var(--subtle-background); /* Using the CSS variable */
+  color: var(--white); /* Using the CSS variable */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, var(--shadow-subtle)); /* Using the CSS variable */
+  transition: background-color 0.3s ease-in;
+}
+
+/* This hides the rollover (dropdown) menu by default. */
+.rollover-menu {
+  display: none;
+  position: absolute;
+  /* Using the CSS variable for the light background */
+  background-color: var(--white);
+  /* Standardizing the shadow using rgba(0, 0, 0, opacity) with a variable */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, var(--shadow-subtle));
+}
+
+/* This displays the rollover menu when the parent list item is hovered over. */
+.drop:hover .rollover-menu {
+  display: block;
+}
+
+/* Styles for the links inside the rollover menu. */
+.rollover-menu a {
+  /* Using the primary color variable for the text */
+  color: var(--primary-color);
+}
+
+.rollover-menu a:hover {
+  /* Using the light color variable for the text hover */
+  color: var(--white);
+  /* Standardizing the hover shadow to subtle black shadow */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, var(--shadow-subtle));
+}
+
+.rollover-menu a:nth-child(1) {
+  /* Using the accent color variable for the border */
+  border-top: 5px solid var(--accent-color);
+}
+
+/*--======================================================================
+                              FOOTER
+========================================================================*/
+
+/* This styles the footer section. */
+footer {
+  margin: 0px -8px -8px -8px;
+  background-color: var(--primary-color);
+  border-top: 5px solid var(--accent-color);
+  bottom: 0;
+}
+
+/* Uses Flexbox to lay out the content horizontally, replacing <table> */
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Spreads the three items out */
+  align-items: flex-start; /* Vertically aligns items */
+  width: 100%; /* Ensures it takes up the full width, mimicking the old table */
+}
+
+/* Gives each div roughly equal width, replacing the old td width: 33% */
+.footer-item {
+  flex-basis: 33%;
+  text-align: center; /* Ensures the text inside is centered */
+}
+
+/* This styles the paragraph text and the link inside the footer. */
+.footer-item p,
+.footer-item a {
+  /* Target both paragraphs and the new link */
+  font-family: "Josefin Slab", serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--accent-color);
+  text-decoration: none;
+  /* Change display to inline-block so it respects vertical margins */
+  display: inline-block;
+  margin-top: 15px; /* This margin will now be recognized */
+}
+
+/*--======================================================================
+                              BODY
+========================================================================*/
+
+/* This creates a formatting context that allows elements to flow inline while having block-level properties. */
+.container {
+  display: inline-block;
+  background-size: 100%;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*--======================================================================
+                      HEADERS & PARAGRAPHS
+========================================================================*/
+
+/* General styles for headers h2, h3, h4, and paragraph elements (p). 
+   This sets the common font and alignment for all body text elements. */
+h2,
+h3,
+h4,
+p {
+  font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+  text-align: center;
+}
+
+/* Header Color Hierarchy:
+This block ensures headings use brand colors, creating a strong visual identity. */
+
+/* Styles for the main header (h1). */
+h1 {
+  font-family: "Sacramento", cursive; /*Font from fonts.google.com*/
+  font-size: 80px;
+  color: var(--text-color-green);
+  text-align: center;
+}
+
+/* Specific styles for h2 and h3 (using the brand color). */
+h2,
+h3 {
+  color: var(--text-color-green); /* Applies the brand color */
+}
+
+/* Specific styles for h2. */
+h2 {
+  font-size: 60px;
+  text-decoration: underline; /* Adds an underline. */
+  text-decoration-color: var(
+    --accent-color
+  ); /* Sets the color of the underline. */
+}
+
+/* Specific styles for h3. */
+h3 {
+  font-size: 30px;
+}
+
+/* Body Text & Sub-Header Styles:
+This uses the softer gray for the body copy and the lowest-level header (h4), improving readability and contrast. */
+/* Specific styles for h4 (Sub-headers: using the softer gray). */
+
+h4 {
+  font-size: 15px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: var(--text-color-gray); /* Applies the softer text color */
+}
+
+/* General styles for all paragraph elements (Body text: using the softer gray). */
+p {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(
+    --text-color-gray
+  ); /* 💡 CRITICAL FIX: Changed color to gray for body text */
+}
+
+/*--======================================================================
+                              IMAGES
+========================================================================*/
+
+/* This class creates a two-column layout using floats. */
+.column {
+  float: left;
+  width: 48%;
+  padding: 10px;
+}
+
+/* Media query to adjust the column layout for screens smaller than 1200px. */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%; /* Makes columns full width to stack them. */
+    padding: 0px;
+    margin-left: -15px; /* Adjusts margin to center the content. */
+  }
+}
+
+/* This styles the first 7 images within the .column class. */
+.column img:nth-child(-n + 7) {
+  width: 500px;
+  height: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, var(--shadow-medium)),
+    0 6px 20px 0 rgba(0, 0, 0, var(--shadow-subtle));
+}
+
+/* This is the container for the images and their descriptions. */
+.recipe-container {
+  width: 500px;
+  height: 350px;
+  /* Shorthand for margin: top (100px), left/right (auto), bottom (180px). Auto centers the element horizontally. */
+  margin: 100px auto 180px;
+  perspective: 1000px; /*Tells the browser how much 3 dimenstional space to take up on the screen*/
+}
+
+/* Media query to adjust image and container sizes for mobile screens. */
+@media screen and (max-width: 600px) {
+  .column img:nth-child(-n + 7) {
+    width: 350px;
+    height: 225px;
+  }
+  .recipe-container {
+    width: 350px;
+    height: 225px;
+  }
+}
+
+/* This class adds a background color to the recipe card. */
+.recipe-card-background {
+  background-color: var(--subtle-background);
+}
+
+/* Alternates the blue tile background on smaller screen sizes. */
+@media screen and (max-width: 1200px) {
+  /* This changes the pork recipe card to have a white background. */
+  #pork {
+    background-color: var(--white);
+  }
+  /* This changes the biscuit recipe card to have a blue background. */
+  #biscuits {
+    background-color: var(--subtle-background);
+  }
+}
+
+/*--======================================================================
+                            FEATURED RECIPE
+========================================================================*/
+
+/* Styles the H3 tag of the featured recipe to override previous styles using an ID selector. */
+#featured-header {
+  font-family: "Sacramento", cursive; /*Font from fonts.google.com*/
+  font-size: 60px;
+  color: var(--text-color-green);
+}
+
+/* Styles the main paragraph text of the featured recipe. */
+.main-text {
+  text-align: justify; /* Aligns text to both the left and right margins. */
+  padding-top: 20px;
+  margin: 40px;
+}
+
+/* Centers the content (the inline-block anchor tag) inside its wrapper. */
+.button-wrapper {
+  text-align: center;
+}
+
+/* Sets margin left to 0 because it is not needed on a small screen and centers the text */
+@media screen and (max-width: 1200px) {
+  #featured-main-text {
+    margin-left: 0;
+  }
+}
+
+/* Specifically styles the img tag nested within the #featured div in the Featured Recipe section. */
+@media screen and (min-width: 1600px) {
+  #featured img {
+    width: 700px;
+    height: auto; /* Automatically calculates the image height based on the width. */
+    margin-left: -100px;
+    margin-top: -20px; /* Negative margins are used to override the .recipe-container margins and center the image. */
+  }
+}
+
+/* Adjusts the position of the featured image to be centered in its div when the width of the browser is 1599px or less. */
+@media screen and (max-width: 1599px) {
+  #featured img {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+}
+
+/* Media query for mobile devices. */
+@media screen and (max-width: 600px) {
+  /* Adjusts the height of the background for mobile. */
+  #featured .recipe-card-background {
+    height: 300px;
+  }
+  /* Moves the image up to center it in the new background height. */
+  #featured img {
+    margin-top: -65px;
+  }
+}
+
+/* This is the ID selector for the featured recipe's button. */
+#featured-button {
+  display: inline-block; /* Positions the recipe button on its own line from the other elements. */
+  margin: 60px auto 0px;
+  background-color: var(--primary-color);
+  border-radius: 35px;
+  border: none; /* Removes the default border set by the browser. */
+  font-family: "Josefin Slab", serif; /*Font from fonts.google.com*/
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px 25px; /* Shorthand: top/bottom (15px), left/right (25px). */
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Specifically styles the hover effect of the recipe button. */
+#featured-button:hover {
+  background-color: var(--accent-color);
+}
+
+/*IMAGE FLIP*/
+
+/*Positions the flip effect, defines transition time, ans defines a 3D effect*/
+.flip {
+  position: relative;
+  width: 100%;
+  height: 100%; /*Setting the width and height to 100% will allow the effect to take up 100% of the available space*/
+  text-align: center;
+  transition: 0.5s ease-in-out; /*The ease-in-out defines a slow start and end of the transition*/
+  transform-style: preserve-3d; /*Treats elements as 3D objects instead of flat 2D objects*/
+}
+
+.flip:hover {
+  transform: rotateY(
+    -180deg
+  ); /* transform property is used to
+give an element a 2D or 3D transformation. Rotate Y means the element will rotate horizontally on the Y-axis. Deg is short for degrees. A full circle is 360° 180° means that the element will rotate 180° counterclockwise*/
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-back h4,
+.flip-back p {
+  /* This compresses the vertical space, ensuring the button remains visible */
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.flip-back {
+  background-color: var(--subtle-background);
+  border: 2px solid var(--white);
+  transform: rotateY(
+    180deg
+  ); /*Adds 180 deg back from the previously subtracted -180 deg it moved to previously so the text can be read properly*/
+}
+
+.text-container {
+  padding-top: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .text-container {
+    padding-top: 0px;
+  }
+}
+/*RECIPE BUTTON*/
+
+input[type="button"] {
+  background-color: var(--white);
+  border: none;
+  border-radius: 20px;
+  font-family: "Josefin Slab" serif; /*Font from fonts.google.com*/
+  font-weight: bold;
+  font-size: 22px;
+  padding: 11px 17px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+/*--======================================================================
+                          CONTACT FORM
+========================================================================*/
+
+/*Sets of the conent within the div tag containg the ID contact to be centered on the webpage*/
+
+#contact-form {
+  display: block;
+  margin-bottom: 70px;
+}
+
+form {
+  display: table; /*This will display the form in a table format as rows and columns*/
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto; /*The browser will automatically calculate margins to center the form on the screen*/
+}
+
+/*This will specifically target the input tags that are nested within the form tags*/
+form input {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  color: var(--border-gray);
+  border: 2px solid var(--border-gray);
+  border-radius: 5px;
+  padding: 3px;
+  margin: 10px 15px 10px 0px;
+  transition: 0.3s ease-out; /*Transitions back to light gray when a user clicks away from an input field*/
+}
+
+form input:focus {
+  border: 2px solid var(--primary-color);
+  color: var(--black);
+  outline: none; /*Removes default border added when the focus pseudo class is triggered*/
+  transition: 0.3s ease-out;
+}
+
+label {
+  font-family: "Josefin Slab", serif; /*Fon from fonts.google.com*/
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  resize: both; /*Will allow the user to resize the text area both width and height*/
+  border: 3px solid var(--border-gray);
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--border-gray);
+  font-size: 15px;
+  transition: 0.3s ease-out; /*Will transition back to light gray*/
+}
+
+textarea:focus {
+  border: 2px solid var(--primary-color);
+  color: var(--black);
+  outline: none; /*Removes default border added when the focus pseudo class is triggered*/
+  transition: 0.3s ease-out;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 35px;
+  font-family: "Josefin Slab", serif; /*Fon from fonts.google.com*/
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  float: right; /*Positions the submit button to the bottom right of the form*/
+}
+
+input[type="submit"]:hover {
+  background-color: var(--accent-color);
+}
+
+/*--======================================================================
+                          RECIPE MODAL
+========================================================================*/
+
+.recipe-modal {
+  /* 🛑 CRITICAL: Remove ALL full-screen positioning and display properties. 
+     The native <dialog> handles z-index, position, and the dark overlay. */
+  border: none;
+  padding: 0;
+  z-index: 10;
+}
+
+.recipe-content {
+  /* Set the size of the content box relative to the screen, but let <dialog> center it */
+  width: 65vw;
+  height: 80vh; /* Use vh/vw for size, not position */
+  max-height: 95vh;
+  overflow-y: auto; /* Allows scrolling if content is too long */
+  /* 💡 NEW BEST PRACTICE RULE 💡 */
+  max-width: 1200px; /* Limits the modal width on very large screens */
+  background-color: var(--white);
+  box-shadow: 0 5px 20px var(--shadow-subtle);
+  box-sizing: border-box;
+}
+
+/* New required style to make the background overlay darker */
+.recipe-modal::backdrop {
+  background-color: rgba(0, 0, 0, var(--shadow-strong));
+}
+
+.close-btn {
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  float: right;
+  padding-right: 10px;
+}
+
+.modal-header {
+  padding-top: 20px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.rp-column-1 {
+  width: 33%;
+}
+
+.rp-column-2 {
+  width: 67%;
+}
+
+.recipe-list {
+  margin-left: -30px;
+  font-family: "Josefin Slab", serif;
+  font-size: 18px;
+  display: block; /* Override the flex value property in th ul type selector and list the items one after the other */
+  border: none; /* Overrides the border property and value in the ul type selector */
+  background-color: transparent; /* Overrides the background color in the ul type selector */
+  line-height: 1.5;
+  text-align: center;
+}
+
+.recipe-directions {
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.recipe-directions ~ p {
+  padding: 0px 20px;
+  text-align: left;
+}

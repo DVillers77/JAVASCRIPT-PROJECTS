@@ -613,3 +613,17 @@ This repository serves as a portfolio for all coding projects and assignments co
 * **JavaScript Class Structure (Step 294):** Built the calculator logic using a `class` (best practice) to manage state (`currentOperand`, `previousOperand`, `operation`) and encapsulate methods (`compute`, `clear`, etc.).
 * **Two-Line Display UX (Step 296/297):** Configured a modern two-line display, overcoming several CSS conflicts (Flexbox vs. fixed heights) to achieve a stable and visually balanced output. The JavaScript was refined to provide persistent calculation history on the top line after the `=` button is pressed.
 * **Final Alignment & Polish:** Adjusted CSS for font sizes and vertical alignment to ensure the history text and current input are clearly distinguishable and aesthetically balanced.
+
+### Simple Recipes Website Modernization (Steps 301 - 310)
+
+- **Date**: Saturday, October 4, 2025
+- **Assignments Covered**: 301, 304, 307, 309, 310
+- **Objective**: To modernize a static HTML/CSS website by fully implementing dynamic content injection, client-side form validation, and native JavaScript modal control.
+- **Outcome**: The project was finalized with all features integrated and documented:
+
+* **Data Handling (SSOT):** Implemented a Single Source of Truth (SSOT) array in JavaScript to dynamically populate recipe card details (prep time, servings, level) and the featured recipe description (Steps 301, 304).
+* **Form Validation:** Integrated client-side form validation (Step 307), utilizing `event.preventDefault()` to stop page refresh, checking for required fields, validating email format with a Regular Expression, and logging the captured data (`formData` object) to the console.
+* **Modern Modals & UX Control:** Refactored the modal system to use the native HTML **`<dialog>`** element and its **`showModal()`** and **`close()`** methods. Implemented the **`setTimeout()`** and **`clearTimeout()`** methods for advanced control over modal closing, demonstrating both automated (Bad UX) and manually overridden (Good UX) patterns (Step 309).
+* **CSS and HTML Cleanup (Step 310):** Addressed and fixed all conflicting selectors and layout issues, including:
+  - Updating the navbar link and CSS selector from `#contact` to **`#contact-form`**.
+  - Applying **`display: inline-block`** to the footer link (`a`) to ensure it respects vertical margins.
