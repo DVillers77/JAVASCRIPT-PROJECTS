@@ -36,14 +36,6 @@ This project is entirely front-end and requires no server-side installation or d
 
 The project follows a standard front-end directory structure:
 
-simple-recipes/
-├── css/
-│ └── style.css # All styling rules and custom properties.
-├── js/
-│ └── simple-recipes.js # All JavaScript logic (data, validation, modals, timers).
-├── index.html # Main project page.
-└── README.md # This file.
-
 ## 🧠 Key Learning and Modernization
 
 The development process involved several key modernization steps and fixes:
