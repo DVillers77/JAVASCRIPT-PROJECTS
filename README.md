@@ -627,3 +627,16 @@ This repository serves as a portfolio for all coding projects and assignments co
 * **CSS and HTML Cleanup (Step 310):** Addressed and fixed all conflicting selectors and layout issues, including:
   - Updating the navbar link and CSS selector from `#contact` to **`#contact-form`**.
   - Applying **`display: inline-block`** to the footer link (`a`) to ensure it respects vertical margins.
+
+### Pizza Menu Ordering System (Steps 313 - 322)
+
+- **Date**: Saturday, October 4, 2025
+- **Assignments Covered**: 313, 314, 315, 316, 318, 319, 320, 321, 322
+- **Objective**: To fully develop a functional, three-column pizza menu ordering system, integrating modernized JavaScript logic with an improved User Experience (UX) and CSS structural design.
+- **Key Features & Concepts Implemented:**
+
+  - **Structural Refactor (HTML/CSS):** Overhauled the menu layout to support **three columns** (`.left`, `.center`, `.right`) by increasing the main container width to **600px**. All three menu options (Size, Vegetables, Meats) were cleanly organized within a dedicated **`#menuOptions`** container for easier management.
+  - **JavaScript Modernization (ES6+):** The core calculation logic in `pizza-menu.js` was upgraded, utilizing **`const` and `let`** instead of `var`, **Template Literals** for string construction, and implementing a **Price Lookup Object** to manage size costs.
+  - **Critical Logic & Pricing Fixes (Step 320/321):** Identified and fixed the critical bug in the legacy code that incorrectly set the price for all pizza sizes. Implemented the requested business logic for toppings: **Two free toppings total** (Meat or Vegetable), with additional toppings costing \$1.00 each (`toppingTotal = toppingCount - 2`).
+  - **UX Improvement (Steps 321):** Corrected poor UX by consolidating the complex topping price rule into a **single, unambiguous header** across the entire topping selection area, preventing the confusion of implying two free toppings per category.
+  - **CSS Best Practices:** Incorporated **CSS Custom Properties** (`:root` variables) for consistent color management across the project, utilizing a **sauce and dough** theme.

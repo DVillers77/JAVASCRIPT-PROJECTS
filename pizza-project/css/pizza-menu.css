@@ -1,0 +1,113 @@
+/* ==========================================================================
+   SECTION 0: CSS CUSTOM PROPERTIES
+   ========================================================================== */
+
+:root {
+  /* BACKGROUNDS */
+  --bg-cream: #f5f5dc;
+
+  /* TEXT AND BRAND COLORS */
+  --color-red-sauce: #8b0000;
+  --color-text-header: #333333;
+  --color-text-default: #000000;
+}
+
+/* ==========================================================================
+   SECTION 1: GLOBAL STYLING
+   ========================================================================== */
+
+body {
+  background-color: var(--bg-cream);
+}
+
+h1 {
+  font-family: Georgia, serif;
+  color: var(--color-red-sauce);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  color: var(--color-text-header);
+}
+
+div {
+  font-family: Verdana, sans-serif;
+  color: var(--color-text-default);
+}
+
+/* ==========================================================================
+   SECTION 2: MAIN CONTAINERS (IDs) - Updated for New Structure
+   ========================================================================== */
+
+/* !  -- STRUCTURAL UPDATE: Increased height to 550px to contain all content.  --> */
+#menuBG {
+  width: 600px;
+  height: 550px;
+  margin: 10px auto;
+}
+
+/* !  -- NEW CONTAINER: Wraps the three columns. Contains the 600px width and height for the floats.  --> */
+#menuOptions {
+  width: 600px;
+  height: 250px;
+  margin-bottom: 20px; /* Space between options and button */
+}
+
+/* !  -- STRUCTURAL UPDATE: Removed fixed height so it auto-adjusts to its children (#menuOptions, #btnOrder, #cart).  --> */
+#frmMenu {
+  width: 600px;
+  height: auto;
+}
+
+/* #totalPrice and #showText will be positioned manually inside the 600px #cart */
+#totalPrice {
+  width: 250px;
+  height: 190px;
+  margin: 0 auto;
+  float: right;
+}
+
+#showText {
+  width: 350px;
+  height: 190px;
+  margin: 0px auto;
+  float: left;
+  text-align: left;
+}
+
+#cart {
+  top: 0;
+  margin: 0px auto;
+  width: 600px;
+  height: 400px;
+}
+
+#btnOrder {
+  margin: 10px 0px 10px 250px;
+  width: 100px;
+  height: 40px;
+}
+
+/* ==========================================================================
+   SECTION 3: MENU COLUMNS (Classes) - UNCHANGED
+   ========================================================================== */
+
+.left {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.center {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.right {
+  width: 200px;
+  height: 250px;
+  float: left;
+}
