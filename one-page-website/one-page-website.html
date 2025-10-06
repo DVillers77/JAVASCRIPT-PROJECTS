@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/one-page-website.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon-paws.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-paws-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-paws-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="images/favicon-paws.ico" />
+    <script src="js/one-page-website.js" defer></script>
+    <!--meta description-->
+    <meta name="description" content="placeholder for text" />
+    <title>weloveanimals.com</title>
+  </head>
+  <!--navbar-->
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#cat">Cats & Kittens</a></li>
+        <li><a href="#dog">Dogs & Puppies</a></li>
+        <li><a href="#rabbit">Rabbits</a></li>
+        <li><a href="#guineapig">Guinea Pigs</a></li>
+        <li><a href="#fish">Fish</a></li>
+        <li><a href="#reptile">Reptiles</a></li>
+        <li><a href="#video-title">Videos</a></li>
+        <li class="love-animals-link">
+          <a href="#stories">Tell us why you love animals</a>
+        </li>
+        <li>
+          <button
+            onclick="toggleTheme()"
+            aria-label="Toggle Light and Dark Theme"
+          >
+            🌓 Theme
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!--header-->
+    <header>
+      <h1>Welcome to<em>"We Love Animals.com"</em></h1>
+    </header>
+    <main>
+      <!--pet images-->
+      <div>
+        <h2>Poplar Animals</h2>
+        <div class="pet-images-container">
+          <div id="cat" class="pet-card">
+            <a href="#cat">
+              <h3>Cats & Kittens</h3>
+              <img
+                class="pet-image lightbox-trigger"
+                src="images/cat-thumbnail.jpg"
+                alt="Picture of kittens"
+                data-original="images/cat-original.jpg"
+              />
+            </a>
+          </div>
+          <div id="dog" class="pet-card">
+            <a href="#dog">
+              <h3>Dogs & Puppies</h3>
+              <img
+                class="pet-image lightbox-trigger"
+                src="images/dog-thumbnail.jpg"
+                alt="Picture of dogs"
+                data-original="images/dog-original.jpg"
+              />
+            </a>
+          </div>
+          <div id="rabbit" class="pet-card">
+            <a href="#rabbit">
+              <h3>Rabbits</h3>
+              <img
+                class="pet-image lightbox-trigger"
+                src="images/rabbits-thumbnail.jpg"
+                alt="Picture of rabbits"
+                data-original="images/rabbits-original.jpg"
+              />
+            </a>
+          </div>
+          <div id="guineapig" class="pet-card">
+            <a href="#guineapig">
+              <h3>Guinea pigs</h3>
+              <img
+                class="pet-image lightbox-trigger"
+                src="images/guineapigs-thumbnail.jpg"
+                alt="Picture of guinea pigs"
+                data-original="images/guineapigs-original.jpg"
+              />
+            </a>
+          </div>
+          <div id="fish" class="pet-card">
+            <a href="#fish">
+              <h3>Fish</h3>
+              <img
+                class="pet-image lightbox-trigger"
+                src="images/fish-thumbnail.jpg"
+                alt="Picture of gold fish"
+                data-original="images/fish-original.jpg"
+              />
+            </a>
+          </div>
+          <div id="reptile" class="pet-card">
+            <a href="#reptile">
+              <h3>Reptiles</h3>
+              <img
+                class="pet-image lightbox-trigger"
+                src="images/bearded-dragon-thumbnail.jpg"
+                alt="Picture of a bearded dragon"
+                data-original="images/bearded-dragon-original.jpg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--videos-->
+      <section>
+        <!--dog video-->
+        <div id="video">
+          <div class="video-header">
+            <a href="#video-title">
+              <h3 id="video-title">Videos</h3>
+            </a>
+          </div>
+          <div class="video-container">
+            <iframe
+              class="video-iframe"
+              src="https://www.youtube.com/embed/ng58pNPDDW4"
+              frameborder="0"
+              title="Cute Dog Video from YouTube"
+            ></iframe>
+          </div>
+          <div class="video-link">
+            <h3 class="video-link-title">
+              Check out this funny dog video on YouTube!
+            </h3>
+            <a
+              href="https://www.youtube.com/embed/ybhNTqetubQ?si=AqRnWeC6tvEGZQCg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Can I pet that dog?
+            </a>
+          </div>
+        </div>
+      </section>
+      <div id="lightbox-overlay">
+        <div id="lightbox-modal">
+          <span class="close-modal">&times;</span>
+          <img id="lightbox-image" src="" alt="Enlarged Animal Photo" />
+          <a class="prev-button">&#10094;</a>
+          <a class="next-button">&#10095;</a>
+        </div>
+      </div>
+    </main>
+    <!--footer-->
+    <footer>
+      <!--FORM-->
+      <section class="form-container">
+        <fieldset>
+          <h3 id="form-title">Tell us why you love animals</h3>
+          <div id="stories">
+            <form action="">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" />
+
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" />
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
+              <span> * (optional)</span>
+
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  id="Newsletter"
+                  name="newsletter-opt-in"
+                />
+                <label for="Newsletter"
+                  >Would you like to receive our monthly newsletter?</label
+                >
+              </div>
+
+              <div>
+                <label for="user-story-text">Your Story</label>
+                <textarea
+                  name="user-story"
+                  id="user-story-text"
+                  placeholder="Tell us why you love animals here..."
+                  rows="5"
+                ></textarea>
+              </div>
+              <div class="submit-button-container">
+                <span class="submit-icon"></span>
+                <button class="submit-button" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </fieldset>
+      </section>
+    </footer>
+  </body>
+</html>

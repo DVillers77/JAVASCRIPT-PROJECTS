@@ -640,3 +640,15 @@ This repository serves as a portfolio for all coding projects and assignments co
   - **Critical Logic & Pricing Fixes (Step 320/321):** Identified and fixed the critical bug in the legacy code that incorrectly set the price for all pizza sizes. Implemented the requested business logic for toppings: **Two free toppings total** (Meat or Vegetable), with additional toppings costing \$1.00 each (`toppingTotal = toppingCount - 2`).
   - **UX Improvement (Steps 321):** Corrected poor UX by consolidating the complex topping price rule into a **single, unambiguous header** across the entire topping selection area, preventing the confusion of implying two free toppings per category.
   - **CSS Best Practices:** Incorporated **CSS Custom Properties** (`:root` variables) for consistent color management across the project, utilizing a **sauce and dough** theme.
+
+### We Love Animals Website (Theme & UX Finalization)
+
+- **Date**: Tuesday, October 6, 2025
+- **Assignments Covered**: 326
+- **Objective**: To finalize the "We Love Animals" one-page website by implementing a robust, fully functional dual-theme toggle system that correctly handles manual user preference overrides, and to confirm the integration of all JavaScript functionalities (Lightbox).
+- **Outcome**: The project was finalized with all user experience features stabilized and a major theme bug resolved:
+
+* **Critical Theme Bug Fix:** The primary bug preventing the manual theme toggle from working was resolved. The fix involved correcting a CSS specificity issue: the invalid selector `body.light-theme-manual :root` was replaced with the highly specific **`body.light-theme-manual`** (and its dark counterpart) to ensure the user's click successfully **overrides** the operating system's `@media (prefers-color-scheme: dark)` preference.
+* **Theme System Implemented:** The final theme system uses a three-tier approach: **CSS `:root`** for the default (Light) theme, **`@media`** for OS detection, and **`JS` class toggles** for manual user control (with state saved to **`localStorage`**).
+* **JS Stability:** The JavaScript structure was confirmed as stable, allowing the manual toggle to function without conflicts from the Lightbox gallery code.
+* **Accessibility & UX:** Full functionality of the interactive Lightbox image gallery was verified, including click triggers, responsive image scaling, and keyboard accessibility for navigation (`ArrowRight`, `ArrowLeft`) and closing (`Escape`).

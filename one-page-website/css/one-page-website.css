@@ -1,0 +1,511 @@
+/*==============================================================================
+                            CSS CUSTOM PROPERTIES
+==============================================================================*/
+:root {
+  /* BACKGROUNDS */
+  --color-background-primary: #f7e6ca; /* Old: Champagne */
+  --color-nav-primary: #fbceb1; /* Old: Apricot */
+
+  /* TEXT & BORDERS */
+  --color-text-dark: #333;
+  --color-text-light: #fff; /* White */
+  --color-background-input: #fff; /* Input fields are white by default */
+  --color-border-light: #ccc;
+
+  /* ACCENTS & UI */
+  --color-action-primary: #007bff; /* Submit Button Blue */
+
+  /* BASE COLOR FOR RGBA (We use black for all shadows/overlays) */
+  --color-base-dark-rgb: 0, 0, 0;
+
+  /* OPACITY STANDARDS (Standardized transparency levels for shadows/controls) */
+  --opacity-shadow-light: 0.2; /* Used for subtle shadows (nav bar) */
+  --opacity-shadow-medium: 0.4; /* Used for controls (lightbox buttons) */
+  --opacity-shadow-heavy: 0.8; /* Used for prominent shadows (pet images) */
+  --opacity-overlay-dark: 0.9; /* Used for dark overlays (lightbox background) */
+}
+
+/*==============================================================================
+                            PAGE STRUCTURE
+==============================================================================*/
+/* Adds the necessary padding/margin to all content sections */
+header,
+main,
+footer {
+  /* Restores the original 20px padding to all sides of your content */
+  padding: 20px;
+}
+
+/*==============================================================================
+                            DARK THEME OVERRIDE
+==============================================================================*/
+
+/* 1. MANUAL LIGHT THEME OVERRIDE (Highest Specificity)
+   This is triggered when the user clicks the toggle to 'light' 
+   and FORCES the light theme, even if the OS is dark. */
+body.light-theme-manual {
+  --color-background-primary: #f7e6ca;
+  --color-nav-primary: #fbceb1;
+  --color-text-dark: #333;
+  --color-text-light: #fff;
+  --color-background-input: #fff;
+  --color-border-light: #ccc;
+  --color-base-dark-rgb: 0, 0, 0;
+}
+
+/* 2. MANUAL DARK THEME OVERRIDE
+   This is triggered when the user clicks the toggle to 'dark' */
+body.dark-theme {
+  --color-background-primary: #121212;
+  --color-nav-primary: #333333;
+  --color-text-dark: #f0f0f0;
+  --color-text-light: #000;
+  --color-background-input: #333;
+  --color-border-light: #666;
+  --color-base-dark-rgb: 255, 255, 255;
+}
+
+/* 3. SYSTEM PREFERENCE DARK THEME FALLBACK (Lowest Specificity)
+   This is only active if the user has NOT set a manual preference. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-primary: #121212;
+    --color-nav-primary: #333333;
+    --color-text-dark: #f0f0f0;
+    --color-text-light: #000;
+    --color-background-input: #333;
+    --color-border-light: #666;
+    --color-base-dark-rgb: 255, 255, 255;
+  }
+}
+
+/*==============================================================================
+                            BODY TEXT
+==============================================================================*/
+body {
+  /* This removes the default margin and padding from all browsers */
+  margin: 0;
+  /* Sets the font-family for all text on the page to Arial, with sans-serif as a fallback. */
+  font-family: Arial, sans-serif;
+  /* Sets the base font-size for all text. Using 'rem' here is a best practice for accessibility. */
+  font-size: 1rem;
+  background-color: var(--color-background-primary);
+
+  color: var(--color-text-dark);
+}
+
+/* Optional: Sets a specific font-family for all h tags */
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", serif;
+}
+
+/* Optional: Sets a specific font-size for list items */
+li {
+  font-size: 1.2rem;
+}
+/*==============================================================================
+                                NAV BAR
+==============================================================================*/
+nav {
+  /* Sets the background color for the entire navigation bar */
+  background-color: var(--color-nav-primary);
+  /* This adds padding to the content of the nav bar, so it's not flush with the edges */
+  padding: 10px 20px;
+  /* This gives the navbar a subtle shadow for depth */
+  /* REFACTOR: Used base color and light opacity (0.1 -> 0.2) */
+  box-shadow: 0 2px 4px
+    rgba(var(--color-base-dark-rgb), var(--opacity-shadow-light));
+  /* This makes the navbar stick to the top of the page when the user scrolls */
+  position: sticky;
+  top: 0;
+  /* This ensures the navbar stays on top of other content as the user scrolls */
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 5px;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  /* REFACTOR: Used dark text color */
+  color: var(--color-text-dark);
+}
+
+nav ul li a::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/favicon-paws-16x16.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+/* This is a specific rule to ensure the puppy paws are on the 'love animals' link */
+.love-animals-link a::before {
+  content: "";
+}
+
+/*==============================================================================
+                                PET IMAGES
+==============================================================================*/
+/* Refactored to use CSS Grid for superior responsiveness and control */
+.pet-images-container {
+  /* Use Grid for 2D layout control */
+  display: grid;
+  /* CRITICAL: Create columns that autofit into the space, 
+     but ensure each column is at least 300px wide. */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Add consistent gap between grid items */
+  gap: 20px;
+  /* Center the grid and provide horizontal padding */
+  margin: 20px 5%;
+}
+
+/* This is for each individual image container */
+.pet-card {
+  /* Remove old Flexbox rules. Grid handles the sizing now. */
+  margin: 0;
+  /* Center the content within the card */
+  text-align: center;
+}
+
+/* This is the class for the images themselves */
+.pet-image {
+  /* Ensure the image fills the horizontal space of its container */
+  width: 100%;
+
+  /* NEW: Set a consistent display height for all thumbnails */
+  height: 250px; /* Adjust this value (e.g., 200px or 300px) as needed */
+
+  /* CRITICAL FIX: Forces the image to cover the defined height/width without stretching */
+  object-fit: cover;
+
+  /* CRITICAL FIX: Centers the image content inside the container */
+  object-position: center;
+
+  /* This ensures the image is responsive within its container */
+  display: block;
+  margin: 0 auto;
+  /* Adds a subtle shadow to the image */
+  /* REFACTOR: Used base color and heavy opacity (0.7 -> 0.8) */
+  box-shadow: 0 4px 8px 0
+    rgba(var(--color-base-dark-rgb), var(--opacity-shadow-heavy));
+  /* Rounds the corners of the image */
+  border-radius: 7px;
+}
+
+/* This targets the h3 elements within the pet image containers and adds the icon */
+#cat h3,
+#dog h3,
+#rabbit h3,
+#guineapig h3,
+#fish h3,
+#reptile h3 {
+  /* This makes the h3 a flexible container to align the icon and text */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  /* REFACTOR: Used dark text color */
+  color: var(--color-text-dark);
+}
+
+#cat h3::before,
+#dog h3::before,
+#rabbit h3::before,
+#guineapig h3::before,
+#fish h3::before,
+#reptile h3::before {
+  /* This creates a pseudo-element to display the icon */
+  content: "";
+  /* Sets the size of the pseudo-element to match the icon */
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/favicon-paws-16x16.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Adds some space between the icon and the text */
+  margin-right: 5px;
+}
+/*==============================================================================
+                                Videos
+==============================================================================*/
+/* This is the main container for all video-related content */
+#video {
+  /* Sets a maximum width for the entire video section on large screens */
+  max-width: 800px;
+  /* Centers the video section horizontally on the page */
+  margin: 20px auto;
+  /* Aligns the text within this container to the left */
+  text-align: left;
+}
+
+/* -------------------- Video Title Section -------------------- */
+#video-title {
+  /* Aligns the icon and text */
+  display: inline-flex;
+  align-items: center;
+  /* Removes the underline from the links */
+  text-decoration: none;
+  /* REFACTOR: Used dark text color */
+  color: var(--color-text-dark);
+}
+
+#video-title::before {
+  /* This creates a pseudo-element to display the icon */
+  content: "";
+  /* Prevents the icon from stretching */
+  flex-shrink: 0;
+  /* Sets the size of the pseudo-element to match the icon */
+  width: 16px;
+  height: 16px;
+  /* Sets the icon as a background image and ensures it fits properly */
+  background-image: url("../images/favicon-paws-16x16.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Adds some space between the icon and the text */
+  margin-right: 5px;
+}
+
+/* -------------------- Embedded Video Section -------------------- */
+.video-container {
+  position: relative;
+  /* This maintains a 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  /* Centers the video container on the page with no top or bottom margin */
+  margin: 0px auto;
+  /* Sets a maximum width for the video container on large screens */
+  max-width: 100%;
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------- Linked Video Section -------------------- */
+.video-link {
+  /* This centers all inline-level content inside the div */
+  text-align: center;
+  /* Adds spacing around the container */
+  margin: 20px auto;
+}
+
+.video-link-title {
+  margin: 0;
+}
+
+.video-link a {
+  /* Aligns the icon and text */
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+  /* Removes the underline from the links */
+  text-decoration: none;
+  /* Sets the color of the link text */
+  /* REFACTOR: Used dark text color */
+  color: var(--color-text-dark);
+  /* Shifts the link to the left by half the width of the icon */
+  transform: translateX(-8px);
+  /* Sets the font size to match the navigation links */
+  font-size: 1.2rem;
+}
+
+.video-link a::before {
+  /* This creates a pseudo-element to display the icon */
+  content: "";
+  /* Sets the size of the pseudo-element to match the icon */
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/favicon-paws-16x16.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* Adds some space between the icon and the text */
+  margin-right: 5px;
+}
+/*==============================================================================
+                                FORM
+==============================================================================*/
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* This targets the h3 tag within the form and adds the puppy paws icon */
+#form-title {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  /* REFACTOR: Used dark text color */
+  color: var(--color-text-dark);
+}
+
+#form-title::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/favicon-paws-16x16.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 0;
+  white-space: nowrap;
+}
+
+.checkbox-container input {
+  margin: 0;
+  margin-right: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  margin: 5px 0;
+  /* REFACTOR: Used light border color */
+  border: 1px solid var(--color-border-light);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Submit Button and Icon Styling */
+.submit-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.submit-icon {
+  background-image: url("../images/favicon-paws-16x16.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.submit-button {
+  /* REFACTOR: Used action primary color */
+  background-color: var(--color-action-primary);
+  /* REFACTOR: Used light text color */
+  color: var(--color-text-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+/*==============================================================================
+                                LIGHTBOX
+==============================================================================*/
+
+/* Add a pointer to indicate images are clickable now */
+.lightbox-trigger {
+  cursor: pointer;
+}
+
+/* 1. OVERLAY (Initial state is hidden) */
+#lightbox-overlay {
+  display: none; /* Hides the lightbox by default */
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* REFACTOR: Used base color and dark overlay opacity */
+  background-color: rgba(
+    var(--color-base-dark-rgb),
+    var(--opacity-overlay-dark)
+  );
+  /* Centers the modal box horizontally and vertically when visible */
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2. MODAL CONTENT */
+#lightbox-modal {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+/* 3. LIGHTBOX IMAGE */
+#lightbox-image {
+  max-width: 100%;
+  max-height: 100vh;
+  display: block;
+  margin: auto;
+  /* REFACTOR: Used light text color */
+  border: 3px solid var(--color-text-light);
+}
+
+/* 4. NAVIGATION & CLOSE BUTTONS */
+.prev-button,
+.next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  /* REFACTOR: Used light text color */
+  color: var(--color-text-light);
+  font-size: 30px;
+  user-select: none;
+  /* REFACTOR: Used base color and medium opacity (0.4) */
+  background-color: rgba(
+    var(--color-base-dark-rgb),
+    var(--opacity-shadow-medium)
+  );
+  border-radius: 3px;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+.close-modal {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  /* REFACTOR: Used light text color */
+  color: var(--color-text-light);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2001;
+}
