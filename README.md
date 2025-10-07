@@ -675,3 +675,14 @@ This repository serves as a portfolio for all coding projects and assignments co
   3.  Retrieves the HTML content of `response.html` using `response.text()`.
   4.  Dynamically injects the content into the main page (`id="ajax-content"`) and customizes the message with the user's input name.
 - **Key Debug Fixes**: Corrected function name mismatch (`getMsg` vs. `get_msg`), ensured unique element IDs (`id="ajax-content"`), and added the required `event.preventDefault()` to stop the page from submitting.
+
+### AJAX Challenge Complete: Static Content Replacement
+
+- **Date**: Tuesday, October 7, 2025
+- **Assignment Covered**: 342 (AJAX Challenge)
+- **Objective**: Create a solution to replace a paragraph of text with content fetched from a separate HTML file using an asynchronous request triggered by a button click.
+- **Implementation**: The functionality was implemented using the modern **fetch() API** and **async/await** in `challenge-script.js`.
+  1.  The `loadNewContent()` function targeted the `<p id="old-content">` element.
+  2.  It sent a `fetch('new-content.html')` request.
+  3.  The response text was retrieved and injected into the target element using `targetElement.innerHTML = newContent;`.
+- **Outcome**: The test was successful: clicking the button instantly replaced the original paragraph with the new content without causing a full page refresh.
