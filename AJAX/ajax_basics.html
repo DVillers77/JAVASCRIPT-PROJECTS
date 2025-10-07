@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic AJAX Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- The main container for the form and content -->
+    <div class="container">
+      <h1>Sign up for our Newsletter</h1>
+      <div class="display">
+        <!-- This DIV (id="ajax-content") acts as the target for the AJAX response. The fetched HTML content will be injected here. -->
+        <div id="ajax-content"></div>
+        <form>
+          <!-- This input ID is used by the JavaScript to retrieve the user's name for personalization -->
+          <input id="fullName" placeholder="Name" />
+          <input placeholder="Email" />
+          <!-- The onclick event calls the get_msg function in our JS file. We pass the 'event' object to prevent the default page refresh. -->
+          <input
+            type="button"
+            class="btn"
+            value="Submit"
+            onclick="get_msg(event);"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- This links the external JavaScript file (ajaxscript.js) containing the modern fetch() AJAX logic -->
+    <script src="ajaxscript.js"></script>
+  </body>
+</html>
