@@ -662,3 +662,16 @@ This repository serves as a portfolio for all coding projects and assignments co
   - **Installation Management:** The latest XAMPP version was successfully installed on Windows 11 by **bypassing UAC restrictions** (installing to `C:\XAMPP` instead of `Program Files`).
   - **Component Selection:** Installation was streamlined by selecting only the essential components required for this course: **Apache**, **MySQL** (MariaDB), **PHP**, and **phpMyAdmin**.
   - **Project Initialization:** The three project files (`ajax_basic.html`, `response.html`, and `style.css`) were correctly placed into the **`C:\XAMPP\htdocs`** folder, making them accessible via the virtual server URL.
+
+### AJAX Video Lesson Complete (Modern fetch() Implementation)
+
+- **Date**: Tuesday, October 7, 2025
+- **Assignment Covered**: 341 (AJAX Video)
+- **Objective**: Implement asynchronous form submission functionality using JavaScript to display a 'Thank You' message without reloading the page.
+- **Modernization Choice**: Replaced the legacy XMLHttpRequest (XHR) object with the modern **fetch() API** and **async/await** for clean, promise-based handling.
+- **Outcome**: The code successfully performs the following actions upon form submission:
+  1.  Prevents the default page refresh.
+  2.  Sends an asynchronous **GET** request to the local Apache server (`http://localhost/ajax-basics/`).
+  3.  Retrieves the HTML content of `response.html` using `response.text()`.
+  4.  Dynamically injects the content into the main page (`id="ajax-content"`) and customizes the message with the user's input name.
+- **Key Debug Fixes**: Corrected function name mismatch (`getMsg` vs. `get_msg`), ensured unique element IDs (`id="ajax-content"`), and added the required `event.preventDefault()` to stop the page from submitting.
