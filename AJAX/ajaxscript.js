@@ -1,5 +1,5 @@
 // Function is called when the submit button is clicked
-function get_msg() {
+function get_msg(event) {
   // 1. Prevent the default browser form submission (page refresh)
   event.preventDefault();
 
@@ -8,7 +8,7 @@ function get_msg() {
   const inputVal = document.getElementById("fullName").value;
 
   // Get the element where the response HTML will be displayed.
-  const contentElement = document.getElementById("content");
+  const contentElement = document.getElementById("ajax-content");
 
   // Clear the content element and show a brief "Loading..." message
   contentElement.innerHTML = "<h2>Loading response...</h2>";
