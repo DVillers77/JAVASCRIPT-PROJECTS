@@ -643,7 +643,7 @@ This repository serves as a portfolio for all coding projects and assignments co
 
 ### We Love Animals Website (Theme & UX Finalization)
 
-- **Date**: Tuesday, October 6, 2025
+- **Date**: Monday, October 6, 2025
 - **Assignments Covered**: 326
 - **Objective**: To finalize the "We Love Animals" one-page website by implementing a robust, fully functional dual-theme toggle system that correctly handles manual user preference overrides, and to confirm the integration of all JavaScript functionalities (Lightbox).
 - **Outcome**: The project was finalized with all user experience features stabilized and a major theme bug resolved:
@@ -652,3 +652,13 @@ This repository serves as a portfolio for all coding projects and assignments co
 * **Theme System Implemented:** The final theme system uses a three-tier approach: **CSS `:root`** for the default (Light) theme, **`@media`** for OS detection, and **`JS` class toggles** for manual user control (with state saved to **`localStorage`**).
 * **JS Stability:** The JavaScript structure was confirmed as stable, allowing the manual toggle to function without conflicts from the Lightbox gallery code.
 * **Accessibility & UX:** Full functionality of the interactive Lightbox image gallery was verified, including click triggers, responsive image scaling, and keyboard accessibility for navigation (`ArrowRight`, `ArrowLeft`) and closing (`Escape`).
+
+### XAMPP Server Setup and AJAX Project Initialization
+
+- **Date**: Tuesday, October 7, 2025
+- **Assignments Covered**: 339 (Download XAMPP), 340 (Preparation Assignment)
+- **Objective**: To successfully install the XAMPP local server environment and initialize the AJAX project files, making them accessible via the Apache web server.
+- **Outcome**: The environment is fully prepared for the AJAX video (Step 341):
+  - **Installation Management:** The latest XAMPP version was successfully installed on Windows 11 by **bypassing UAC restrictions** (installing to `C:\XAMPP` instead of `Program Files`).
+  - **Component Selection:** Installation was streamlined by selecting only the essential components required for this course: **Apache**, **MySQL** (MariaDB), **PHP**, and **phpMyAdmin**.
+  - **Project Initialization:** The three project files (`ajax_basic.html`, `response.html`, and `style.css`) were correctly placed into the **`C:\XAMPP\htdocs`** folder, making them accessible via the virtual server URL.
