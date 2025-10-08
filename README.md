@@ -686,3 +686,14 @@ This repository serves as a portfolio for all coding projects and assignments co
   2.  It sent a `fetch('new-content.html')` request.
   3.  The response text was retrieved and injected into the target element using `targetElement.innerHTML = newContent;`.
 - **Outcome**: The test was successful: clicking the button instantly replaced the original paragraph with the new content without causing a full page refresh.
+
+### DOM Challenge: Element Property Manipulation
+
+- **Date**: Wednesday, October 8, 2025
+- **Assignment Covered**: 353 (Elements Challenge)
+- **Objective**: To write and successfully execute a basic $\text{HTML}$ page that uses $\text{JavaScript}$ to manipulate a $\text{DOM}$ element property upon a user event.
+- **Outcome**: The challenge was completed by creating a file (`dom-challenge.html`) that successfully demonstrated $\text{DOM}$ object manipulation:
+
+* **Targeted Property:** The **`document.title`** property was used to read and set the text of the browser tab title.
+* **Execution Method:** The $\text{DOM}$ manipulation logic was wrapped in a $\text{JavaScript}$ function (`updateTitle()`) and executed via a button's **`onclick`** event handler, confirming the relationship between $\text{HTML}$ events and $\text{JavaScript}$ functions.
+* **Learning Reinforcement:** The challenge reinforced the concept that all $\text{HTML}$ elements are $\text{JavaScript}$ objects with accessible properties and methods.

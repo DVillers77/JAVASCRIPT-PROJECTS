@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Original Page Title</title>
+  </head>
+  <body>
+    <h1>DOM Element Challenge</h1>
+    <p>The Title is set to dispaly, "Original Page Title".</p>
+    <p>
+      When the script runs the title is changed to dispaly, "Step 353 Complete!"
+    </p>
+    <p>Click the button below to execute the JavaScript code.</p>
+
+    <button onclick="updateTitle()">Run JS DOM Code</button>
+
+    <script>
+      // Utilizing the document.title property
+      // The 'document' object refers to the entire page (the DOM).
+      // The '.title' property allows us to set or get the text in the browser tab.
+      // 1. Define the function that will execute the DOM manipulation
+      function updateTitle() {
+        // Utilizing the document.title property
+        document.title = "Step 353 Complete!";
+
+        // Optional: Update the body content to confirm success
+        document.getElementById("status").textContent =
+          "Page title successfully updated!";
+      }
+    </script>
+    <p id="status"></p>
+  </body>
+</html>
