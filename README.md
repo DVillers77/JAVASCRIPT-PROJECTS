@@ -697,3 +697,12 @@ This repository serves as a portfolio for all coding projects and assignments co
 * **Targeted Property:** The **`document.title`** property was used to read and set the text of the browser tab title.
 * **Execution Method:** The $\text{DOM}$ manipulation logic was wrapped in a $\text{JavaScript}$ function (`updateTitle()`) and executed via a button's **`onclick`** event handler, confirming the relationship between $\text{HTML}$ events and $\text{JavaScript}$ functions.
 * **Learning Reinforcement:** The challenge reinforced the concept that all $\text{HTML}$ elements are $\text{JavaScript}$ objects with accessible properties and methods.
+
+- **Date**: Wednesday, October 8, 2025
+- **Assignments Covered**: 356 (Header Animations), 357 (Image Animations), 360 (FAQ Toggle)
+- **Objective**: To successfully implement three primary, synchronized animation effects for the Classic Cars showcase using the $\text{jQuery}$ library for reliable performance and smooth user experience.
+- **Outcome**: The final project version utilizes $\text{jQuery}$ for all complex UI interactions, providing predictable, smooth, and robust animations. The key features implemented include:
+  1.  **Perpetual $\text{H1}$ Shine Animation**: A repeating, non-stop horizontal shine effect on the main title is achieved by **chaining two `.animate()` calls** within a `setInterval(..., 0)` loop, ensuring a continuous, non-jittery cycle.
+  2.  **Staggered Title Reveal**: The car titles appear sequentially on hover and disappear in reverse order on mouse leave. This is implemented using $\text{jQuery}$'s `.show()` and `.hide()` with precise millisecond delays (`1ms`, `1500ms`, `2000ms`), which automatically handles the animation (fade and slight slide) and synchronization.
+  3.  **Dynamic $\text{FAQ}$ Toggle**: The frequently asked questions section functions as a smooth accordion. This is handled efficiently by the $\text{jQuery}$ **`.slideToggle()`** method, which controls the vertical height animation of the answer panels.
+- **Decision Rationale**: A comparative test with pure $\text{CSS}/\text{Vanilla JS}$ revealed persistent, difficult-to-resolve **timing conflicts and glitches** in the modern approach. The $\text{jQuery}$ version was adopted as the final solution because its built-in animation engine reliably synchronizes complex, staggered effects, delivering the required smooth, professional user experience.
