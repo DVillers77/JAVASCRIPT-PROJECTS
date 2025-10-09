@@ -722,3 +722,5 @@ This repository serves as a portfolio for all coding projects and assignments co
       - **Single-Use Click Event**: Implemented the **`.one("click", ...)`** method on images, demonstrating how to execute an action (an alert) only the first time a specific element is clicked, then the listener is automatically removed.
   3.  **$\text{jQuery}$ Effect Challenge (361)**:
       - **Chained Effect with Callback**: Implemented **`.slideUp().slideDown(..., callback)`** on a car title. This demonstrates **Managing Animation Effects** and executing a function (a console message) _only_ after the full, chained effect is complete.
+  4.  **Submission Requirements**:
+      All code files were finalized to meet submission standards, including **adding explanatory developer comments within the index.html file** to document the purpose of DOM elements targeted by $\text{jQuery}$.

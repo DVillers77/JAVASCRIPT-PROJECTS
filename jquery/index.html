@@ -3,28 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <title>JQuery Basics</title>
+    <!-- JQuery Library Link: This is the core library required for all JQuery functions and methods -->
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <!-- Project Script Link: Contains all custom JQuery functions and animations (Steps 356, 357, 360, 361) -->
     <script src="script.js" type="text/javascript" defer></script>
   </head>
 
   <body>
-    <!--Header decrease in size as the page scrolls down-->
+    <!-- Header Section: Target for the Shine and Scroll Animations (Steps 356) -->
     <div class="container">
+      <!-- 'shine' class applies the permanent gradient text effect. 'header' is for dynamic size control on scroll -->
       <h1 class="header shine">Classic Cars</h1>
     </div>
 
-    <!--Images-->
+    <!-- Images and Titles Section: Target for the Hover and Click Events (Steps 357, 361) -->
     <div class="container">
+      <!-- #classic-cars is the target for the mouseenter/mouseleave events (hover effect) -->
       <div class="row" id="classic-cars">
         <div class="column">
+          <!-- 'car-title' is hidden by default and animated to show on hover (Step 357) -->
           <div class="car-title" id="title-one">
             <h2>Chevrolet Bel Air</h2>
           </div>
+          <!-- Image is the target for the one-time click event (.one) (Step 361) -->
           <img src="images/chevy.jpg" alt="Image of a Chevrolet Bel Air" />
         </div>
         <div class="column">
@@ -42,16 +48,14 @@
       </div>
     </div>
 
-    <!--FAQ Sections-->
-
-    <!--Each of these have a slide toggle when clicked on-->
+    <!-- FAQ Section: Target for the SlideToggle Animation (Step 360) -->
     <div class="container faq">
       <h2>FAQ</h2>
-      <!--Panel One Question-->
+      <!-- Question element: Target for the JQuery click event to trigger the slideToggle -->
       <div class="question">
         <h3>Chevrolet Bel Air</h3>
       </div>
-      <!--Panel One Answer-->
+      <!-- Answer element: Target for the JQuery slideToggle() effect -->
       <div class="answer">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -61,11 +65,11 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </div>
-      <!--Panel Two Question-->
+      <!-- Panel Two Question -->
       <div class="question">
         <h3>Porshe Carrera</h3>
       </div>
-      <!-- Panel Two Answer-->
+      <!-- Panel Two Answer -->
       <div class="answer">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -75,11 +79,11 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </div>
-      <!--Panel Three Question-->
+      <!-- Panel Three Question -->
       <div class="question">
         <h3>MGB Roadster</h3>
       </div>
-      <!--Panel Three Answer-->
+      <!-- Panel Three Answer -->
       <div class="answer">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
