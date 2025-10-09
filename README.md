@@ -724,3 +724,22 @@ This repository serves as a portfolio for all coding projects and assignments co
       - **Chained Effect with Callback**: Implemented **`.slideUp().slideDown(..., callback)`** on a car title. This demonstrates **Managing Animation Effects** and executing a function (a console message) _only_ after the full, chained effect is complete.
   4.  **Submission Requirements**:
       All code files were finalized to meet submission standards, including **adding explanatory developer comments within the index.html file** to document the purpose of DOM elements targeted by $\text{jQuery}$.
+
+### ACADEMY CINEMAS BOOTSTRAP PROJECT COMPLETE (Steps 366 - 373)
+
+- **Date**: Thursday, October 9, 2025
+- **Assignments Covered**: 366, 367, 370, 372, 373
+- **Objective**: To fully implement all core Bootstrap dynamic components (Modal, Toast, Popover), resolve layout issues from component integration, and finalize the project with mandatory educational documentation for the final $\text{Git}$ submission.
+- **Outcome**: The Academy Cinemas project was finalized with a stable layout, full feature integration, and all required documentation:
+
+* **Bootstrap Component Integration**: Three core components were implemented and integrated with the site's $\text{HTML}$ and $\text{JavaScript}$:
+
+- **Sign-In Modal ($\text{Step 370}$):** Added the $\text{HTML}$ for a persistent member sign-in $\text{Modal}$, triggered from the $\text{Navbar}$.
+- **Ticket Confirmation Toast ($\text{Step 367}$):** Integrated the $\text{Toast}$ component to provide non-intrusive feedback, dynamically displaying the user's movie, time, and ticket quantity purchase details.
+- **Movie Rating Popovers ($\text{Step 372}$):** Implemented **Popovers** on all movie posters, utilizing custom $\text{HTML}$ attributes to pass the specific rating image file path to the initializing $\text{JavaScript}$.
+
+* **Layout & Documentation Finalization**: The project structure and documentation were corrected to meet all standards:
+
+- **Navbar Alignment Fix ($\text{Step 366}$):** Resolved the improper alignment of the "Sign In" button on the $\text{Navbar}$ by applying the Bootstrap utility class **`me-auto`** to the navigation list (`<ul>`).
+- **Educational Documentation ($\text{Step 372}$):** All required educational development comments (`<!  -- comment -->`) were added throughout the `index.html` file to clearly document the purpose and function of $\text{DOM}$ elements, component hooks, and $\text{JavaScript}$ integration points.
+- **Code Integrity & Submission ($\text{Step 373}$):** Conducted a full audit to confirm the removal of all unauthorized code additions and verified the preservation of all original $\text{HTML}$ comments before the final successful $\text{Git}$ commit and push.
