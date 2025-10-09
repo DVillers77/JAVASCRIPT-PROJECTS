@@ -706,3 +706,19 @@ This repository serves as a portfolio for all coding projects and assignments co
   2.  **Staggered Title Reveal**: The car titles appear sequentially on hover and disappear in reverse order on mouse leave. This is implemented using $\text{jQuery}$'s `.show()` and `.hide()` with precise millisecond delays (`1ms`, `1500ms`, `2000ms`), which automatically handles the animation (fade and slight slide) and synchronization.
   3.  **Dynamic $\text{FAQ}$ Toggle**: The frequently asked questions section functions as a smooth accordion. This is handled efficiently by the $\text{jQuery}$ **`.slideToggle()`** method, which controls the vertical height animation of the answer panels.
 - **Decision Rationale**: A comparative test with pure $\text{CSS}/\text{Vanilla JS}$ revealed persistent, difficult-to-resolve **timing conflicts and glitches** in the modern approach. The $\text{jQuery}$ version was adopted as the final solution because its built-in animation engine reliably synchronizes complex, staggered effects, delivering the required smooth, professional user experience.
+
+### $\text{jQuery}$ Animation & Event Challenge Completion
+
+- **Date**: Thursday, October 9, 2025
+- **Assignments Covered**: 356 (Header Animations), 357 (Image Animations), 360 (FAQ Toggle), 361 ($\text{jQuery}$ Event & Effect Challenge)
+- **Objective**: To finalize the stable $\text{jQuery}$ animation set and successfully implement the required $\text{jQuery}$ event and effect challenge methods to deepen library fluency.
+- **Outcome**: The Classic Cars showcase is fully functional, utilizing $\text{jQuery}$ for all complex UI interactions. The project now demonstrates both reliable animation synchronization and mastery of key $\text{jQuery}$ methods:
+  1.  **Core Animations (356, 357, 360)**:
+      - **Perpetual $\text{H1}$ Shine Loop**: Chained **`.animate()`** calls create a continuous, non-jittery visual effect.
+      - **Shrinking Header on Scroll**: Uses a scroll listener to toggle a $\text{CSS}$ class for smooth sizing.
+      - **Staggered Title Reveal**: $\text{jQuery}$'s **`.show()`/`.hide()`** methods with delays ensure sequential and smooth title appearance/disappearance.
+      - **Smooth $\text{FAQ}$ Accordion**: Implemented with the efficient **`.slideToggle()`** method.
+  2.  **$\text{jQuery}$ Event Challenge (361)**:
+      - **Single-Use Click Event**: Implemented the **`.one("click", ...)`** method on images, demonstrating how to execute an action (an alert) only the first time a specific element is clicked, then the listener is automatically removed.
+  3.  **$\text{jQuery}$ Effect Challenge (361)**:
+      - **Chained Effect with Callback**: Implemented **`.slideUp().slideDown(..., callback)`** on a car title. This demonstrates **Managing Animation Effects** and executing a function (a console message) _only_ after the full, chained effect is complete.
