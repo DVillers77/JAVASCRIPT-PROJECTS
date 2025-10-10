@@ -1,0 +1,109 @@
+@media screen and (min-width: 320px) {
+  /*
+  The `clamp()` function is used for creating fluid typography. It sets a minimum, preferred, and maximum font size.
+  - The minimum font size is 50px. The font will never be smaller than this.
+  - The preferred font size is 5vw (5% of the viewport width). This allows the font to scale smoothly as the browser window is resized.
+  - The maximum font size is 100px. The font will never be larger than this, preventing it from becoming too big on large screens.
+*/
+  h1 {
+    font-size: clamp(50px, 5vw, 100px);
+  }
+
+  h4 {
+    font-size: clamp(25px, 5vw, 35px);
+  }
+
+  .lead,
+  .btn {
+    font-size: clamp(16px, 5vw, 18px);
+  }
+
+  .yellow-btn {
+    font-size: clamp(20px, 5vw, 25px);
+  }
+}
+@media screen and (max-width: 990px) {
+  .navbar-collapse {
+    background-color: var(--secondary-color);
+    border-bottom: 5px solid rgb(98, 0, 0);
+    /*Removes the overlap between the navbar and navbar collapse*/
+    margin-top: 14px;
+    /*Removes the gap on the sides of the navbar and the screen edges*/
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  /* addes a margin of 20px on the left side of the menu links moving them further from the edge of the screen*/
+  .nav-link {
+    margin-left: 20px;
+  }
+
+  /* Aligns the drop-down links to the left and adds padding to make the containers larger */
+  .dropdown-item {
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  .movie-poster {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    scroll-padding-top: 300px;
+  }
+
+  .img {
+    margin-bottom: 30px;
+  }
+
+  .container {
+    padding: 50px;
+  }
+}
+
+/* My attempt to correct the poster sizing between 992px and 1400px. =========== Work in progress ======= */
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .stood-still {
+    align-self: flex-start;
+    max-width: 425px;
+    max-height: 625px;
+  }
+}
+
+/*==============================================================================
+                            CUSTOM NAV FIXES
+==============================================================================*/
+@media screen and (max-width: 990px) {
+  /* Aligns the Sign In button with the 20px margin of the nav links */
+  .sign-in-btn-mobile-align {
+    margin-left: 45px !important;
+  }
+}
+
+/*==============================================================================
+                            TICKETS SECTION UX FIX
+==============================================================================*/
+
+/* FINAL FIX: Aggressively adjust card heights and spacing on mobile to make 
+   the 'Buy Tickets' button visible. */
+@media (max-width: 768px) {
+  /* 1. Target the cards to remove fixed height and reduce spacing */
+  #tickets .card {
+    height: auto !important; /* CRITICAL: Overrides the fixed 250px height */
+    padding: 10px; /* Reduces card padding */
+    margin-right: 0 !important; /* Removes horizontal margin on stacked cards */
+    margin-bottom: 20px; /* Adds clean vertical separation between stacked cards */
+  }
+
+  /* 2. Target the card body for minimal padding */
+  #tickets .card-body {
+    padding: 0.5rem !important;
+  }
+
+  /* 3. Address the spacing around the number input box */
+  #tickets input[type="number"] {
+    margin-top: 5px; /* Add a small margin above the input */
+  }
+}

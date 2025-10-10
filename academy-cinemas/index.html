@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Academy Cinemas</title>
+
+    <!-- GLOBAL SCRIPT SECURITY NOTES (SRI) -->
+    <!-- All CDN links (Bootstrap CSS/JS, jQuery JS) use 'integrity' and 'crossorigin' attributes. -->
+    <!-- integrity: A critical security feature that prevents the loading of files tampered with on the CDN. -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- BOOTSTRAP JAVASCRIPT: defer attribute applied. -->
+    <!-- defer is a great modern practice that tells the browser to finish loading HTML content before executing the script, preventing delays. -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      defer
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQUERY CDN: Script Dependency Order (Crucial) -->
+    <!-- jQuery must be placed before the local javascript.js because the custom script relies on the $ function. -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="javascript/javascript.js"
+      type="text/javascript"
+      defer
+    ></script>
+
+    <!-- CUSTOM CSS SPECIFICITY NOTE: -->
+    <!-- The custom CSS links are placed last to ensure their styles load after Bootstrap's, giving them higher priority to override default rules. -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/custom-css-media.css" />
+  </head>
+  <body>
+    <!--========================================================================
+                                    NAVBAR
+    =========================================================================-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Academy Cinemas</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Now Playing
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#ben-hur">Ben Hur</a></li>
+                <li>
+                  <a class="dropdown-item" href="#stood-still"
+                    >The Day the Earth Stood Still</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#vertigo">Vertigo</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tickets">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <!-- The data-bs-toggle and data-bs-target attributes link the button to the Modal component. -->
+          <button
+            class="btn btn-outline-light me-2 sign-in-btn-mobile-align nav-shrink-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#signInModal"
+          >
+            Sign In
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--========== LOGO ==========-->
+    <header class="row justify-content-center">
+      <img
+        src="images/logo.png"
+        class="img-fluid col-lg-6"
+        alt="Academy Cinemas logo"
+        id="header-image"
+      />
+    </header>
+    <!--========================================================================
+                                  NOW PLAYING
+    =========================================================================-->
+    <section>
+      <div class="container" id="now-playing">
+        <h1>Now Playing</h1>
+
+        <!--========================= BEN HUR =========================-->
+        <div class="d-flex flex-row flex-wrap spacer" id="ben-hur">
+          <!--========== MOVIE POSTER ==========-->
+          <div class="col-lg-5 mx-auto movie-poster">
+            <!-- POP-OVER SPAN: This wrapper links the image to the Bootstrap Popover component -->
+            <!-- data-bs-image is a custom attribute used by javascript.js to fetch the correct rating image. -->
+            <!-- ===== MOVIE RATING ===== -->
+            <span
+              data-bs-toggle="popover"
+              data-bs-image="images/four-and-half-stars.png"
+              data-bs-title="Ben-Hur Rating"
+            >
+              <!-- img-fluid makes image reponsive -->
+              <img
+                src="images/ben-hur.jpg"
+                class="img-fluid"
+                alt="Ben-Hur movie poster"
+              />
+            </span>
+          </div>
+
+          <!--=============== MOVIE DESCRIPTION ================-->
+          <div class="card col-lg-5 mx-auto">
+            <div class="card-body">
+              <h3 class="card-title">Ben-Hur</h3>
+              <p class="lead">
+                After a Jewish prince is betrayed and sent into slavery by a
+                Roman friend in 1st-century Jerusalem, he regains his freedom
+                and comes back for revenge.
+              </p>
+              <dl>
+                <div class="d-flex">
+                  <dt>Director:</dt>
+                  <dd>William Wyler</dd>
+                </div>
+                <div class="d-flex">
+                  <dt>Starring:</dt>
+                  <dd>Charlton Heston | Jack Hawkins | Stephen Boyd</dd>
+                </div>
+              </dl>
+              <!-- BEN HUR SHOW TIMES -->
+              <section>
+                <h4 class="card-title">Show Times</h4>
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn" data-time="10:00">
+                      10:00 AM
+                    </button>
+                    <button type="button" class="btn" data-time="11:30">
+                      11:30 AM
+                    </button>
+                    <button type="button" class="btn" data-time="13:10">
+                      1:10 PM
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn" data-time="14:30">
+                      2:30 PM
+                    </button>
+                    <button type="button" class="btn" data-time="16:50">
+                      4:50 PM
+                    </button>
+                    <button type="button" class="btn" data-time="20:00">
+                      8:00 PM
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!--=============== THE DAY THE EARTH STOOD STILL ===============-->
+        <div
+          class="d-flex flex-row flex-wrap flex-row-reverse spacer"
+          id="stood-still"
+        >
+          <!--========== MOVIE POSTER ==========-->
+          <div class="col-lg-5 mx-auto movie-poster">
+            <!-- POP-OVER SPAN: This wrapper links the image to the Bootstrap Popover component -->
+            <!-- data-bs-image is a custom attribute used by javascript.js to fetch the correct rating image. -->
+            <!-- ===== MOVIE RATING ===== -->
+            <span
+              data-bs-toggle="popover"
+              data-bs-image="images/four-stars.png"
+              data-bs-title="The Day the Earth Stood Still Rating"
+            >
+              <!-- img-fluid makes image reponsive -->
+              <img
+                src="images/earth-stood-still.jpg"
+                class="img-fluid"
+                alt="The Day the Earth Stood Still movie poster"
+              />
+            </span>
+          </div>
+
+          <!--=============== MOVIE DESCRIPTION ================-->
+          <div class="card col-lg-5 mx-auto">
+            <div class="card-body">
+              <h3 class="card-title">The day the Earth stood still</h3>
+              <p class="lead">
+                An alien lands in Washington, D.C. and tells the people of Earth
+                that they must live peacefully or be destroyed as a danger to
+                other planets. Director: Robert Wise
+              </p>
+              <dl>
+                <div class="d-flex">
+                  <dt>Director:</dt>
+                  <dd>Robert Wise</dd>
+                </div>
+                <div class="d-flex">
+                  <dt>Starring:</dt>
+                  <dd>Michael Rennie | Patricia Neal | Hugh Marlowe</dd>
+                </div>
+              </dl>
+              <!-- STOOD STILL SHOW TIMES -->
+              <section>
+                <h4 class="card-title">Show Times</h4>
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn" data-time="10:00">
+                      10:00 AM
+                    </button>
+                    <button type="button" class="btn" data-time="11:30">
+                      11:30 AM
+                    </button>
+                    <button type="button" class="btn" data-time="13:10">
+                      1:10 PM
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn" data-time="14:30">
+                      2:30 PM
+                    </button>
+                    <button type="button" class="btn" data-time="16:50">
+                      4:50 PM
+                    </button>
+                    <button type="button" class="btn" data-time="20:00">
+                      8:00 PM
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!--========================= VERTIGO =========================-->
+        <div class="d-flex flex-row flex-wrap spacer" id="vertigo">
+          <!--========== MOVIE POSTER ==========-->
+          <div class="col-lg-5 mx-auto movie-poster">
+            <!-- POP-OVER SPAN: This wrapper links the image to the Bootstrap Popover component -->
+            <!-- data-bs-image is a custom attribute used by javascript.js to fetch the correct rating image. -->
+            <!-- ===== MOVIE RATING ===== -->
+            <span
+              data-bs-toggle="popover"
+              data-bs-image="images/four-and-half-stars.png"
+              data-bs-title="Vertigo Rating"
+            >
+              <!-- img-fluid makes image reponsive -->
+              <img
+                class="img-fluid"
+                src="images/vertigo.jpg"
+                alt="Vertigo movie poster"
+              />
+            </span>
+          </div>
+
+          <!--=============== MOVIE DESCRIPTION ================-->
+          <div class="card col-lg-5 mx-auto">
+            <div class="card-body">
+              <h3 class="card-title">Vertigo</h3>
+              <p class="lead">
+                A former San Francisco police detective juggles wrestling with
+                his personal demons and becoming obsessed with the hauntingly
+                beautiful woman he has been hired to trail, who may be deeply
+                disturbed.
+              </p>
+              <dl>
+                <div class="d-flex">
+                  <dt>Director:</dt>
+                  <dd>Alfred Hitchcock</dd>
+                </div>
+                <div class="d-flex">
+                  <dt>Starring:</dt>
+                  <dd>James Stewart | Kim Novak | Barbara Bel Geddes</dd>
+                </div>
+              </dl>
+              <!-- VERTIGO SHOW TIMES -->
+              <section>
+                <h4 class="card-title">Show Times</h4>
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn" data-time="10:00">
+                      10:00 AM
+                    </button>
+                    <button type="button" class="btn" data-time="11:30">
+                      11:30 AM
+                    </button>
+                    <button type="button" class="btn" data-time="13:10">
+                      1:10 PM
+                    </button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="btn" data-time="14:30">
+                      2:30 PM
+                    </button>
+                    <button type="button" class="btn" data-time="16:50">
+                      4:50 PM
+                    </button>
+                    <button type="button" class="btn" data-time="20:00">
+                      8:00 PM
+                    </button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--========================================================================
+                                    TICKETS
+    =========================================================================-->
+    <section>
+      <div class="container spacer" id="tickets">
+        <a href="#tickets"></a>
+        <h1>Tickets</h1>
+        <div class="d-flex flex-row flex-wrap">
+          <div class="col-12 col-md">
+            <div class="card text-center">
+              <h5 class="card-title">Please select a movie</h5>
+              <div class="card-body">
+                <select
+                  id="movieSelect"
+                  class="form-select"
+                  aria-label="Movie title selection"
+                >
+                  <option selected>Select movie</option>
+                  <option value="1">Ben-Hur</option>
+                  <option value="2">The day the Earth stood still</option>
+                  <option value="3">Vertigo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md">
+            <div class="card text-center">
+              <h5 class="card-title">Please select a show time</h5>
+              <div class="card-body">
+                <select
+                  id="timeSelect"
+                  class="form-select"
+                  aria-label="Show time selection"
+                >
+                  <option selected>Select time</option>
+                  <option value="1">10:00 AM</option>
+                  <option value="2">11:30 AM</option>
+                  <option value="3">1:10 PM</option>
+                  <option value="4">2:30 PM</option>
+                  <option value="5">4:50 PM</option>
+                  <option value="6">8:00 PM</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md">
+            <div class="card text-center">
+              <h5 class="card-title">Please select number of tickets</h5>
+              <div class="card-body">
+                <input type="number" id="quantity" value="1" step="1" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-auto">
+            <button onclick="buyTickets()" type="submit" class="btn yellow-btn">
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--===================================================================
+                                  Ticket Details
+    ===================================================================-->
+    <div
+      id="toastDisplay"
+      class="toast custom-toast"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+      data-bs-autohide="false"
+    >
+      <div class="toast-header">
+        <strong class="me-auto">Ticket Information</strong>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+      <!-- ID: toastBody - Used by JS to inject the purchase message (movie, time, quantity) -->
+      <div class="toast-body" id="toastBody">
+        Purchase details will appear here.
+      </div>
+    </div>
+    <!--========================================================================
+                                  CONTACT FORM
+    =========================================================================-->
+    <form aria-labelledby="contact-heading">
+      <div class="container">
+        <h1 id="contact">Contact Us!</h1>
+        <fieldset>
+          <legend class="visually-hidden">Name</legend>
+          <div class="row gy-4">
+            <div class="col text-warning">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first-name"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="col text-warning">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="last-name"
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+        </fieldset>
+        <div class="text-warning">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="text-warning">
+          <label for="message">Type message here...</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="3"
+            placeholder="Type message here..."
+          ></textarea>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button type="submit" class="btn yellow-btn" id="contact-submit">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+    <!--========================================================================
+                                  FOOTER
+    =========================================================================-->
+    <footer class="py-2 text-white">
+      <div class="container-fluid px-5 py-3">
+        <div class="row">
+          <!-- Contact Info Column -->
+          <div
+            class="col-md-4 col-sm-6 p-3 justify-content-start align-items-center"
+          >
+            <h5 class="text-white">Academy Cinemas</h5>
+            <address class="mb-0">
+              <p class="mb-0 text-white-50">
+                310 SW 4th Ave Suite 200<br />Portland, OR 97204
+              </p>
+            </address>
+            <div class="mt-2 text-white-50">
+              <p class="mb-0">
+                Phone:
+                <a href="tel:+1502066915" class="text-white-50"
+                  >+1 (503) 206-6915</a
+                >
+              </p>
+              <p class="mb-0">
+                Email:
+                <a
+                  href="mailto:info@learncodinganywhere.com"
+                  class="text-white-50"
+                  >info@learncodinganywhere.com</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Logo and Copyright Column -->
+          <div
+            class="col-md-4 col-sm-12 ps-5 text-center d-flex flex-column align-items-center justify-content-center"
+          >
+            <img
+              src="images/logo.png"
+              class="footer-img mb-2"
+              alt="Academy Cinemas logo"
+            />
+            <small class="text-white-50">© 2025 Academy Cinemas</small>
+          </div>
+
+          <!-- Navigation Links Column -->
+          <div
+            class="col-md-4 col-sm-6 d-flex justify-content-end align-items-center"
+          >
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#now-playing" class="nav-link px-2 text-white"
+                  >Now Playing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#tickets" class="nav-link px-2 text-white">Tickets</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link px-2 text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- MODAL COMPONENT: Sign In Form. Best practice is to place the Modal HTML right before the closing </body> tag. -->
+    <div
+      class="modal fade"
+      id="signInModal"
+      tabindex="-1"
+      aria-labelledby="signInModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signInModalLabel">Member Sign In</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="passwordInput" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passwordInput"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="rememberMeCheck"
+                />
+                <label class="form-check-label" for="rememberMeCheck"
+                  >Remember me</label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- Submit button intentionally lacks data-bs-dismiss to allow for custom JavaScript validation logic before closing. -->
+            <button type="submit" class="btn btn-primary">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

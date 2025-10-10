@@ -1,0 +1,389 @@
+/*==============================================================================
+                                FONTS
+==============================================================================*/
+/* "Passion One" ff: sans-serif fw: 400 fs: normal from fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+
+/* "Yesteryear" ff: cursive fw: 400 fs: normal from fonts.google.com */
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
+
+/*==============================================================================
+                          GLOBAL VARIABLES
+==============================================================================*/
+/* creates global css variables that can be reused */
+:root {
+  --main-color: rgb(126, 133, 130);
+  --main-color-accent: rgb(237, 192, 3);
+  --main-color-transparent: rgba(126, 133, 130, 0.8);
+  --secondary-color: rgba(128, 0, 0, 0.9);
+  --accent-color: rgb(36, 36, 36);
+  --accent-text-color: rgb(255, 255, 255);
+  --main-font-family: "Passion One", sans-serif; /* Video incorrectly labels this cursive*/
+  --secondary-font-family: "Yesteryear", cursive;
+}
+
+html {
+  scroll-padding-top: 100px;
+}
+/*==============================================================================
+                                BODY
+==============================================================================*/
+body {
+  background-image: url(../images/theater-curtains.jpg);
+  /* 100% width 120% height preventing the image from repaeting by stretching the image beyond the screen element and hidding the lower 20% of the image. This is a workaround to an improperly prepared image by the instructor and is not considered a best practice. A properly prepared image using "background-repeat: no-repeat;" would be conidered a best practice for this */
+  background-size: 100% 120%;
+  background-attachment: fixed;
+  overflow-x: hidden; /* Removes left to right scrool bar*/
+}
+
+/*==============================================================================
+                               NAVBAR
+==============================================================================*/
+.navbar {
+  background-color: var(--secondary-color);
+  border-bottom: 5px solid rgb(98, 0, 0);
+  height: 100px;
+}
+/* SHRINK ON SCROLL NAVBAR. reduced from 80px to 60px */
+.nav-shrink {
+  height: 60px;
+  transition: 0.5s ease;
+}
+
+/* SHRINK ON SCROLL CONTENT ENHANCEMENT */
+.nav-shrink .navbar-brand {
+  font-size: 1.75rem; /* Reduces the logo text size slightly */
+  transition: font-size 0.5s ease-in-out;
+}
+
+.nav-shrink .nav-link {
+  font-size: 1.5rem; /* Reduces the link text size slightly */
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  transition: font-size 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+/* Adds a transition to the movie drop down menu on shrink and scroll */
+.navbar-collapse {
+  transition: margin-top 0.5s ease;
+}
+
+/* SHRINK ON SCROLL: Sign In Button Fix (Targets the custom nav-shrink-btn) */
+.nav-shrink .nav-shrink-btn {
+  /* Reduce font size and padding for a proportional shrink */
+  font-size: 0.85rem;
+  padding: 0.25rem 0.6rem !important;
+
+  /* Vertical alignment fix: This clears the default top margin and re-centers it */
+  margin-top: 1.2rem;
+
+  /* Match the transition speed to the rest of the Navbar */
+  transition: all 0.5s ease-in-out;
+}
+
+/*Affects the title in the navbar Academy Cinemas */
+.navbar-brand {
+  color: var(--main-color-accent);
+  font-family: var(--main-font-family);
+  font-size: 45px;
+  padding-left: 30px;
+}
+
+.nav-link {
+  color: var(--main-color-accent);
+  font-family: var(--main-font-family);
+  font-size: 35px;
+}
+
+/*Affects the hover state of the links in the navbar */
+.nav-link:hover {
+  color: var(--main-color-transparent);
+  text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
+}
+/*Sets the color of the link taht has been clicked on the "active link" */
+.nav-link:focus {
+  color: var(--accent-text-color);
+  text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
+}
+
+/*Adjust the left padding of the navbar links */
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1.5rem;
+}
+
+/*======================= MOVIE DROP DOWNN MENU =======================*/
+/*Targets the drop down menu that contains the links for each movie title */
+.dropdown-menu {
+  border: none; /*Removes the thin black border */
+  border-radius: 0;
+  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.4);
+  background-color: var(--main-color);
+  padding: 0px; /*Overrides BS padding on the top & bottom of the drop-down menu */
+}
+
+/*Sets up the syling for each movie in the drop-down menu. !! This overides the default styling _dropdown.scss:175 !! */
+.dropdown-item {
+  color: var(--accent-color);
+  font-family: var(--main-font-family);
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px; /*Adds space ontop of links to center them */
+  padding-bottom: 20px; /*Adds space under links to center them */
+  border-bottom: 2px solid rgb(117, 77, 13);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--accent-text-color);
+  background-color: var(--main-color);
+}
+/*========== MOBILE MENU ==========*/
+.navbar-toggler {
+  border: none;
+  transition: 0.5s ease;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgb(98, 0, 0);
+  transition: 0.5s ease;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(237,192,3)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*========== Header IMAGE ==========*/
+#header-image {
+  padding-top: 150px;
+}
+
+/*==============================================================================
+                            GENERAL STYLING
+==============================================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5 p {
+  cursor: default; /*Maintains default cursor on hover*/
+}
+
+h1 {
+  font-family: var(--main-font-family);
+  color: var(--main-color-accent);
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  text-align: center;
+  font-size: 100px;
+}
+
+h3 {
+  font-family: var(--main-font-family);
+  font-size: 50px;
+}
+
+h4 {
+  font-family: var(--secondary-font-family);
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 30px;
+  font-family: var(--main-font-family);
+}
+/*========== MOVIE POSTER ==========*/
+img {
+  border-radius: 5px;
+}
+
+.movie-poster {
+  box-sizing: content-box;
+}
+
+/*========== MOVIE DESCRIPTION CARDS ==========*/
+.card {
+  border: 5px solid var(--main-color);
+  border-radius: 5px; /* no affect */
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-body {
+  padding-top: 30px; /* no affect */
+  padding-left: 20px; /* no affect */
+}
+
+.spacer {
+  padding-top: 50px; /* added 50px to the mb-4 margin bottom-4 */
+}
+
+.container {
+  padding: 100px;
+}
+
+p {
+  text-wrap: wrap;
+}
+
+dt {
+  font-weight: 600; /* Makes the term bold */
+  margin-right: 0.5rem;
+}
+
+/*========== SHOW TIMES ==========*/
+/* ===== BUTTONS =====*/
+.btn {
+  background-color: var(--main-color);
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  color: var(--accent-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+}
+
+.btn:focus {
+  border-color: transparent;
+  background-color: var(--main-color);
+  color: var(--accent-text-color);
+}
+
+/* Styling for yellow buttons for the buy tickets and contact form sections */
+.yellow-btn {
+  background-color: var(--main-color-accent);
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 20px;
+  color: var(--accent-color);
+  width: 150px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.yellow-btn:hover,
+.yellow-btn:focus {
+  background-color: var(--main-color-accent);
+  color: var(--accent-text-color);
+}
+
+.btn:hover {
+  border-color: transparent;
+  background-color: var(--main-color-accent);
+  color: var(--accent-text-color);
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: transparent;
+}
+
+.card-body,
+:before,
+:after {
+  box-sizing: content-box;
+}
+
+/*==============================================================================
+                            TICKET CARDS
+==============================================================================*/
+
+/* Specifically styles the card class within the element containg the tickets id */
+/* ========== movie and time select forms ========== */
+#tickets .card {
+  padding: 40px;
+  height: 250px;
+  margin-right: 20px;
+  background-color: white;
+}
+
+.form-select {
+  font-family: var(--main-font-family);
+  font-size: 20px;
+  border: 3px solid var(--main-color);
+  transition: border-color 0.5s ease-in;
+}
+
+.form-select:focus {
+  border-color: var(--secondary-color);
+  box-shadow: none;
+  transition: 0.5s ease-in;
+}
+
+/* ========== Number of tickets form ========== */
+input[type="number"] {
+  width: 70px;
+  padding: 5px;
+  border: 3px solid var(--main-color);
+  border-radius: 5px;
+  font-family: var(--main-font-family);
+  font-size: 20px;
+  transition: border-color 0.5s ease-in;
+}
+
+input[type="number"]:focus {
+  border: 3px solid var(--secondary-color);
+  transition: 0.5s ease-in;
+  /* reomoves the default outline set by the browser */
+  outline: 0;
+}
+
+/*==============================================================================
+                            CONTACT FORM
+==============================================================================*/
+.form-control {
+  border: 3px solid var(--main-color);
+  transition: 1s ease;
+}
+
+.form-control:focus {
+  color: #212529;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0px 0.25rem var(--main-color);
+}
+
+/*==============================================================================
+                               FOOTER
+==============================================================================*/
+footer {
+  border-top: 5px solid var(--main-color);
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-text {
+  font-family: var(--main-font-family);
+  color: var(--accent-text-color);
+  font-size: 30px;
+}
+
+.footer-img {
+  width: auto;
+  height: 130px;
+}
+
+/*==============================================================================
+                                POPOVERS (Step 367)
+==============================================================================*/
+
+/* Used to resize the injected star rating image inside the Popover */
+.star-rating {
+  width: 80%;
+  height: auto;
+}
+
+/*==============================================================================
+                                TOAST (Step 370)
+==============================================================================*/
+
+/* Corrected CSS to perfectly center the toast on the screen */
+.custom-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Ensures it sits above other content */
+}
