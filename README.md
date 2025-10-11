@@ -1294,3 +1294,14 @@ and a mastery of core JavaScript concepts.
   variable declaration and **PascalCase** for all $\text{XML}$ element tags
   (e.g., `<Book>`, `<Series>`). The code successfully extracted and displayed
   the content of the `<Series>` tag.
+
+#### **Step 410: First React Timer Component** ⚛️
+
+- **Date**: October 11, 2025
+- **Objective**: To install the core $\text{React}$ and $\text{ReactDOM}$
+  libraries locally and create the first component-based application using the
+  older `React.createClass` syntax.
+- **Outcome**: Successfully created `react-1.html` which uses
+  `React.createClass` and `React.createFactory` to generate a component that
+  updates every 50 milliseconds, displaying a running timer. The necessary
+  library files were linked locally via `<script>` tags in the `<head>`.
