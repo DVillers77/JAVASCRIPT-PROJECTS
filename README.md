@@ -1281,3 +1281,16 @@ and a mastery of core JavaScript concepts.
     - Ensuring the **"Buy Tickets" button is always visible** on mobile by using
       the $\text{Bootstrap}$ **`mt-4`** utility class for necessary vertical
       spacing.
+
+#### **Step 392: XML Parser Challenge** 💾
+
+- **Date**: October 11, 2025
+- **Objective**: To demonstrate understanding of the $\text{XML}$ DOM by using a
+  $\text{JavaScript}$ parser to extract and display data from a custom-defined
+  $\text{XML}$ string.
+- **Outcome**: Successfully created `challenge-392.html` which parses a custom
+  'Game of Thrones' themed $\text{XML}$ data string. The solution implements
+  **modern $\text{JavaScript}$ best practices** by using `let` and `const` for
+  variable declaration and **PascalCase** for all $\text{XML}$ element tags
+  (e.g., `<Book>`, `<Series>`). The code successfully extracted and displayed
+  the content of the `<Series>` tag.

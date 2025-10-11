@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 392 - XML Parser</title>
+  </head>
+  <body>
+    <h1>XML Data Output</h1>
+    <p id="xmlExample"></p>
+    <script>
+      // 1. Declare variables using modern let/const and camelCase naming
+      let xmlParser, xmlDocument;
+
+      // Create a text string using const, applying PascalCase to XML tags for best practice
+      const bookXML =
+        "<Book>" +
+        "<Title>A Game of Thrones</Title>" +
+        "<Series>A Song of Ice and Fire</Series>" +
+        "<Author>George R. R. Martin</Author>" +
+        "<Year>1996</Year>" +
+        "</Book>";
+
+      // 2. Creates an XML DOM parser
+      xmlParser = new DOMParser();
+
+      // 3. Creates a new XML DOM object from the text string
+      // Note: xmlParser and xmlDocument are now initialized (reassigned), which is why we used 'let'
+      xmlDocument = xmlParser.parseFromString(bookXML, "text/xml");
+
+      // 4. Use getElementsByTagName() to display the text within the chosen tag ("Series")
+      // The final output displayed will be "A Song of Ice and Fire"
+      document.getElementById("xmlExample").innerHTML =
+        xmlDocument.getElementsByTagName("Series")[0].childNodes[0].nodeValue;
+    </script>
+  </body>
+</html>
