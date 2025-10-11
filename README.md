@@ -1305,3 +1305,15 @@ and a mastery of core JavaScript concepts.
   `React.createClass` and `React.createFactory` to generate a component that
   updates every 50 milliseconds, displaying a running timer. The necessary
   library files were linked locally via `<script>` tags in the `<head>`.
+
+#### **Step 412: Class Component and CDN** ⚛️
+
+- **Date**: October 11, 2025
+- **Objective**: To transition from older React syntax to modern ES6 classes,
+  implement a simple stateful component, and use public CDN links (unpkg.com)
+  for library access.
+- **Outcome**: Successfully created `react-2.html`. The file defines a
+  `LikeButton` class component that manages its own state (`liked`) and uses
+  `ReactDOM.render()` to display a button that updates its text when clicked.
+  The container DIV and React method casing were corrected to ensure proper
+  rendering with the modern library version.
