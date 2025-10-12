@@ -1317,3 +1317,14 @@ and a mastery of core JavaScript concepts.
   `ReactDOM.render()` to display a button that updates its text when clicked.
   The container DIV and React method casing were corrected to ensure proper
   rendering with the modern library version.
+
+#### **Step 418: JSX ASSIGNMENT** ⚛️
+
+- **Date**: October 12, 2025
+- **Objective**: Implement the first JSX component, transitioning the project
+  from using React.createElement() to HTML-like syntax. This involved
+  integrating the Babel standalone compiler via CDN.
+- **Outcome**: Created `react-projects/project-3/react-3.html`. The file
+  successfully links the three necessary CDNs (React, ReactDOM, and Babel) and
+  uses the `<script type="text/babel">` tag to define and render a `Greeting`
+  class component returning JSX.
