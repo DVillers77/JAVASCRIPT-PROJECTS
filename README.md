@@ -1328,3 +1328,14 @@ and a mastery of core JavaScript concepts.
   successfully links the three necessary CDNs (React, ReactDOM, and Babel) and
   uses the `<script type="text/babel">` tag to define and render a `Greeting`
   class component returning JSX.
+
+#### **Step 424: NODE.JS ASSIGNMENT** 🚀
+
+- **Date**: October 12, 2025
+- **Objective**: Transition to the professional React workflow by using Node.js
+  and Create React App (CRA) to scaffold a complete project environment.
+- **Outcome**: Executed `npx create-react-app my-app`, `cd my-app`, and
+  `npm start` in the terminal, successfully spinning up the default React
+  application and its development server in the browser. A new project folder
+  named `my-app` was created, establishing the standardized, command-line-driven
+  environment.
