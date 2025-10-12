@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VW UNIT CHALLENGE</title>
+  </head>
+  <body>
+    <main>
+      <h1>Set the font size using the vw unit.</h1>
+      <p style="color: blue; font-size: 2vw">
+        Font size of this paragraph is set using inline styling. The text size
+        is now directly relative to the width of the browser window. If the
+        viewport is 1000px wide, 2vw equals 20px. If the viewport shrinks to
+        500px, 2vw shrinks to 10px.
+      </p>
+      <ul>
+        <li>
+          Best Practices (Separation of Concerns): While using inline styling
+          (style="...") is fast for these challenges, best practice for real
+          projects is to use an external linked CSS file or a style block in the
+          head of your HTML. This keeps the presentation (style) separate from
+          the structure (HTML).
+        </li>
+        <li>
+          Modernization (Other Viewport Units): In modern CSS, you have four
+          primary viewport units:
+          <ul>
+            <li>vw (Viewport Width): 1vw is 1% of the viewport width.</li>
+            <li>vh (Viewport Height): 1vh is 1% of the viewport height.</li>
+            <li>
+              vmin (Viewport Minimum): 1% of the smaller dimension (width or
+              height).
+            </li>
+            <li>
+              vmax (Viewport Maximum): 1% of the larger dimension (width or
+              height).
+            </li>
+          </ul>
+        </li>
+        <li>
+          Enhanced Learning (Responsive UX): The vw unit is fundamental to
+          Responsive Design. By making font sizes and element dimensions
+          relative to the viewport, you ensure the content scales fluidly and
+          provides a consistent User Experience (UX) across devices of vastly
+          different screen sizes, from mobile phones to large desktop monitors.
+        </li>
+      </ul>
+      <p></p>
+    </main>
+  </body>
+</html>

@@ -1339,3 +1339,13 @@ and a mastery of core JavaScript concepts.
   application and its development server in the browser. A new project folder
   named `my-app` was created, establishing the standardized, command-line-driven
   environment.
+
+#### **Step 428: VW UNIT CHALLENGE** 📏
+
+- **Date**: October 12, 2025
+- **Objective**: Implement the viewport width (vw) unit to create a fluidly
+  responsive text element, demonstrating a foundational principle of modern CSS.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/vw-unit-challenge.html`. The
+  text element's font size was set using inline styling with the `2vw` unit,
+  successfully scaling the text size with the browser window's width.
