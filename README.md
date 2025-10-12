@@ -1349,3 +1349,13 @@ and a mastery of core JavaScript concepts.
   `unassigned-projects/rapid-exercise-challenges/vw-unit-challenge.html`. The
   text element's font size was set using inline styling with the `2vw` unit,
   successfully scaling the text size with the browser window's width.
+
+#### **Step 429: FADE CHALLENGE** ✨
+
+- **Date**: October 12, 2025
+- **Objective**: Create a smooth fade-in effect using CSS Keyframe Animation,
+  demonstrating control over element visibility and timing.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/fade-challenge.html`. Used the
+  `@keyframes` rule to animate `opacity` from 0 to 1, applying the animation
+  with a duration and the `forwards` property for persistent visibility.

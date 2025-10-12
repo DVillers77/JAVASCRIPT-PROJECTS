@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FADE CHALLENGE</title>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Fade Challenge</h1>
+      <p>
+        Check ouy this fade-in effect on the below paragraph using pure CSS
+        animation.
+      </p>
+      <p style="animation: fadeIn 3s ease-in-out forwards">
+        This text will fade in as the page loads.
+      </p>
+      <ul>
+        <li>
+          Best Practices (Animation Fill-Mode): Correctly used the forwards
+          value in my animation property (animation: fadeIn 3s ease-in-out
+          forwards). This is best practice for fade-ins because it ensures the
+          element stays visible (at the to state of opacity: 1) after the
+          animation is complete. Without forwards, the element would snap back
+          to the initial state (opacity: 0).
+        </li>
+        <li>
+          Modernization (Performance): Animating the opacity property is highly
+          performant because it uses the GPU (Graphics Processing Unit) for
+          composition, making the animation smooth. In contrast, animating
+          layout properties like width or height forces the browser to
+          recalculate the entire page layout on every frame, which is much
+          slower.
+        </li>
+        <li>
+          Enhanced Learning (User Experience - UX): The fade-in effect is a
+          powerful UX tool. It avoids the jarring experience of elements
+          instantly appearing on the page, instead guiding the user's eye and
+          creating a sense of modernity and polish. This is crucial for my UI/UX
+          Designer Boot Camp focus.
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
