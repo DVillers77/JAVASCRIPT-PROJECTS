@@ -1359,3 +1359,18 @@ and a mastery of core JavaScript concepts.
   `unassigned-projects/rapid-exercise-challenges/fade-challenge.html`. Used the
   `@keyframes` rule to animate `opacity` from 0 to 1, applying the animation
   with a duration and the `forwards` property for persistent visibility.
+
+#### **Step 430: FORM CHALLENGE** 📞
+
+- **Date**: October 12, 2025
+- **Objective**: Create a form with a phone number input and implement
+  client-side JavaScript validation. This step required extensive debugging of
+  browser rendering and validation states.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/form-challenge.html`. The
+  final, robust solution combines the `input` event listener, $\text{HTML5}$
+  `pattern`, and $\text{CSS}$ **`:valid` / `:invalid`** pseudo-classes. The
+  persistent invalid state was resolved by ensuring `setCustomValidity("")` is
+  called at the start of the validation function, preventing the invalid flag
+  from sticking and allowing the real-time `:valid` $\text{CSS}$ border to
+  display.

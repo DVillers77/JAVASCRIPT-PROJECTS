@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Challenge</title>
+    <style>
+      /* Removes default focus ring/shadow, using ID for high specificity */
+      #phone:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+
+      /* Base style */
+      #phone {
+        border: 2px solid #ccc;
+        transition: border-color 0.1s ease-in-out;
+      }
+
+      /* Green border when the pattern is matched (and validity is clear) */
+      #phone:valid {
+        border-color: green !important;
+      }
+
+      /* Red border when content exists but the pattern is NOT matched */
+      /* :not(:placeholder-shown) prevents the field from being red when initially empty */
+      #phone:invalid:not(:placeholder-shown) {
+        border-color: red !important;
+      }
+    </style>
+  </head>
+  <main>
+    <h1>FORM CHALLENGE</h1>
+    <p>
+      The most effective way to validate a phone number on the front end is to
+      use an &lt;input type="tel"&gt; element with a pattern attribute
+      containing a regular expression (regex).
+    </p>
+
+    <h2>🔍 The Debugging Journey: Achieving Real-Time UX</h2>
+    <p>
+      The core challenge was fighting the browser's native form validation
+      lifecycle, which prioritized its own styles over our custom JavaScript
+      changes. The solution required a four-step refinement process:
+    </p>
+    <ol>
+      <li>
+        <strong
+          >Event Listener: <code>keyup</code> to <code>input</code>.</strong
+        >
+        The initial fix was to switch the event listener from
+        <code>keyup</code> (fires after the key is released) to
+        <code>input</code> (fires on any content change, including paste), which
+        is the correct event for real-time responsiveness.
+      </li>
+      <li>
+        <strong>CSS Specificity Fix.</strong> The border was slow to update
+        while the input was focused. We fixed this by using high-specificity CSS
+        (the <code>#phone</code> ID) and adding <code>!important</code> rules to
+        aggressively remove the browser's default <code>outline</code> and
+        <code>box-shadow</code> focus styles, which were conflicting with our
+        border changes.
+      </li>
+      <li>
+        <strong
+          >CSS Purity: Classes to <code>:valid</code> /
+          <code>:invalid</code>.</strong
+        >
+        We stopped manually toggling <code>.valid-input</code> classes with
+        JavaScript. Instead, we used the native CSS pseudo-classes
+        <code>:valid</code> and <code>:invalid</code>. This synchronizes the
+        visual style directly with the browser's internal validation engine,
+        making the border color change instant.
+      </li>
+      <li>
+        <strong>The Final Fix: Validation State Reset.</strong> Even with the
+        correct CSS, the border stayed red because once
+        <code>setCustomValidity("...")</code> is called, the input remains
+        permanently invalid. The fix was to add
+        <code>phoneInput.setCustomValidity("");</code> to the **very first
+        line** of the validation function. This ensures the input state is reset
+        on every keystroke, allowing the correct valid status (and the green
+        <code>:valid</code> CSS) to finally take effect.
+      </li>
+    </ol>
+
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" required />
+      <br /><br />
+
+      <label for="phone">Enter your phone number here:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        title="Format: 123-456-7890"
+        required
+      />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script>
+    const phoneInput = document.getElementById("phone");
+    // Use the 'input' event for real-time validation
+    phoneInput.addEventListener("input", validatePhone);
+    // Also use 'blur' for a final check when the user leaves the field
+    phoneInput.addEventListener("blur", validatePhone);
+
+    function validatePhone() {
+      // 1. **ALWAYS** clear the custom message first. This is the FIX for the sticky red border.
+      phoneInput.setCustomValidity("");
+
+      // 2. Check validity (relies on the pattern attribute)
+      const isValid = phoneInput.checkValidity();
+
+      // 3. If invalid, set the custom message to trigger the red border (via CSS :invalid)
+      if (!isValid) {
+        // Only set the detailed message if the user has actually typed something
+        if (phoneInput.value.length > 0) {
+          phoneInput.setCustomValidity("Invalid format: 123-456-7890");
+        }
+        // If the field is empty, the 'required' attribute handles the message
+      }
+      // If it is valid, the message is already cleared by Step 1, and the :valid CSS applies automatically.
+    }
+  </script>
+  <body></body>
+</html>
