@@ -1403,3 +1403,14 @@ and a mastery of core JavaScript concepts.
   stops (`0%`, `50%`, `100%`) using the `@keyframes` rule. The animation was
   applied with the `infinite alternate` property for a continuous,
   back-and-forth effect.
+
+  #### **Step 433: ZOOM IN AND OUT CHALLENGE** 🔍
+
+- **Date**: October 13, 2025
+- **Objective**: Zoom in and out on an image using pure CSS.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/zoom-challenge.html`. The
+  solution uses the `transition` property for a smooth effect and the `:hover`
+  pseudo-class to trigger a **`transform: scale(1.5)`** function, effectively
+  zooming the image. The container uses `overflow: hidden` to mask the enlarged
+  parts of the image, creating a clean zoom effect.
