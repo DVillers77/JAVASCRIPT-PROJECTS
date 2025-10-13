@@ -1427,3 +1427,14 @@ and a mastery of core JavaScript concepts.
   enhanced by adding the **`scroll-behavior: smooth;`** $\text{CSS}$ property to
   the `html` element, ensuring a smooth, animated scroll transition instead of
   an instant jump.
+
+  #### **Step 435: SLIDESHOW CHALLENGE (Color)** 🖼️
+
+- **Date**: October 13, 2025
+- **Objective**: Create an automatic slideshow using JavaScript timing.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/slideshow-challenge.html`. The
+  solution successfully uses $\text{CSS}$ to stack slides and a recursive
+  $\text{JavaScript}$ function with `setTimeout()` to toggle the `display`
+  property of the slide elements every 2 seconds, creating an automatic,
+  color-based slideshow loop.

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatic Slideshow Challenge</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      .slideshow-container {
+        max-width: 600px;
+        position: relative;
+        margin: auto;
+        border: 4px solid #333;
+        overflow: hidden; /* Ensures slides don't leak outside the container */
+      }
+
+      /* Slides (Images) Styling */
+      .mySlides {
+        display: none; /* Crucial: Start all slides hidden */
+        width: 100%;
+        height: 400px; /* Fixed height for consistency */
+        background-size: cover;
+        background-position: center;
+        /* Optional: Add a transition for a fade effect */
+        transition: opacity 1s ease-in-out;
+      }
+
+      /* Example backgrounds for demonstration */
+      #slide1 {
+        background-color: #2ecc71; /* Green */
+      }
+      #slide2 {
+        background-color: #f1c40f; /* Yellow */
+      }
+      #slide3 {
+        background-color: #ff0000; /* Red */
+      }
+
+      .text {
+        color: white;
+        font-size: 24px;
+        padding: 15px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Automatic Slideshow Challenge</h1>
+      <p>
+        The slides below cycle automatically every 2 seconds using JavaScript's
+        <code>setTimeout()</code>.
+      </p>
+
+      <div class="slideshow-container">
+        <div class="mySlides" id="slide1">
+          <div class="text">Slide 1: Green for Go!</div>
+        </div>
+
+        <div class="mySlides" id="slide2">
+          <div class="text">Slide 2: Yellow for Caution!</div>
+        </div>
+
+        <div class="mySlides" id="slide3">
+          <div class="text">Slide 3: Red for stop!</div>
+        </div>
+      </div>
+    </main>
+    <script>
+      let slideIndex = 0; // Initialize the slide index
+
+      // Function to display the slides
+      function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+
+        // 1. Hide all slides
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        // 2. Increment the index
+        slideIndex++;
+
+        // 3. Loop back to the first slide when the end is reached
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+
+        // 4. Show the current slide (Note: index is 0-based, so use slideIndex - 1)
+        slides[slideIndex - 1].style.display = "block";
+
+        // 5. Call the function again after 2000 milliseconds (2 seconds)
+        // This creates the automatic, continuous loop
+        setTimeout(showSlides, 2000);
+      }
+
+      // Start the slideshow immediately
+      showSlides();
+    </script>
+  </body>
+</html>
