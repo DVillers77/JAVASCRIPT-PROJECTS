@@ -1374,3 +1374,18 @@ and a mastery of core JavaScript concepts.
   called at the start of the validation function, preventing the invalid flag
   from sticking and allowing the real-time `:valid` $\text{CSS}$ border to
   display.
+
+#### **Step 431: POP CONTACT FORM CHALLENGE** 📧
+
+- **Date**: October 13, 2025
+- **Objective**: Create a functional, styled popup contact form using HTML, CSS,
+  and JavaScript, focusing on performance optimization.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/pop-contact-form-challenge.html`.
+  The solution uses a fixed-position $\text{CSS}$ overlay and
+  $\text{JavaScript}$ class toggling. The $\text{CSS}$ was optimized by moving
+  all heavy positioning and visual rules (`position: fixed`, `width`, `height`,
+  `background-color`) from the default `.popup-overlay` rule to the active
+  `.popup-overlay.open` rule. This prevents the browser from computing
+  unnecessary $\text{CSS}$ properties while the element is hidden
+  (`display: none`), improving page performance.
