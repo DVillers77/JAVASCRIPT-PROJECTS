@@ -1389,3 +1389,17 @@ and a mastery of core JavaScript concepts.
   `.popup-overlay.open` rule. This prevents the browser from computing
   unnecessary $\text{CSS}$ properties while the element is hidden
   (`display: none`), improving page performance.
+
+  #### **Step 432: ANIMATION CHALLENGE** 🎬
+
+- **Date**: October 13, 2025
+- **Objective**: Successfully utilize the CSS @keyframes rule to animate an
+  element.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/animation-challenge.html`. A
+  complex keyframe animation named `bounceColor` was defined, demonstrating the
+  ability to simultaneously animate **multiple $\text{CSS}$ properties**
+  (`transform` for position and `background-color`) across multiple percentage
+  stops (`0%`, `50%`, `100%`) using the `@keyframes` rule. The animation was
+  applied with the `infinite alternate` property for a continuous,
+  back-and-forth effect.

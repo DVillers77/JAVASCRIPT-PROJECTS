@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Challenge</title>
+    <style>
+      /* 1. Define the Keyframe Rule */
+      /* This animation changes both position (transform) and color */
+      @keyframes bounceColor {
+        0% {
+          transform: translateY(0); /* Start position */
+          background-color: #f39c12; /* Orange */
+        }
+        50% {
+          transform: translateY(50px); /* Move down 50 pixels */
+          background-color: #c0392b; /* Red */
+        }
+        100% {
+          transform: translateY(0); /* Return to start position */
+          background-color: #2ecc71; /* Green */
+        }
+      }
+
+      /* 2. Apply the Animation to an Element */
+      .box {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin: 50px auto; /* Center the box */
+        /* Apply the animation: name | duration | timing | iteration | direction */
+        animation: bounceColor 2s ease-in-out infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>CSS Keyframe Animation Challenge</h1>
+      <p>
+        This animation utilizes the **@keyframes** rule to simultaneously
+        animate the element's **position** (using transform) and **background
+        color** across 0%, 50%, and 100% stops.
+      </p>
+
+      <div class="box"></div>
+    </main>
+  </body>
+</html>
