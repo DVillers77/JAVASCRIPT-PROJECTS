@@ -1414,3 +1414,16 @@ and a mastery of core JavaScript concepts.
   pseudo-class to trigger a **`transform: scale(1.5)`** function, effectively
   zooming the image. The container uses `overflow: hidden` to mask the enlarged
   parts of the image, creating a clean zoom effect.
+
+  #### **Step 434: BOOKMARK CHALLENGE** 🔖
+
+- **Date**: October 13, 2025
+- **Objective**: Utilize HTML bookmarks to link to various sections of a webpage
+  and apply smooth scrolling.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/bookmark-challenge.html`. The
+  solution successfully links navigation items (`<a href="#ID">`) to
+  corresponding section elements (`<section id="ID">`). The user experience was
+  enhanced by adding the **`scroll-behavior: smooth;`** $\text{CSS}$ property to
+  the `html` element, ensuring a smooth, animated scroll transition instead of
+  an instant jump.

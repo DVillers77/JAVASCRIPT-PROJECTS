@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Challenge</title>
+    <style>
+      /* --- CRUCIAL STEP 2: SMOOTH SCROLLING CSS --- */
+      /* Applying this to the root element ensures smooth scrolling for all internal anchors */
+      html {
+        scroll-behavior: smooth;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Basic styling demonstration */
+      .section {
+        height: 80vh; /* Make each section tall enough to require scrolling */
+        padding: 40px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+      }
+
+      #section1 {
+        background-color: #e6f7ff;
+      }
+
+      #section2 {
+        background-color: #fff0e6;
+      }
+
+      #section3 {
+        background-color: #f0e6ff;
+      }
+
+      #section4 {
+        background-color: #e6ffe6;
+      }
+
+      .nav-menu {
+        position: fixed; /* Keep the menu visible at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 15px 0;
+        text-align: center;
+        z-index: 10;
+      }
+
+      .nav-menu a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav-menu">
+      <a href="#section1">Jump to Section 1 (Top)</a>
+      <a href="#section2">Jump to Section 2 (Middle)</a>
+      <a href="#section3">Jump to Section 3 (Lower)</a>
+      <a href="#section4">Jump to Section 4 (Bottom)</a>
+    </header>
+    <main style="padding-top: 80px">
+      <h1>HTML Bookmark and Smooth Scroll Challenge</h1>
+
+      <section id="section1" class="section">
+        <h2>Section 1: The Beginning</h2>
+        <p>
+          This is the first section of the document. Click any link in the fixed
+          menu above to test the **smooth scrolling** effect!
+        </p>
+        <p>This text is long to ensure the page is scrollable.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, quam.
+          Quidem, quisquam. Quidem, quisquam.
+        </p>
+      </section>
+
+      <section id="section2" class="section">
+        <h2>Section 2: Mid-Page Content</h2>
+        <p>
+          This content is located near the middle of the page. The link in the
+          navigation bar uses <code>href="#section2"</code> to navigate here.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, quam.
+          Quidem, quisquam. Quidem, quisquam.
+        </p>
+      </section>
+
+      <section id="section3" class="section">
+        <h2>Section 3: Further Down</h2>
+        <p>
+          We are using the **<code>id</code> attribute** on this
+          <code>&lt;section&gt;</code> element to define this bookmark target.
+        </p>
+        <p>
+          The CSS property <code>scroll-behavior: smooth;</code> applied to the
+          <code>&lt;html&gt;</code> tag is what makes the transition seamless.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, quam.
+          Quidem, quisquam. Quidem, quisquam.
+        </p>
+      </section>
+
+      <section id="section4" class="section">
+        <h2>Section 4: The Bottom</h2>
+        <p>
+          This is the final section. Note that the $\text{HTML}$ links use the
+          structure: <code>&lt;a href="#targetID"&gt;</code> and the destination
+          element uses: <code>&lt;element id="targetID"&gt;</code>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, quam.
+          Quidem, quisquam. Quidem, quisquam.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
