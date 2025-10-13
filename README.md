@@ -1450,3 +1450,16 @@ and a mastery of core JavaScript concepts.
   the **`background-image: url(...)`** $\text{CSS}$ property and the
   `background-size: cover` property to display random images from Picsum within
   the slides, demonstrating the background image technique for a slideshow.
+
+#### **Step 436: STICKY CHALLENGE** 📌
+
+- **Date**: October 13, 2025
+- **Objective**: Create a sticky contact button on the bottom right of a web
+  page that triggers a popup form.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/sticky-challenge.html`. The
+  solution successfully uses **`position: fixed;`** to lock the button to the
+  viewport. Debugging resolved a critical typo in the HTML ID (`conactPopup` to
+  `contactPopup`) and confirmed the correct JavaScript scope. The form styling
+  was finalized by ensuring `width: 100%;` was applied to input fields, matching
+  the high-quality aesthetics established in previous challenges.
