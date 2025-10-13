@@ -1463,3 +1463,13 @@ and a mastery of core JavaScript concepts.
   `contactPopup`) and confirmed the correct JavaScript scope. The form styling
   was finalized by ensuring `width: 100%;` was applied to input fields, matching
   the high-quality aesthetics established in previous challenges.
+
+#### **Step 443: <HR> TAG ASSIGNMENT** 📏
+
+- **Date**: October 13, 2025
+- **Objective**: Create a basic HTML page demonstrating the use of the `<hr>`
+  tag.
+- **Outcome**: Created `unassigned-projects/hr-tag-assignment.html`. The
+  solution successfully uses the `<hr>` tag to create a thematic break between
+  sections of content, demonstrating its role as a visual divider on the
+  webpage.
