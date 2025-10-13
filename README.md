@@ -1438,3 +1438,15 @@ and a mastery of core JavaScript concepts.
   $\text{JavaScript}$ function with `setTimeout()` to toggle the `display`
   property of the slide elements every 2 seconds, creating an automatic,
   color-based slideshow loop.
+
+  #### **Step 435: SLIDESHOW CHALLENGE (Images)** 🖼️
+
+- **Date**: October 13, 2025
+- **Objective**: Create a second version of the automatic slideshow using
+  background images from external URLs for practice.
+- **Outcome**: Created
+  `unassigned-projects/rapid-exercise-challenges/slideshow-challenge-images.html`.
+  The solution successfully uses the same JavaScript timing logic but utilizes
+  the **`background-image: url(...)`** $\text{CSS}$ property and the
+  `background-size: cover` property to display random images from Picsum within
+  the slides, demonstrating the background image technique for a slideshow.
