@@ -1505,3 +1505,15 @@ and a mastery of core JavaScript concepts.
   into a usable JavaScript object, allowing its properties (book, author, pages)
   to be accessed using dot notation. The output display was refined using
   `innerHTML` and `<br>` tags to show the results on separate lines.
+
+#### **Step 457: LOCALSTORAGE() METHOD ASSIGNMENT** 💾
+
+- **Date**: October 14, 2025
+- **Objective**: Write and successfully execute the `localStorage()` method,
+  enhancing the assignment with interactive buttons to control data persistence.
+- **Outcome**: Created `unassigned-projects/local-storage-assignment.html`. The
+  solution successfully implements **`localStorage.setItem()`** and
+  **`localStorage.removeItem()`** via event listeners attached to dedicated
+  buttons. Data retrieval using **`localStorage.getItem()`** dynamically updates
+  the UI, and the display logic was refined with an explicit check for `null` to
+  ensure robust conditional handling.

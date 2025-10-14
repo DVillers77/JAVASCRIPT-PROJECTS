@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step 457: localStorage Assignment</title>
+  </head>
+  <body>
+    <h1>localStorage Assignment Status</h1>
+    <p>
+      Retrieving data for key 'current-step' from localStorageusing a button for
+      add item and a button to remove it.
+    </p>
+    <p>The key is current-step and the value is 457</p>
+
+    <button id="set-button">Set Step 457</button>
+    <button id="remove-button">Remove Step</button>
+    <p>Current Status: <span id="output"></span></p>
+
+    <script>
+      // Get references to the HTML buttons
+      const setButton = document.getElementById("set-button");
+      const removeButton = document.getElementById("remove-button");
+
+      // Write a function to handle the storage operation
+      function setStep() {
+        // Use localStorage.setItem() to save a key-value pair
+        localStorage.setItem("current-step", "457");
+        // Update the display to reflect the change
+        updateStatusDisplay();
+      }
+
+      // Connect the function to the set button's click event
+      setButton.addEventListener("click", setStep);
+
+      // Write a function to handle the removal operation
+      function removeStep() {
+        // Use localStorage.removeItem() to delete the item with the key 'current-step'
+        localStorage.removeItem("current-step");
+        // Update the display to reflect the change
+        updateStatusDisplay();
+      }
+
+      // Connect the function to the remove button's click event
+      removeButton.addEventListener("click", removeStep);
+
+      // Function to read the stored value and update the HTML element
+      function updateStatusDisplay() {
+        const retrievedValue = localStorage.getItem("current-step");
+        const outputElement = document.getElementById("output");
+
+        // Set the content based on whether the value exists
+        if (retrievedValue !== null) {
+          outputElement.textContent = `Key: current-step | Value: ${retrievedValue} (Stored)`;
+        } else {
+          outputElement.textContent =
+            "Key: current-step | Value: null (Not Stored)";
+        }
+      }
+
+      // CRITICAL STEP: Call this function once when the page loads
+      updateStatusDisplay();
+    </script>
+  </body>
+</html>
