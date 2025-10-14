@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON.stringify() Assignment</title>
+  </head>
+  <body>
+    <h1>JSON Serialization Demo</h1>
+    <p>
+      Original JavaScript Object (Displayed as **Formatted JSON** for
+      Structure): The keys in the literal object do not have double quotes. The
+      JSON formatting added them.
+    </p>
+
+    <pre id="originalObject"></pre>
+
+    <p>Serialized JSON String:</p>
+    <code id="jsonString"></code>
+
+    <script>
+      // 1. DEFINE YOUR JAVASCRIPT OBJECT HERE (e.g., a 'car')
+      const myObject = {
+        book: "Game of Thrones",
+        author: "George R R Martin",
+        pages: 694,
+        published: "1996",
+      };
+
+      // 2. SERIALIZE THE OBJECT using JSON.stringify()
+      const jsonOutput = JSON.stringify(myObject);
+
+      // 3. DISPLAY THE RESULTS on the page
+      document.getElementById("originalObject").textContent = JSON.stringify(
+        myObject,
+        null,
+        2
+      );
+      document.getElementById("jsonString").textContent = jsonOutput;
+    </script>
+  </body>
+</html>
