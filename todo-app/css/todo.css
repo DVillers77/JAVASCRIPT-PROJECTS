@@ -1,0 +1,98 @@
+body {
+  /* UI CENTERING */
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+/* ADDED: Styling for the new header elements */
+h1 {
+  margin-top: 40px; /* Adds space at the top of the page */
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+
+.instruction {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 25px; /* Adds space above the input field */
+  text-align: center;
+}
+
+body {
+  /* Restricts the app width for a clean look and centers it on the page */
+  /* 1. UI CENTERING: max-width and margin: 0 auto centers the main app container. */
+  max-width: 500px;
+  margin: 0 auto;
+  /* Add padding to prevent the main content from being hidden by the fixed footer */
+  padding-bottom: 100px;
+}
+
+/* --- Input and Button Styling (Reduced Height and Size) --- */
+input {
+  /* FIX: Using equal top/bottom padding (8px) for precise vertical centering */
+  padding: 8px 10px;
+  /* Reduced width to fit button alongside it (500px total width) */
+  width: 380px;
+  height: 40px;
+  font-size: 20px;
+  /* VISIBILITY STYLES */
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding-left: 10px; /* Add slight padding for text */
+  box-sizing: border-box; /* Crucial: ensures border/padding don't expand the element past 500px */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+input:focus {
+  /* Removes the default browser outline when the input is focused */
+  outline: none;
+  border-color: #007bff;
+}
+
+li {
+  /* Styles for future task list items */
+  text-align: left;
+  font-size: 40px;
+  list-style: none;
+  margin: 0;
+}
+
+#add {
+  /* Button Aesthetics */
+  background-color: #007bff;
+  color: white;
+  height: 40px; /* Match input height */
+  width: 120px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transition: background-color 0.2s;
+}
+
+#add:hover {
+  background-color: #0056b3;
+}
+
+/* --- Footer Challenge --- */
+footer {
+  /* STICKY FOOTER: Fixes it to the viewport */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  /* BORDER & STYLE: Added border and background */
+  border-top: 1px solid #ccc;
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 99;
+  font-size: 14px;
+}
