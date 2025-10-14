@@ -1487,10 +1487,21 @@ and a mastery of core JavaScript concepts.
 
 #### **Step 453: JSON.STRINGIFY() ASSIGNMENT** 🧊➡️💧
 
-- **Date**: October 13, 2025
+- **Date**: October 14, 2025
 - **Objective**: Successfully implement the JSON.stringify() method to serialize
   a JavaScript object.
 - **Outcome**: Created `unassigned-projects/json-stringify-assignment.html`. The
   code successfully converts a complex JavaScript object (`myObject`) into a
   portable JSON string (`jsonOutput`), demonstrating the serialization required
   for data storage and exchange.
+
+#### **Step 455: JSON.PARSE() ASSIGNMENT** 💧➡️🧊
+
+- **Date**: October 14, 2025
+- **Objective**: Successfully implement the JSON.parse() method to deserialize a
+  JSON string.
+- **Outcome**: Created `unassigned-projects/json-parse-assignment.html`. The
+  code demonstrates taking a strict JSON string input and converting it back
+  into a usable JavaScript object, allowing its properties (book, author, pages)
+  to be accessed using dot notation. The output display was refined using
+  `innerHTML` and `<br>` tags to show the results on separate lines.

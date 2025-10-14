@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON.parse() Assignment</title>
+  </head>
+  <body>
+    <h1>JSON Deserialization Demo</h1>
+
+    <p>JSON String Input:</p>
+    <code id="jsonInput"></code>
+
+    <p>Accessing the 'author' property after parsing:</p>
+    <p id="parsedOutput"></p>
+
+    <script>
+      // 1. DEFINE YOUR JSON STRING HERE
+      // Remember: MUST use double quotes for keys and values!
+      const jsonString =
+        '{"book": "Game of Thrones", "author": "George R R Martin", "pages": 694}';
+
+      // Display the input string for context
+      document.getElementById("jsonInput").textContent = jsonString;
+
+      // 2. PARSE THE STRING using JSON.parse()
+      const jsObject = JSON.parse(jsonString);
+
+      // 3. ACCESS DATA and 4. DISPLAY THE RESULT on the page
+      // The line breaks were achieved by replacing textcontext with innerHTML
+      document.getElementById("parsedOutput").innerHTML =
+        "Book:" +
+        " " +
+        jsObject.book +
+        "<br>" +
+        "Author:" +
+        " " +
+        jsObject.author +
+        "<br>" +
+        "Pages: " +
+        " " +
+        jsObject.pages;
+    </script>
+  </body>
+</html>
