@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step 462: ONDBLCLICK Event Handler Challenge</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+      #challenge-paragraph {
+        padding: 20px;
+        border: 2px solid #3498db;
+        color: #2c3e50;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s;
+        margin: 20px auto;
+        max-width: 400px;
+        background-color: #ecf0f1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Double Click Challenge</h1>
+
+    <p id="challenge-paragraph" ondblclick="changeStyle()">
+      Double-click this paragraph to change its appearance!
+    </p>
+
+    <p>
+      The code uses the **ondblclick** event handler to execute the function.
+    </p>
+
+    <script>
+      /**
+       * Function executed when the paragraph is double-clicked.
+       * It now checks if the style is currently 'red' to successfully toggle the state.
+       */
+      function changeStyle() {
+        const paragraph = document.getElementById("challenge-paragraph");
+
+        // FIX: The condition now checks if the background is the ACTIVE color ('red').
+        // If it is 'red', we reset the style. Otherwise, we apply the 'red' style.
+        if (paragraph.style.backgroundColor === "red") {
+          // Reset to original style (using the original CSS color #ecf0f1)
+          paragraph.style.color = "#2c3e50";
+          paragraph.style.backgroundColor = "#ecf0f1";
+          paragraph.textContent =
+            "Double-click this paragraph to change its appearance!";
+        } else {
+          // Apply new style
+          paragraph.style.color = "white";
+          paragraph.style.backgroundColor = "red";
+          paragraph.textContent = "Style Changed! Double-click again to reset.";
+        }
+      }
+    </script>
+  </body>
+</html>

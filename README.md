@@ -1534,3 +1534,13 @@ and a mastery of core JavaScript concepts.
     `<label for>` for screen readers.
   - **Aesthetics**: Created a clean, circular **Theme Toggle** with dynamic
     icons (☀️/🌙) and fixed critical dark mode visibility issues.
+
+#### **Step 462: ONDBLCLICK EVENT HANDLER CHALLENGE** 🖱️🖱️
+
+- **Date**: October 15, 2025
+- **Objective**: Successfully implement and test the `ondblclick` event handler.
+- **Outcome**: Created
+  `unassigned-projects/ondblclick-event-handler-challenge.html`. The solution
+  uses an **inline event handler** to call a JavaScript function (`changeStyle`)
+  that modifies the styling (color and background) of a paragraph element upon a
+  double-click, confirming the handler's successful execution.
