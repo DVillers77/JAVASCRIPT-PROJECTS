@@ -1517,3 +1517,20 @@ and a mastery of core JavaScript concepts.
   buttons. Data retrieval using **`localStorage.getItem()`** dynamically updates
   the UI, and the display logic was refined with an explicit check for `null` to
   ensure robust conditional handling.
+
+#### **Step 458 & 459: JAVASCRIPT TODO APP CORE** 💡✅
+
+- **Date**: October 15, 2025
+- **Objective**: Finalize the core functionality, UI/UX refinements, and
+  accessibility (A11y) features for the TaskMaster TODO App. This includes
+  implementing the task removal functionality (Step 459).
+- **Outcome**: The application's core logic is complete, featuring **persistent
+  storage** via `localStorage`, **full CRUD** capability (Add, Check/Uncheck,
+  Remove), and a robust **Undo history**.
+- **Refinements**:
+  - **Pixel-Perfect Alignment**: Solved stubborn CSS conflicts to achieve
+    perfect vertical alignment between the input field and action buttons.
+  - **A11y/UX**: Implemented **Enter key** submission and added `aria-label`/
+    `<label for>` for screen readers.
+  - **Aesthetics**: Created a clean, circular **Theme Toggle** with dynamic
+    icons (☀️/🌙) and fixed critical dark mode visibility issues.

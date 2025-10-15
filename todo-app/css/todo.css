@@ -1,98 +1,282 @@
-body {
-  /* UI CENTERING */
-  max-width: 500px;
-  margin: 0 auto;
-  padding-bottom: 100px;
+/* Dev Comment (Best Practice): Define CSS Custom Properties (Variables) within :root. This is the default (Light Mode) color set. */
+:root {
+  /* Primary Theme Colors */
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+
+  /* Secondary/Utility Colors */
+  --color-text-dark: #333;
+  --color-text-medium: #666;
+  --color-background-light: #f9f9f9;
+  --color-border: #ddd;
+  --color-muted-text: #999;
+  --color-page-background: white;
+
+  /* Action Colors (Destructive/Safety/History) */
+  --color-danger: #dc3545;
+  --color-danger-hover: #c82333;
+  --color-secondary-action: #6c757d;
+  --color-secondary-action-hover: #5a6268;
 }
 
-/* ADDED: Styling for the new header elements */
+/* --- Dark Theme Definitions --- */
+.dark-theme {
+  --color-page-background: #121212;
+  --color-card-background: #1e1e1e;
+  --color-text-dark: #e0e0e0;
+  --color-text-medium: #b3b3b3;
+  --color-border: #444;
+  --color-background-light: #2c2c2c;
+  --color-muted-text: #666;
+  --color-primary: #0096ff;
+}
+
+/* UI CENTERING */
+body {
+  /* Dev Comment (Best Practice): Setting max-width and margin: 0 auto centers the main app container. */
+  max-width: 500px;
+  margin: 0 auto;
+  /* Adds necessary padding to prevent the main content from being obscured by the fixed footer. */
+  padding-bottom: 100px;
+  background-color: var(--color-page-background);
+  color: var(--color-text-dark);
+  /* Crucial for absolute positioning of the theme toggle button */
+  position: relative;
+}
+
+/* Apply dark theme variables to the body/app container */
+body.dark-theme {
+  background-color: var(--color-page-background);
+  color: var(--color-text-dark);
+}
+
+/* --- THEME TOGGLE PLACEMENT AND STYLE --- */
+#theme-toggle {
+  /* Dev Comment (Placement): position: absolute relative to the body's max-width container for top-right placement. top: 0px removes clutter by placing it right at the edge. */
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  /* UX AESTHETICS: Styling the button to be a clean circle. */
+  background-color: var(--color-secondary-action);
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  /* Makes the button circular */
+  border-radius: 50%;
+  /* Centers the emoji inside the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#theme-toggle:hover {
+  background-color: var(--color-secondary-action-hover);
+}
+
+/* --- Layout and Element Styles --- */
 h1 {
-  margin-top: 40px; /* Adds space at the top of the page */
+  margin-top: 40px;
   font-size: 36px;
-  color: #333;
+  color: var(--color-text-dark);
   text-align: center;
 }
 
 .instruction {
   font-size: 18px;
-  color: #666;
-  margin-bottom: 25px; /* Adds space above the input field */
+  color: var(--color-text-medium);
+  /* margin-bottom removed as it was ineffective */
   text-align: center;
 }
 
-body {
-  /* Restricts the app width for a clean look and centers it on the page */
-  /* 1. UI CENTERING: max-width and margin: 0 auto centers the main app container. */
-  max-width: 500px;
-  margin: 0 auto;
-  /* Add padding to prevent the main content from being hidden by the fixed footer */
-  padding-bottom: 100px;
+/* Dev Comment (Layout Principle): Flexbox ensures all input-bar contents stay on one line and manages spacing using 'gap'. */
+.input-bar {
+  display: flex;
+  /* BEST PRACTICE: Forces all child items (input, buttons) to align perfectly in the vertical center. */
+  align-items: center;
+  gap: 5px;
+  /* FIX: Adds necessary top margin to separate the input bar from the instruction text above. */
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
-/* --- Input and Button Styling (Reduced Height and Size) --- */
-input {
-  /* FIX: Using equal top/bottom padding (8px) for precise vertical centering */
+/* --- Input and Button Styling --- */
+/* Dev Comment (Specificity Fix): Targets only the main text input field (id="task"), preventing rules like flex-grow from being inherited by the checkbox input. */
+#task {
+  /* Dev Comment (Layout Principle): flex-grow: 1 ensures the input field takes up all remaining space in the flex container. */
+  flex-grow: 1;
   padding: 8px 10px;
-  /* Reduced width to fit button alongside it (500px total width) */
-  width: 380px;
   height: 40px;
   font-size: 20px;
-  /* VISIBILITY STYLES */
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background-light);
+  color: var(--color-text-dark);
   border-radius: 5px;
-  padding-left: 10px; /* Add slight padding for text */
-  box-sizing: border-box; /* Crucial: ensures border/padding don't expand the element past 500px */
-  display: inline-block;
-  vertical-align: middle;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
-input:focus {
-  /* Removes the default browser outline when the input is focused */
+#task:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: var(--color-primary);
 }
 
-li {
-  /* Styles for future task list items */
-  text-align: left;
-  font-size: 40px;
-  list-style: none;
-  margin: 0;
-}
-
-#add {
-  /* Button Aesthetics */
-  background-color: #007bff;
+/* Base button style shared across all main action buttons */
+#add,
+#removeAll,
+#undo {
   color: white;
-  height: 40px; /* Match input height */
-  width: 120px;
-  font-size: 18px;
+  height: 40px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  display: inline-block;
-  vertical-align: middle;
   transition: background-color 0.2s;
+
+  /* Dev Comment (Layout FIX): Ensures no residual vertical margin interferes with Flexbox alignment. */
+  margin: 0;
+  padding: 0 10px;
+
+  /* Final Alignment Fix: Forces the top edge of the button to align with the top edge of the input. */
+  vertical-align: top;
 }
 
+/* Styles for specific buttons using defined color variables */
+#add {
+  width: 90px;
+  background-color: var(--color-primary);
+}
 #add:hover {
-  background-color: #0056b3;
+  background-color: var(--color-primary-hover);
 }
 
-/* --- Footer Challenge --- */
+/* Dev Comment (Layout FIX): Removed fixed width here and #undo to allow Flexbox to adjust their size, resolving the wrapping issue. */
+#removeAll {
+  background-color: var(--color-danger);
+}
+#removeAll:hover {
+  background-color: var(--color-danger-hover);
+}
+
+#undo {
+  background-color: var(--color-secondary-action);
+}
+#undo:hover {
+  background-color: var(--color-secondary-action-hover);
+}
+
+/* --- Horizontal Rule (Hash Mark) Spacing --- */
+hr {
+  /* FIX: Adds proportional vertical space above and below the hash mark. */
+  margin: 25px 0;
+  /* Ensures the line uses the border color for theme consistency. */
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+/* --- Task List Styles (UL, LI, Checkbox, Remove Button) --- */
+/* Dev Comment (Layout FIX): Targets the dynamically generated list container. This removes the browser's default padding/margin, pinning the list to the left edge of the app container. */
+#todos ul {
+  list-style: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  /* Dev Comment (Layout Principle): Using flexbox on the LI centers the checkbox, text, and delete button vertically and aligns them horizontally. */
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+  list-style: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid var(--color-border);
+  box-sizing: border-box; /* Crucial FIX: Ensures 100% width includes the padding, fixing the overflow issue. */
+  width: 100%;
+}
+
+/* Dev Comment (UX Principle): Styles the native checkbox for better visibility and user interaction. */
+li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Dev Comment (Layout Principle): Allows the task text to flow naturally after the checkbox. The delete button is pushed to the far right using 'margin-left: auto' on the .remove button. */
+.task-text {
+  text-align: left;
+}
+
+/* Dev Comment (Layout Principle): margin-left: auto on the delete button pushes it to the far right edge of the list item. */
+.remove {
+  margin-left: auto;
+  background-color: transparent;
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  min-width: 30px;
+}
+
+/* Dev Comment (UX Principle): The .completed class is toggled by JavaScript to provide visual feedback for completed tasks. */
+.completed {
+  text-decoration: line-through;
+  color: var(--color-muted-text);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* --- Dark Theme Overrides --- */
+body.dark-theme h1,
+body.dark-theme .instruction {
+  color: var(--color-text-dark);
+}
+
+body.dark-theme #task {
+  background-color: var(--color-background-light);
+  border-color: var(--color-border);
+  color: var(--color-text-dark);
+}
+
+body.dark-theme li {
+  border-bottom: 1px solid var(--color-border);
+}
+
+body.dark-theme .remove {
+  background-color: var(--color-background-light);
+}
+
+/* Dev Comment (Dark Theme Override): Ensures the footer colors are inverted for dark mode. */
+body.dark-theme footer {
+  background-color: var(--color-background-light);
+  color: var(--color-text-dark);
+}
+
+/* --- REQUIRED PROJECT FOOTER STYLING --- */
 footer {
-  /* STICKY FOOTER: Fixes it to the viewport */
+  /* Dev Comment (Layout Requirement): position: fixed is crucial for making the footer "sticky" at the bottom of the viewport. */
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-
-  /* BORDER & STYLE: Added border and background */
-  border-top: 1px solid #ccc;
-  background-color: #f0f0f0;
+  background-color: var(--color-text-dark);
+  color: white;
   text-align: center;
   padding: 10px 0;
-  z-index: 99;
   font-size: 14px;
+  z-index: 1000;
+}
+
+footer p {
+  margin: 3px 0;
 }

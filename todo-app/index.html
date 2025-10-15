@@ -9,13 +9,27 @@
     <link rel="stylesheet" href="css/todo.css" />
   </head>
   <body>
+    <button id="theme-toggle" aria-label="Toggle Light/Dark Theme">☀️</button>
+
     <h1>TaskMaster TODO App</h1>
-    <p class="instruction">
+    <label for="task" class="instruction">
       What do you need to get done today? Type a task and hit 'Add Item'.
-    </p>
-    <input id="task" /><button id="add">Add Item</button>
+    </label>
+
+    <div class="input-bar">
+      <input id="task" type="text" />
+      <button id="add">Add Item</button>
+      <button id="removeAll" class="hidden" aria-label="Clear All Tasks">
+        Clear All
+      </button>
+      <button id="undo" class="hidden" aria-label="Undo Last Action">
+        Undo
+      </button>
+    </div>
 
     <hr />
+
+    <p id="feedback" class="hidden" role="alert"></p>
 
     <div id="todos"></div>
 
