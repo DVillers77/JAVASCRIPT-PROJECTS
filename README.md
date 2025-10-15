@@ -1544,3 +1544,16 @@ and a mastery of core JavaScript concepts.
   uses an **inline event handler** to call a JavaScript function (`changeStyle`)
   that modifies the styling (color and background) of a paragraph element upon a
   double-click, confirming the handler's successful execution.
+
+#### **Step 464: API ASSIGNMENT (Fetch Method)** 🌐📤
+
+- **Date**: October 15, 2025
+- **Objective**: Successfully utilize the `fetch` function to make an external
+  API request and handle the data. (Required a replacement API due to service
+  issues with the original assignment URL.)
+- **Outcome**: Created `unassigned-projects/api-assignment.html` and
+  `api-assignment.js`. The JavaScript code uses the **`fetch()`** method with
+  **`then().catch()`** to retrieve a random fact from the **Random Useless Facts
+  API** (`https://uselessfacts.jsph.pl/api/v2/facts/random`). The response is
+  successfully converted from JSON and displayed in the UI, demonstrating the
+  core principles of client-side API interaction.
