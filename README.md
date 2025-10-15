@@ -1598,3 +1598,15 @@ and a mastery of core JavaScript concepts.
   **responsiveness** through extensive use of `vw` units and media queries; and
   **JavaScript event handling** for the contact form modal, featuring a function
   to close the form when the user clicks off of it.
+
+#### **Step 469: CODE TESTING ASSIGNMENT** 🧪
+
+- **Date**: October 15, 2025
+- **Objective**: Conduct a systematic "destructive testing" exercise on the
+  `sample_portfolio.js`, `sample_index.html`, and `sample_portfolio.css` files.
+  This involves deleting an unfamiliar line of code from each file, observing
+  the resulting change in the browser, and then restoring the file to its
+  original working state.
+- **Outcome**: This process confirms the precise function of key code elements
+  across all three languages (structure, style, and behavior), solidifying
+  understanding before beginning the portfolio implementation.
