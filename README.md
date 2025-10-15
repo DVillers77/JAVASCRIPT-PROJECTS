@@ -1557,3 +1557,19 @@ and a mastery of core JavaScript concepts.
   API** (`https://uselessfacts.jsph.pl/api/v2/facts/random`). The response is
   successfully converted from JSON and displayed in the UI, demonstrating the
   core principles of client-side API interaction.
+
+#### **Step 465: API CHALLENGE (The Ultimate Fun Center)** 💡🐱🐕🗣️
+
+- **Date**: October 15, 2025
+- **Objective**: Complete the API Challenge by integrating four separate API
+  functionalities (two fact generators, an image fetcher, and a text
+  transformer) into a single page. This demonstrates mastery of the `fetch()`
+  API and handling various JSON response structures.
+- **Outcome**: The `api-assignment.html` and `api-assignment.js` were finalized
+  to create the **Ultimate API Fun Center**. The application now features:
+  1.  **Useless Fact:** Fetching text from the Useless Facts API.
+  2.  **Cat Fact:** Fetching text from the Cat Facts API.
+  3.  **Dog Picture:** Fetching a random image URL from the Dog CEO API.
+  4.  **Yoda Translator:** Taking user input and sending it to the Fun
+      Translations API (Yoda endpoint) using **`encodeURIComponent`** for safe
+      URL transmission.
